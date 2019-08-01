@@ -14,6 +14,8 @@
 
 package datastructure.string.alg4.ch05.sort;
 
+import util.alg4.library.StdOut;
+
 public class Alphabet {
 
     /**

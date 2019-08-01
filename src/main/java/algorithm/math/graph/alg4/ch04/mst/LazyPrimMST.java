@@ -41,6 +41,12 @@
 
 package algorithm.math.graph.alg4.ch04.mst;
 
+import datastructure.disjointsets.alg4.ch01.UF;
+import datastructure.queue.alg4.ch01.Queue;
+import datastructure.queue.alg4.ch02.MinPQ;
+import util.alg4.library.In;
+import util.alg4.library.StdOut;
+
 /**
  *  The {@code LazyPrimMST} class represents a data type for computing a
  *  <em>minimum spanning tree</em> in an edge-weighted graph.

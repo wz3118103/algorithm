@@ -32,6 +32,8 @@
 
 package datastructure.string.alg4.ch05.search;
 
+import util.alg4.library.StdOut;
+
 /**
  *  The {@code BoyerMoore} class finds the first occurrence of a pattern string
  *  in a text string.

@@ -33,6 +33,8 @@
 
 package datastructure.string.alg4.ch05.search;
 
+import util.alg4.library.StdOut;
+
 import java.math.BigInteger;
 import java.util.Random;
 

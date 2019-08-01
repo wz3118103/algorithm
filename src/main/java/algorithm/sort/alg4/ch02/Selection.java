@@ -23,6 +23,9 @@
 
 package algorithm.sort.alg4.ch02;
 
+import util.alg4.library.StdIn;
+import util.alg4.library.StdOut;
+
 import java.util.Comparator;
 
 /**

@@ -16,6 +16,9 @@
 
 package util.alg4.ch01;
 
+import util.alg4.library.StdOut;
+import util.alg4.library.StdRandom;
+
 /**
  *  The {@code RandomSeq} class is a client that prints out a pseudorandom
  *  sequence of real numbers in a given range.

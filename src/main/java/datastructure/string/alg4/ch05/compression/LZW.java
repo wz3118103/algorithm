@@ -20,6 +20,10 @@
 
 package datastructure.string.alg4.ch05.compression;
 
+import datastructure.string.alg4.ch05.trie.TST;
+import util.alg4.library.BinaryStdIn;
+import util.alg4.library.BinaryStdOut;
+
 /**
  *  The {@code LZW} class provides static methods for compressing
  *  and expanding a binary input using LZW compression over the 8-bit extended

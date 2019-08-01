@@ -15,6 +15,9 @@
 
 package algorithm.math.others.alg4.ch06;
 
+import util.alg4.library.StdOut;
+import util.alg4.library.StdRandom;
+
 /**
  *  The {@code LinearProgramming} class represents a data type for solving a
  *  linear program of the form { max cx : Ax &le; b, x &ge; 0 }, where A is a m-by-n

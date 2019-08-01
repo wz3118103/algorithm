@@ -25,6 +25,10 @@
 
 package algorithm.search.alg4.ch03;
 
+import datastructure.queue.alg4.ch01.Queue;
+import util.alg4.library.StdIn;
+import util.alg4.library.StdOut;
+
 import java.util.NoSuchElementException;
 
 /**
@@ -379,7 +383,7 @@ public class BinarySearchST<Key extends Comparable<Key>, Value> {
         if (lo == null) throw new IllegalArgumentException("first argument to keys() is null"); 
         if (hi == null) throw new IllegalArgumentException("second argument to keys() is null"); 
 
-        Queue<Key> queue = new Queue<Key>(); 
+        Queue<Key> queue = new Queue<Key>();
         if (lo.compareTo(hi) > 0) return queue;
         for (int i = rank(lo); i < rank(hi); i++) 
             queue.enqueue(keys[i]);

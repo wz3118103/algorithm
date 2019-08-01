@@ -22,6 +22,11 @@
  ******************************************************************************/
 
 package algorithm.math.graph.alg4.ch04.directed;
+
+import util.alg4.ch01.Bag;
+import util.alg4.library.In;
+import util.alg4.library.StdOut;
+
 /**
  *  The {@code DirectedDFS} class represents a data type for 
  *  determining the vertices reachable from a given source vertex <em>s</em>

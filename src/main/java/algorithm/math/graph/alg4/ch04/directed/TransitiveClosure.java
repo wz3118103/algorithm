@@ -32,6 +32,9 @@
 
 package algorithm.math.graph.alg4.ch04.directed;
 
+import util.alg4.library.In;
+import util.alg4.library.StdOut;
+
 /**
  *  The {@code TransitiveClosure} class represents a data type for 
  *  computing the transitive closure of a digraph.

@@ -9,6 +9,8 @@
 
 package algorithm.sort.alg4.ch02;
 
+import util.alg4.library.StdOut;
+
 import java.util.Iterator;
 import java.util.NoSuchElementException;
 

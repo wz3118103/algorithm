@@ -18,6 +18,9 @@
 
 package algorithm.math.others.alg4.ch06;
 
+import util.alg4.library.StdOut;
+import util.alg4.library.StdRandom;
+
 /**
  *  The {@code TwoPersonZeroSumGame} class represents a data type for
  *  computing optimal row and column strategies to two-person zero-sum games.

@@ -10,6 +10,12 @@
 
 package algorithm.math.graph.alg4.ch06;
 
+import algorithm.math.graph.alg4.ch04.sp.DijkstraSP;
+import algorithm.math.graph.alg4.ch04.sp.DirectedEdge;
+import algorithm.math.graph.alg4.ch04.sp.EdgeWeightedDigraph;
+import util.alg4.library.StdOut;
+import util.alg4.library.StdRandom;
+
 /**
  *  The {@code AssignmentProblem} class represents a data type for computing
  *  an optimal solution to an <em>n</em>-by-<em>n</em> <em>assignment problem</em>.

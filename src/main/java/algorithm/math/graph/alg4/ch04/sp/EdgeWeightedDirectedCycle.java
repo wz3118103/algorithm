@@ -11,6 +11,10 @@
 
 package algorithm.math.graph.alg4.ch04.sp;
 
+import datastructure.stack.alg4.Stack;
+import util.alg4.library.StdOut;
+import util.alg4.library.StdRandom;
+
 /**
  *  The {@code EdgeWeightedDirectedCycle} class represents a data type for 
  *  determining whether an edge-weighted digraph has a directed cycle.

@@ -64,6 +64,10 @@
 
 package algorithm.math.graph.alg4.ch04.directed;
 
+import datastructure.queue.alg4.ch01.Queue;
+import util.alg4.library.In;
+import util.alg4.library.StdOut;
+
 /**
  *  The {@code KosarajuSharirSCC} class represents a data type for 
  *  determining the strong components in a digraph.

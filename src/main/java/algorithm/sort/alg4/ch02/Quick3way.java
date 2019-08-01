@@ -23,6 +23,10 @@
 
 package algorithm.sort.alg4.ch02;
 
+import util.alg4.library.StdIn;
+import util.alg4.library.StdOut;
+import util.alg4.library.StdRandom;
+
 /**
  *  The {@code Quick3way} class provides static methods for sorting an
  *  array using quicksort with 3-way partitioning.

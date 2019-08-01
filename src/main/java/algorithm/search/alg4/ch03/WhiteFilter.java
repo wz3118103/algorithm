@@ -30,6 +30,10 @@
 
 package algorithm.search.alg4.ch03;
 
+import util.alg4.library.In;
+import util.alg4.library.StdIn;
+import util.alg4.library.StdOut;
+
 /**
  *  The {@code WhiteFilter} class provides a client for reading in a <em>whitelist</em>
  *  of words from a file; then, reading in a sequence of words from standard input,

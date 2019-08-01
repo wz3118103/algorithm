@@ -24,6 +24,9 @@
 
 package datastructure.string.alg4.ch05.compression;
 
+import util.alg4.library.BinaryStdIn;
+import util.alg4.library.BinaryStdOut;
+
 /**
  *  The {@code RunLength} class provides static methods for compressing
  *  and expanding a binary input using run-length coding with 8-bit

@@ -10,6 +10,9 @@
 
 package algorithm.math.simulate.alg4.ch06;
 
+import util.alg4.library.StdDraw;
+import util.alg4.library.StdRandom;
+
 import java.awt.Color;
 
 /**

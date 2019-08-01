@@ -12,8 +12,8 @@
 
 package algorithm.math.graph.alg4.ch04.sp;
 
-import algorithm.math.graph.alg4.ch04.directed.DirectedEdge;
-import algorithm.math.graph.alg4.ch04.directed.EdgeWeightedDigraph;
+import util.alg4.library.In;
+import util.alg4.library.StdOut;
 
 /**
  *  The {@code DijkstraAllPairsSP} class represents a data type for solving the

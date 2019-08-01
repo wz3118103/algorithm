@@ -28,6 +28,10 @@
 
 package datastructure.string.alg4.ch05.sort;
 
+import datastructure.stack.alg4.Stack;
+import util.alg4.library.StdIn;
+import util.alg4.library.StdOut;
+
 /**
  *  The {@code AmericanFlag} class provides static methods for sorting an
  *  array of extended ASCII strings or integers in-place using 

@@ -37,6 +37,10 @@
 
 package datastructure.string.alg4.ch06;
 
+import util.alg4.library.In;
+import util.alg4.library.StdIn;
+import util.alg4.library.StdOut;
+
 /**
  *  The {@code KWIK} class provides a {@link SuffixArray} client for computing
  *  all occurrences of a keyword in a given string, with surrounding context.

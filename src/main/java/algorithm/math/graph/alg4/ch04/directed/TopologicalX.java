@@ -10,6 +10,12 @@
 
 package algorithm.math.graph.alg4.ch04.directed;
 
+import algorithm.math.graph.alg4.ch04.sp.DirectedEdge;
+import algorithm.math.graph.alg4.ch04.sp.EdgeWeightedDigraph;
+import datastructure.queue.alg4.ch01.Queue;
+import util.alg4.library.StdOut;
+import util.alg4.library.StdRandom;
+
 /**
  *  The {@code TopologicalX} class represents a data type for 
  *  determining a topological order of a directed acyclic graph (DAG).

@@ -24,6 +24,9 @@
 
 package algorithm.math.graph.alg4.ch04.sp;
 
+import util.alg4.library.StdIn;
+import util.alg4.library.StdOut;
+
 /**
  *  The {@code Arbitrage} class provides a client that finds an arbitrage
  *  opportunity in a currency exchange table by constructing a

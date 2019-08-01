@@ -9,6 +9,8 @@
 
 package util.alg4.ch01;
 
+import util.alg4.library.StdOut;
+
 /**
  *  The {@code Date} class is an immutable data type to encapsulate a
  *  date (day, month, and year).

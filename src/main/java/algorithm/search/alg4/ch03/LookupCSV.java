@@ -32,6 +32,10 @@
 
 package algorithm.search.alg4.ch03;
 
+import util.alg4.library.In;
+import util.alg4.library.StdIn;
+import util.alg4.library.StdOut;
+
 /**
  *  The {@code LookupCSV} class provides a data-driven client for reading in a
  *  key-value pairs from a file; then, printing the values corresponding to the

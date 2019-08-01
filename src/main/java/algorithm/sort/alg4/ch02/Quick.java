@@ -28,6 +28,10 @@
 
 package algorithm.sort.alg4.ch02;
 
+import util.alg4.library.StdIn;
+import util.alg4.library.StdOut;
+import util.alg4.library.StdRandom;
+
 /**
  *  The {@code Quick} class provides static methods for sorting an
  *  array and selecting the ith smallest element in an array using quicksort.

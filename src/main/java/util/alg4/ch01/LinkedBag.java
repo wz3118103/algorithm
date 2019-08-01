@@ -29,6 +29,9 @@
 
 package util.alg4.ch01;
 
+import util.alg4.library.StdIn;
+import util.alg4.library.StdOut;
+
 import java.util.Iterator;
 import java.util.NoSuchElementException;
 

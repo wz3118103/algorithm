@@ -9,6 +9,8 @@
 
 package util.alg4.ch01;
 
+import util.alg4.library.StdDraw;
+
 /**
  *  The {@code RectHV} class is an immutable data type to encapsulate a
  *  two-dimensional axis-aligned rectagle with real-value coordinates.

@@ -11,6 +11,9 @@
 
 package algorithm.math.graph.alg4.ch06;
 
+import datastructure.queue.alg4.ch01.Queue;
+import util.alg4.library.StdOut;
+
 /**
  *  The {@code FordFulkerson} class represents a data type for computing a
  *  <em>maximum st-flow</em> and <em>minimum st-cut</em> in a flow

@@ -14,6 +14,8 @@
 
 package util.alg4.ch01;
 
+import util.alg4.library.StdOut;
+
 import java.lang.management.ThreadMXBean;
 import java.lang.management.ManagementFactory;
 

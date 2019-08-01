@@ -31,6 +31,10 @@
 
 package algorithm.math.graph.alg4.ch04.undirected;
 
+import datastructure.stack.alg4.Stack;
+import util.alg4.library.In;
+import util.alg4.library.StdOut;
+
 /**
  *  The {@code DepthFirstPaths} class represents a data type for finding
  *  paths from a source vertex <em>s</em> to every other vertex

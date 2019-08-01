@@ -29,6 +29,9 @@
 
 package datastructure.string.alg4.ch05.sort;
 
+import util.alg4.library.StdIn;
+import util.alg4.library.StdOut;
+
 /**
  *  The {@code LSD} class provides static methods for sorting an
  *  array of <em>w</em>-character strings or 32-bit integers using LSD radix sort.

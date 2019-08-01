@@ -43,6 +43,11 @@
 
 package algorithm.math.graph.alg4.ch04.undirected;
 
+import algorithm.search.alg4.ch03.ST;
+import util.alg4.library.In;
+import util.alg4.library.StdIn;
+import util.alg4.library.StdOut;
+
 /**
  *  The {@code SymbolGraph} class represents an undirected graph, where the
  *  vertex names are arbitrary strings.

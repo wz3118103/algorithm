@@ -15,6 +15,8 @@
 
 package datastructure.btree.alg4.ch06;
 
+import util.alg4.library.StdOut;
+
 /**
  *  The {@code BTree} class represents an ordered symbol table of generic
  *  key-value pairs.

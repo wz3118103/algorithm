@@ -29,6 +29,10 @@
 
 package util.alg4.ch01;
 
+import util.alg4.library.In;
+import util.alg4.library.StdIn;
+import util.alg4.library.StdOut;
+
 /**
  *  The {@code Whitelist} class provides a client for reading in
  *  a set of integers from a file; reading in a sequence of integers

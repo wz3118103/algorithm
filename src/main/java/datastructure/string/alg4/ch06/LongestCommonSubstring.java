@@ -15,6 +15,9 @@
 
 package datastructure.string.alg4.ch06;
 
+import util.alg4.library.In;
+import util.alg4.library.StdOut;
+
 /**
  *  The {@code LongestCommonSubstring} class provides a {@link SuffixArray}
  *  client for computing the longest common substring that appears in two

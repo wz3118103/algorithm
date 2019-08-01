@@ -11,6 +11,8 @@
 
 package algorithm.search.alg4.ch03;
 
+import util.alg4.library.StdOut;
+
 /**
  *  The {@code SparseVector} class represents a <em>d</em>-dimensional mathematical vector.
  *  Vectors are mutable: their values can be changed after they are created.

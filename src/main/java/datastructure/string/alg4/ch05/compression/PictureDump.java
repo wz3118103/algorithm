@@ -16,6 +16,9 @@
 
 package datastructure.string.alg4.ch05.compression;
 
+import util.alg4.library.BinaryStdIn;
+import util.alg4.library.Picture;
+
 import java.awt.Color;
 
 

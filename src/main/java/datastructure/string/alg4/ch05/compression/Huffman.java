@@ -22,6 +22,10 @@
 
 package datastructure.string.alg4.ch05.compression;
 
+import datastructure.queue.alg4.ch02.MinPQ;
+import util.alg4.library.BinaryStdIn;
+import util.alg4.library.BinaryStdOut;
+
 /**
  *  The {@code Huffman} class provides static methods for compressing
  *  and expanding a binary input using Huffman codes over the 8-bit extended

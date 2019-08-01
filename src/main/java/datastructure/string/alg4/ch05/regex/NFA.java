@@ -27,6 +27,12 @@
 
 package datastructure.string.alg4.ch05.regex;
 
+import algorithm.math.graph.alg4.ch04.directed.Digraph;
+import algorithm.math.graph.alg4.ch04.directed.DirectedDFS;
+import datastructure.stack.alg4.Stack;
+import util.alg4.ch01.Bag;
+import util.alg4.library.StdOut;
+
 /**
  *  The {@code NFA} class provides a data type for creating a
  *  <em>nondeterministic finite state automaton</em> (NFA) from a regular
@@ -68,8 +74,8 @@ public class NFA {
     public NFA(String regexp) {
         this.regexp = regexp;
         m = regexp.length();
-        Stack<Integer> ops = new Stack<Integer>(); 
-        graph = new Digraph(m+1); 
+        Stack<Integer> ops = new Stack<Integer>();
+        graph = new Digraph(m+1);
         for (int i = 0; i < m; i++) { 
             int lp = i; 
             if (regexp.charAt(i) == '(' || regexp.charAt(i) == '|') 

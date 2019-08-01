@@ -12,6 +12,9 @@
 
 package datastructure.disjointsets.alg4.ch01;
 
+import util.alg4.library.StdIn;
+import util.alg4.library.StdOut;
+
 /**
  *  The {@code WeightedQuickUnionUF} class represents a <em>union–find data type</em>
  *  (also known as the <em>disjoint-sets data type</em>).

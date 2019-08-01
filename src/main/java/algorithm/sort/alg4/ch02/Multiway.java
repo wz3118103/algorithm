@@ -25,6 +25,9 @@
 
 package algorithm.sort.alg4.ch02;
 
+import util.alg4.library.In;
+import util.alg4.library.StdOut;
+
 /**
  *  The {@code Multiway} class provides a client for reading in several
  *  sorted text files and merging them together into a single sorted

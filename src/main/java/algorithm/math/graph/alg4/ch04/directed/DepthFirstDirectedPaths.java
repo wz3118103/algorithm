@@ -29,6 +29,10 @@
 
 package algorithm.math.graph.alg4.ch04.directed;
 
+import datastructure.stack.alg4.Stack;
+import util.alg4.library.In;
+import util.alg4.library.StdOut;
+
 /**
  *  The {@code DepthFirstDirectedPaths} class represents a data type for finding
  *  directed paths from a source vertex <em>s</em> to every

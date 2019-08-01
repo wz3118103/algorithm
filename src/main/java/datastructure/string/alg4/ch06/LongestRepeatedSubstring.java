@@ -28,6 +28,9 @@
 
 package datastructure.string.alg4.ch06;
 
+import util.alg4.library.StdIn;
+import util.alg4.library.StdOut;
+
 /**
  *  The {@code LongestRepeatedSubstring} class provides a {@link SuffixArray}
  *  client for computing the longest repeated substring of a string that

@@ -28,6 +28,10 @@
 
 package datastructure.string.alg4.ch05.sort;
 
+import util.alg4.library.StdIn;
+import util.alg4.library.StdOut;
+import util.alg4.library.StdRandom;
+
 /**
  *  The {@code Quick3string} class provides static methods for sorting an
  *  array of strings using 3-way radix quicksort.

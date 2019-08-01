@@ -45,6 +45,9 @@
 
 package util.alg4.ch01;
 
+import util.alg4.library.StdIn;
+import util.alg4.library.StdOut;
+
 /**
  *  The {@code Knuth} class provides a client for reading in a 
  *  sequence of strings and <em>shuffling</em> them using the Knuth (or Fisher-Yates)

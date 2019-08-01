@@ -13,6 +13,8 @@
 
 package util.alg4.ch01;
 
+import util.alg4.library.StdOut;
+
 /**
  *  The {@code Stopwatch} data type is for measuring
  *  the time that elapses between the start and end of a

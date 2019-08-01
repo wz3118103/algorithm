@@ -30,6 +30,9 @@
 
 package algorithm.sort.alg4.ch02;
 
+import util.alg4.library.StdIn;
+import util.alg4.library.StdOut;
+
 /**
  *  The {@code Shell} class provides static methods for sorting an
  *  array using Shellsort with Knuth's increment sequence (1, 4, 13, 40, ...).

@@ -32,6 +32,9 @@
 
 package algorithm.search.alg4.ch03;
 
+import util.alg4.library.StdIn;
+import util.alg4.library.StdOut;
+
 /**
  *  The {@code DeDup} class provides a client for reading in a sequence of
  *  words from standard input and printing each word, removing any duplicates.

@@ -9,6 +9,11 @@
 
 package algorithm.math.graph.alg4.ch04.undirected;
 
+import datastructure.queue.alg4.ch01.Queue;
+import datastructure.stack.alg4.Stack;
+import util.alg4.library.StdOut;
+import util.alg4.library.StdRandom;
+
 /**
  *  The {@code EulerianPath} class represents a data type
  *  for finding an Eulerian path in a graph.

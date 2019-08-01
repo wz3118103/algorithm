@@ -34,6 +34,9 @@
 package datastructure.string.alg4.ch05.sort;
 
 
+import util.alg4.library.StdIn;
+import util.alg4.library.StdOut;
+
 /**
  *  The {@code Count} class provides an {@link Alphabet} client for reading
  *  in a piece of text and computing the frequency of occurrence of each

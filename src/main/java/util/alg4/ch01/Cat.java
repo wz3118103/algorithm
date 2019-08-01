@@ -27,6 +27,9 @@
 
 package util.alg4.ch01;
 
+import util.alg4.library.In;
+import util.alg4.library.Out;
+
 /**
  *  The {@code Cat} class provides a client for concatenating the results
  *  of several text files.

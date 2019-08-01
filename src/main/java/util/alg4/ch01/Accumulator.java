@@ -12,6 +12,9 @@
 package util.alg4.ch01;
 
 
+import util.alg4.library.StdIn;
+import util.alg4.library.StdOut;
+
 /**
  *  The {@code Accumulator} class is a data type for computing the running
  *  mean, sample standard deviation, and sample variance of a stream of real

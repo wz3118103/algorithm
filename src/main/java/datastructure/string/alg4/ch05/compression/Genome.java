@@ -17,6 +17,10 @@
 
 package datastructure.string.alg4.ch05.compression;
 
+import datastructure.string.alg4.ch05.sort.Alphabet;
+import util.alg4.library.BinaryStdIn;
+import util.alg4.library.BinaryStdOut;
+
 /**
  *  The {@code Genome} class provides static methods for compressing
  *  and expanding a genomic sequence using a 2-bit code.

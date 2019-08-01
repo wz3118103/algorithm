@@ -28,6 +28,9 @@
 
 package datastructure.string.alg4.ch06;
 
+import util.alg4.library.StdIn;
+import util.alg4.library.StdOut;
+
 /**
  *  The {@code SuffixArrayX} class represents a suffix array of a string of
  *  length <em>n</em>.

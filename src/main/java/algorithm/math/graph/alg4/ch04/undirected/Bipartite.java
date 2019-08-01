@@ -14,6 +14,10 @@
 package algorithm.math.graph.alg4.ch04.undirected;
 
 
+import datastructure.stack.alg4.Stack;
+import util.alg4.library.StdOut;
+import util.alg4.library.StdRandom;
+
 /**
  *  The {@code Bipartite} class represents a data type for 
  *  determining whether an undirected graph is bipartite or whether

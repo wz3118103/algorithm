@@ -32,8 +32,10 @@
 package algorithm.math.graph.alg4.ch04.sp;
 
 
-import algorithm.math.graph.alg4.ch04.directed.DirectedEdge;
-import algorithm.math.graph.alg4.ch04.directed.EdgeWeightedDigraph;
+import datastructure.queue.alg4.ch02.IndexMinPQ;
+import datastructure.stack.alg4.Stack;
+import util.alg4.library.In;
+import util.alg4.library.StdOut;
 
 /**
  *  The {@code DijkstraSP} class represents a data type for solving the

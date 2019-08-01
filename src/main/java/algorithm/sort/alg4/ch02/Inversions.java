@@ -9,6 +9,9 @@
 
 package algorithm.sort.alg4.ch02;
 
+import util.alg4.library.StdIn;
+import util.alg4.library.StdOut;
+
 /**
  *  The {@code Inversions} class provides static methods to count the 
  *  number of <em>inversions</em> in either an array of integers or comparables.

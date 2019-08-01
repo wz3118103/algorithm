@@ -11,6 +11,9 @@
 
 package algorithm.search.alg4.ch03;
 
+import util.alg4.library.StdIn;
+import util.alg4.library.StdOut;
+
 import java.util.Iterator;
 import java.util.NoSuchElementException;
 import java.util.TreeMap;

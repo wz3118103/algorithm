@@ -27,6 +27,9 @@
 
 package datastructure.string.alg4.ch05.regex;
 
+import util.alg4.library.StdIn;
+import util.alg4.library.StdOut;
+
 /**
  *  The {@code GREP} class provides a client for reading in a sequence of
  *  lines from standard input and printing to standard output those lines
@@ -55,7 +58,7 @@ public class GREP {
     public static void main(String[] args) { 
         String regexp = "(.*" + args[0] + ".*)";
         NFA nfa = new NFA(regexp);
-        while (StdIn.hasNextLine()) { 
+        while (StdIn.hasNextLine()) {
             String line = StdIn.readLine();
             if (nfa.recognizes(line)) {
                 StdOut.println(line);

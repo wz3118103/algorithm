@@ -18,6 +18,11 @@
 
 package algorithm.math.graph.alg4.ch04.directed;
 
+import algorithm.search.alg4.ch03.ST;
+import util.alg4.library.In;
+import util.alg4.library.StdIn;
+import util.alg4.library.StdOut;
+
 /**
  *  The {@code SymbolDigraph} class represents a digraph, where the
  *  vertex names are arbitrary strings.

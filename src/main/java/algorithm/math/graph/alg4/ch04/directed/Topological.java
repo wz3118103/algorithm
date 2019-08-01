@@ -28,6 +28,10 @@
 
 package algorithm.math.graph.alg4.ch04.directed;
 
+import algorithm.math.graph.alg4.ch04.sp.EdgeWeightedDigraph;
+import algorithm.math.graph.alg4.ch04.sp.EdgeWeightedDirectedCycle;
+import util.alg4.library.StdOut;
+
 /**
  *  The {@code Topological} class represents a data type for 
  *  determining a topological order of a directed acyclic graph (DAG).

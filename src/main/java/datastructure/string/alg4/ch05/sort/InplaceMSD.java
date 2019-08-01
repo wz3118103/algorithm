@@ -27,6 +27,9 @@
 
 package datastructure.string.alg4.ch05.sort;
 
+import util.alg4.library.StdIn;
+import util.alg4.library.StdOut;
+
 /**
  *  The {@code InplaceMSD} class provides static methods for sorting an
  *  array of extended ASCII strings using in-place MSD radix sort.

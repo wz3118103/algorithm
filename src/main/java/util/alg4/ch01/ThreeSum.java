@@ -27,6 +27,9 @@
 
 package util.alg4.ch01;
 
+import util.alg4.library.In;
+import util.alg4.library.StdOut;
+
 /**
  *  The {@code ThreeSum} class provides static methods for counting
  *  and printing the number of triples in an array of integers that sum to 0

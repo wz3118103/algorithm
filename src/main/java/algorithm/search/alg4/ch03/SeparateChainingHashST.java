@@ -10,6 +10,10 @@
 
 package algorithm.search.alg4.ch03;
 
+import datastructure.queue.alg4.ch01.Queue;
+import util.alg4.library.StdIn;
+import util.alg4.library.StdOut;
+
 /**
  *  The {@code SeparateChainingHashST} class represents a symbol table of generic
  *  key-value pairs.
@@ -199,7 +203,7 @@ public class SeparateChainingHashST<Key, Value> {
 
         // print keys
         for (String s : st.keys()) 
-            StdOut.println(s + " " + st.get(s)); 
+            StdOut.println(s + " " + st.get(s));
 
     }
 

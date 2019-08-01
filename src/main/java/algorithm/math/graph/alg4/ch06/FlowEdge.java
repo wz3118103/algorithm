@@ -9,6 +9,8 @@
 
 package algorithm.math.graph.alg4.ch06;
 
+import util.alg4.library.StdOut;
+
 /**
  *  The {@code FlowEdge} class represents a capacitated edge with a 
   * flow in a {@link FlowNetwork}. Each edge consists of two integers

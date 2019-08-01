@@ -22,6 +22,10 @@
 
 package algorithm.math.graph.alg4.ch04.undirected;
 
+import datastructure.stack.alg4.Stack;
+import util.alg4.library.In;
+import util.alg4.library.StdOut;
+
 /**
  *  The {@code Cycle} class represents a data type for 
  *  determining whether an undirected graph has a simple cycle.

@@ -10,6 +10,11 @@
 
 package algorithm.math.graph.alg4.ch04.directed;
 
+import datastructure.queue.alg4.ch01.Queue;
+import datastructure.stack.alg4.Stack;
+import util.alg4.library.StdOut;
+import util.alg4.library.StdRandom;
+
 /**
  *  The {@code DirectedCycleX} class represents a data type for 
  *  determining whether a digraph has a directed cycle.

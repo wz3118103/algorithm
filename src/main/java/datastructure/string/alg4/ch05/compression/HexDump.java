@@ -26,6 +26,9 @@
 
 package datastructure.string.alg4.ch05.compression;
 
+import util.alg4.library.BinaryStdIn;
+import util.alg4.library.StdOut;
+
 /**
  *  The {@code HexDump} class provides a client for displaying the contents
  *  of a binary file in hexadecimal.

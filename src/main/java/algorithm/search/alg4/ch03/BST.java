@@ -25,6 +25,10 @@
 
 package algorithm.search.alg4.ch03;
 
+import datastructure.queue.alg4.ch01.Queue;
+import util.alg4.library.StdIn;
+import util.alg4.library.StdOut;
+
 import java.util.NoSuchElementException;
 
 /**

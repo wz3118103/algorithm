@@ -19,6 +19,8 @@
 
 package algorithm.sort.alg4.ch02;
 
+import util.alg4.ch01.Transaction;
+
 /**
  *  The {@code TopM} class provides a client that reads a sequence of
  *  transactions from standard input and prints the <em>m</em> largest ones

@@ -51,6 +51,9 @@
 
 package algorithm.math.graph.alg4.ch04.undirected;
 
+import util.alg4.library.StdIn;
+import util.alg4.library.StdOut;
+
 /**
  *  The {@code DegreesOfSeparation} class provides a client for finding
  *  the degree of separation between one distinguished individual and

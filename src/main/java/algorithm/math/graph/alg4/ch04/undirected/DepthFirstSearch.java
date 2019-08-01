@@ -20,6 +20,9 @@
 
 package algorithm.math.graph.alg4.ch04.undirected;
 
+import util.alg4.library.In;
+import util.alg4.library.StdOut;
+
 /**
  *  The {@code DepthFirstSearch} class represents a data type for 
  *  determining the vertices connected to a given source vertex <em>s</em>

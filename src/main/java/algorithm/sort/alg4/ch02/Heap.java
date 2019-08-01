@@ -23,6 +23,9 @@
 
 package algorithm.sort.alg4.ch02;
 
+import util.alg4.library.StdIn;
+import util.alg4.library.StdOut;
+
 /**
  *  The {@code Heap} class provides a static methods for heapsorting
  *  an array.

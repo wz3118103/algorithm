@@ -9,6 +9,10 @@
 
 package algorithm.math.graph.alg4.ch04.directed;
 
+import algorithm.search.alg4.ch03.SET;
+import util.alg4.library.StdOut;
+import util.alg4.library.StdRandom;
+
 /**
  *  The {@code DigraphGenerator} class provides static methods for creating
  *  various digraphs, including Erdos-Renyi random digraphs, random DAGs,

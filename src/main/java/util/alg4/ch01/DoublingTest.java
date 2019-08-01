@@ -16,6 +16,9 @@
 
 package util.alg4.ch01;
 
+import util.alg4.library.StdOut;
+import util.alg4.library.StdRandom;
+
 /**
  *  The {@code DoublingTest} class provides a client for measuring
  *  the running time of a method using a doubling test.

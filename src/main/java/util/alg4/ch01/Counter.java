@@ -20,6 +20,9 @@
 
 package util.alg4.ch01;
 
+import util.alg4.library.StdOut;
+import util.alg4.library.StdRandom;
+
 /**
  *  The {@code Counter} class is a mutable data type to encapsulate a counter.
  *  <p>

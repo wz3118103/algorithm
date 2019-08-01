@@ -9,6 +9,10 @@
 
 package util.alg4.ch01;
 
+import util.alg4.library.StdDraw;
+import util.alg4.library.StdOut;
+import util.alg4.library.StdRandom;
+
 /**
  *  The {@code Interval2D} class represents a closed two-dimensional interval,
  *  which represents all points (x, y) with both {@code xmin <= x <= xmax} and

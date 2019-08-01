@@ -25,8 +25,8 @@
 
 package algorithm.math.graph.alg4.ch04.sp;
 
-import algorithm.math.graph.alg4.ch04.directed.DirectedEdge;
-import algorithm.math.graph.alg4.ch04.directed.EdgeWeightedDigraph;
+import util.alg4.library.StdIn;
+import util.alg4.library.StdOut;
 
 /**
  *  The {@code CPM} class provides a client that solves the

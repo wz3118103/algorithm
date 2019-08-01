@@ -10,6 +10,9 @@
 
 package algorithm.math.graph.alg4.ch04.sp;
 
+import util.alg4.library.StdOut;
+import util.alg4.library.StdRandom;
+
 import java.util.Iterator;
 import java.util.NoSuchElementException;
 

@@ -23,6 +23,9 @@
 
 package algorithm.sort.alg4.ch02;
 
+import util.alg4.library.StdIn;
+import util.alg4.library.StdOut;
+
 /**
  *  The {@code Merge} class provides static methods for sorting an
  *  array using mergesort.
