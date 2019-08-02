@@ -13,7 +13,7 @@
 package algorithm.math.graph.alg4.ch04.undirected;
 
 import algorithm.search.alg4.ch03.SET;
-import datastructure.queue.alg4.ch02.MinPQ;
+import datastructure.queueandheap.alg4.ch02.MinPQ;
 import util.alg4.library.StdOut;
 import util.alg4.library.StdRandom;
 

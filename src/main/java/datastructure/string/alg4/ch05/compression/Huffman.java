@@ -22,7 +22,7 @@
 
 package datastructure.string.alg4.ch05.compression;
 
-import datastructure.queue.alg4.ch02.MinPQ;
+import datastructure.queueandheap.alg4.ch02.MinPQ;
 import util.alg4.library.BinaryStdIn;
 import util.alg4.library.BinaryStdOut;
 

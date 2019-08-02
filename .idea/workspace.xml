@@ -1,0 +1,1743 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="e136a5ca-c75c-48b6-8d35-68e66e0116c5" name="Default Changelist" comment="alg4 modify">
+      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/algorithm/bigdataprocess/codinginterviewguide/chapter_6/BloomFilter.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/algorithm/bigdataprocess/cracking/ch09_scalability_and_memory_limits/Q9_02_Social_Network/BFSData.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/algorithm/bigdataprocess/cracking/ch09_scalability_and_memory_limits/Q9_02_Social_Network/Machine.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/algorithm/bigdataprocess/cracking/ch09_scalability_and_memory_limits/Q9_02_Social_Network/PathNode.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/algorithm/bigdataprocess/cracking/ch09_scalability_and_memory_limits/Q9_02_Social_Network/Person.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/algorithm/bigdataprocess/cracking/ch09_scalability_and_memory_limits/Q9_02_Social_Network/QuestionA.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/algorithm/bigdataprocess/cracking/ch09_scalability_and_memory_limits/Q9_02_Social_Network/QuestionB.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/algorithm/bigdataprocess/cracking/ch09_scalability_and_memory_limits/Q9_02_Social_Network/Server.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/algorithm/bigdataprocess/cracking/ch09_scalability_and_memory_limits/Q9_02_Social_Network/Tester.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/algorithm/bigdataprocess/cracking/ch09_scalability_and_memory_limits/Q9_05_Cache/Cache.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/algorithm/bigdataprocess/cracking/ch09_scalability_and_memory_limits/Q9_05_Cache/Node.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/algorithm/bigdataprocess/cracking/ch09_scalability_and_memory_limits/Q9_05_Cache/Question.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/algorithm/dfs_backtracking/cracking/ch08_recursion_and_dynamic_programming/Q8_04_Power_Set/QuestionA.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/algorithm/dfs_backtracking/cracking/ch08_recursion_and_dynamic_programming/Q8_04_Power_Set/QuestionB.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/algorithm/dfs_backtracking/cracking/ch08_recursion_and_dynamic_programming/Q8_07_Permutations_Without_Dups/QuestionA.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/algorithm/dfs_backtracking/cracking/ch08_recursion_and_dynamic_programming/Q8_07_Permutations_Without_Dups/QuestionB.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/algorithm/dfs_backtracking/cracking/ch08_recursion_and_dynamic_programming/Q8_07_Permutations_Without_Dups/QuestionC.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/algorithm/dfs_backtracking/cracking/ch08_recursion_and_dynamic_programming/Q8_08_Permutations_With_Dups/Question.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/algorithm/dfs_backtracking/cracking/ch08_recursion_and_dynamic_programming/Q8_09_Parens/QuestionA.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/algorithm/dfs_backtracking/cracking/ch08_recursion_and_dynamic_programming/Q8_09_Parens/QuestionB.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/algorithm/dfs_backtracking/cracking/ch08_recursion_and_dynamic_programming/Q8_10_Paint_Fill/Question.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/algorithm/dfs_backtracking/cracking/ch08_recursion_and_dynamic_programming/Q8_12_Eight_Queens/Question.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/algorithm/dfs_backtracking/cracking/ch08_recursion_and_dynamic_programming/Q8_14_Boolean_Evaluation/Others.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/algorithm/dfs_backtracking/cracking/ch08_recursion_and_dynamic_programming/Q8_14_Boolean_Evaluation/QuestionA.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/algorithm/dfs_backtracking/cracking/ch08_recursion_and_dynamic_programming/Q8_14_Boolean_Evaluation/QuestionB.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/algorithm/dfs_backtracking/cracking/ch08_recursion_and_dynamic_programming/Q8_14_Boolean_Evaluation/QuestionC.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/algorithm/dfs_backtracking/cracking/ch08_recursion_and_dynamic_programming/Q8_14_Boolean_Evaluation/Tester.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/algorithm/dynamicprogramming/cracking/ch08_recursion_and_dynamic_programming/Q8_01_Triple_Step/QuestionA.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/algorithm/dynamicprogramming/cracking/ch08_recursion_and_dynamic_programming/Q8_01_Triple_Step/QuestionB.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/algorithm/dynamicprogramming/cracking/ch08_recursion_and_dynamic_programming/Q8_01_Triple_Step/Tester.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/algorithm/dynamicprogramming/cracking/ch08_recursion_and_dynamic_programming/Q8_05_Recursive_Multiply/QuestionA.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/algorithm/dynamicprogramming/cracking/ch08_recursion_and_dynamic_programming/Q8_05_Recursive_Multiply/QuestionB.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/algorithm/dynamicprogramming/cracking/ch08_recursion_and_dynamic_programming/Q8_05_Recursive_Multiply/QuestionC.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/algorithm/dynamicprogramming/cracking/ch08_recursion_and_dynamic_programming/Q8_05_Recursive_Multiply/QuestionD.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/algorithm/dynamicprogramming/cracking/ch08_recursion_and_dynamic_programming/Q8_05_Recursive_Multiply/Tester.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/algorithm/dynamicprogramming/cracking/ch08_recursion_and_dynamic_programming/Q8_11_Coins/Question.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/algorithm/dynamicprogramming/cracking/ch08_recursion_and_dynamic_programming/Q8_11_Coins/QuestionB.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/algorithm/dynamicprogramming/cracking/ch08_recursion_and_dynamic_programming/Q8_11_Coins/Tester.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/algorithm/dynamicprogramming/cracking/ch08_recursion_and_dynamic_programming/Q8_13_Stack_of_Boxes/Box.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/algorithm/dynamicprogramming/cracking/ch08_recursion_and_dynamic_programming/Q8_13_Stack_of_Boxes/BoxComparator.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/algorithm/dynamicprogramming/cracking/ch08_recursion_and_dynamic_programming/Q8_13_Stack_of_Boxes/QuestionA.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/algorithm/dynamicprogramming/cracking/ch08_recursion_and_dynamic_programming/Q8_13_Stack_of_Boxes/QuestionB.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/algorithm/dynamicprogramming/cracking/ch08_recursion_and_dynamic_programming/Q8_13_Stack_of_Boxes/QuestionC.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/algorithm/dynamicprogramming/cracking/ch08_recursion_and_dynamic_programming/Q8_13_Stack_of_Boxes/Tester.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/algorithm/math/bitoperation/cracking/ch05_bit_manipulation/Q5_01_Insertion/Question.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/algorithm/math/bitoperation/cracking/ch05_bit_manipulation/Q5_02_Binary_to_String/Question.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/algorithm/math/bitoperation/cracking/ch05_bit_manipulation/Q5_03_Flip_Bit_to_Win/QuestionA.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/algorithm/math/bitoperation/cracking/ch05_bit_manipulation/Q5_03_Flip_Bit_to_Win/QuestionB.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/algorithm/math/bitoperation/cracking/ch05_bit_manipulation/Q5_03_Flip_Bit_to_Win/QuestionC.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/algorithm/math/bitoperation/cracking/ch05_bit_manipulation/Q5_03_Flip_Bit_to_Win/QuestionD.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/algorithm/math/bitoperation/cracking/ch05_bit_manipulation/Q5_03_Flip_Bit_to_Win/Tester.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/algorithm/math/bitoperation/cracking/ch05_bit_manipulation/Q5_04_Next_Number/QuestionA.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/algorithm/math/bitoperation/cracking/ch05_bit_manipulation/Q5_04_Next_Number/QuestionB.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/algorithm/math/bitoperation/cracking/ch05_bit_manipulation/Q5_04_Next_Number/QuestionC.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/algorithm/math/bitoperation/cracking/ch05_bit_manipulation/Q5_04_Next_Number/Tester.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/algorithm/math/bitoperation/cracking/ch05_bit_manipulation/Q5_06_Conversion/QuestionA.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/algorithm/math/bitoperation/cracking/ch05_bit_manipulation/Q5_06_Conversion/QuestionB.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/algorithm/math/bitoperation/cracking/ch05_bit_manipulation/Q5_06_Conversion/Tester.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/algorithm/math/bitoperation/cracking/ch05_bit_manipulation/Q5_07_Pairwise_Swap/Question.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/algorithm/math/bitoperation/cracking/ch05_bit_manipulation/Q5_08_Draw_Line/Question.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/algorithm/math/bitoperation/cracking/ch05_bit_manipulation/Question5_7.zip" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/algorithm/math/bitoperation/cracking/ch05_bit_manipulation/Sample_Code/RightShifts.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/algorithm/math/bitoperation/cracking/ch05_bit_manipulation/Sample_Code/Sample_Code.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/algorithm/math/graph/cracking/ch04_trees_and_graphs/Q4_01_Route_Between_Nodes/Graph.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/algorithm/math/graph/cracking/ch04_trees_and_graphs/Q4_01_Route_Between_Nodes/Node.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/algorithm/math/graph/cracking/ch04_trees_and_graphs/Q4_01_Route_Between_Nodes/Question.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/algorithm/math/graph/cracking/ch04_trees_and_graphs/Q4_07_Build_Order/DFS/Graph.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/algorithm/math/graph/cracking/ch04_trees_and_graphs/Q4_07_Build_Order/DFS/Project.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/algorithm/math/graph/cracking/ch04_trees_and_graphs/Q4_07_Build_Order/DFS/Question.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/algorithm/math/graph/cracking/ch04_trees_and_graphs/Q4_07_Build_Order/EdgeRemoval/Graph.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/algorithm/math/graph/cracking/ch04_trees_and_graphs/Q4_07_Build_Order/EdgeRemoval/Project.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/algorithm/math/graph/cracking/ch04_trees_and_graphs/Q4_07_Build_Order/EdgeRemoval/Question.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/algorithm/math/others/cracking/ch06_math_and_logic_puzzles/Introduction/PrimeNumbers.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/algorithm/math/others/cracking/ch06_math_and_logic_puzzles/Introduction/SieveOfEratosthenes.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/algorithm/math/others/cracking/ch06_math_and_logic_puzzles/Q6_05_Egg_Drop/Question.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/algorithm/math/others/cracking/ch06_math_and_logic_puzzles/Q6_07_The_Apocalypse/Question.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/algorithm/math/others/cracking/ch06_math_and_logic_puzzles/Q6_10_Test_Strips/Bottle.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/algorithm/math/others/cracking/ch06_math_and_logic_puzzles/Q6_10_Test_Strips/QuestionA.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/algorithm/math/others/cracking/ch06_math_and_logic_puzzles/Q6_10_Test_Strips/QuestionB.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/algorithm/math/others/cracking/ch06_math_and_logic_puzzles/Q6_10_Test_Strips/QuestionC.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/algorithm/math/others/cracking/ch06_math_and_logic_puzzles/Q6_10_Test_Strips/TestStrip.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/algorithm/recursive/cracking/ch08_recursion_and_dynamic_programming/Introduction/FibonacciA.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/algorithm/recursive/cracking/ch08_recursion_and_dynamic_programming/Introduction/FibonacciB.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/algorithm/recursive/cracking/ch08_recursion_and_dynamic_programming/Introduction/FibonacciC.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/algorithm/recursive/cracking/ch08_recursion_and_dynamic_programming/Introduction/FibonacciD.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/algorithm/recursive/cracking/ch08_recursion_and_dynamic_programming/Q8_02_Robot_in_a_Grid/Point.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/algorithm/recursive/cracking/ch08_recursion_and_dynamic_programming/Q8_02_Robot_in_a_Grid/QuestionA.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/algorithm/recursive/cracking/ch08_recursion_and_dynamic_programming/Q8_02_Robot_in_a_Grid/QuestionB.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/algorithm/recursive/cracking/ch08_recursion_and_dynamic_programming/Q8_02_Robot_in_a_Grid/Tester.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/algorithm/recursive/cracking/ch08_recursion_and_dynamic_programming/Q8_06_Towers_of_Hanoi/Question.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/algorithm/recursive/cracking/ch08_recursion_and_dynamic_programming/Q8_06_Towers_of_Hanoi/Tower.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/algorithm/search/cracking/ch08_recursion_and_dynamic_programming/Q8_03_Magic_Index/Question.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/algorithm/search/cracking/ch08_recursion_and_dynamic_programming/Q8_03_Magic_Index/QuestionB.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/datastructure/array/cracking/ch01_arrays_and_strings/Q1_07_Rotate_Matrix/Question.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/datastructure/array/cracking/ch01_arrays_and_strings/Q1_08_Zero_Matrix/QuestionA.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/datastructure/array/cracking/ch01_arrays_and_strings/Q1_08_Zero_Matrix/QuestionB.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/datastructure/array/cracking/ch01_arrays_and_strings/Q1_08_Zero_Matrix/Tester.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/datastructure/bst/cracking/TreeNode.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/datastructure/bst/cracking/ch04_trees_and_graphs/Introduction/Traversals.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/datastructure/bst/cracking/ch04_trees_and_graphs/Q4_02_Minimal_Tree/Question.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/datastructure/bst/cracking/ch04_trees_and_graphs/Q4_03_List_of_Depths/QuestionBFS.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/datastructure/bst/cracking/ch04_trees_and_graphs/Q4_03_List_of_Depths/QuestionDFS.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/datastructure/bst/cracking/ch04_trees_and_graphs/Q4_04_Check_Balanced/QuestionBrute.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/datastructure/bst/cracking/ch04_trees_and_graphs/Q4_04_Check_Balanced/QuestionImproved.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/datastructure/bst/cracking/ch04_trees_and_graphs/Q4_05_Validate_BST/IntWrapper.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/datastructure/bst/cracking/ch04_trees_and_graphs/Q4_05_Validate_BST/Question.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/datastructure/bst/cracking/ch04_trees_and_graphs/Q4_05_Validate_BST/QuestionB.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/datastructure/bst/cracking/ch04_trees_and_graphs/Q4_06_Successor/Question.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/datastructure/bst/cracking/ch04_trees_and_graphs/Q4_08_First_Common_Ancestor/Question.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/datastructure/bst/cracking/ch04_trees_and_graphs/Q4_08_First_Common_Ancestor/QuestionA.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/datastructure/bst/cracking/ch04_trees_and_graphs/Q4_08_First_Common_Ancestor/QuestionB.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/datastructure/bst/cracking/ch04_trees_and_graphs/Q4_08_First_Common_Ancestor/QuestionC.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/datastructure/bst/cracking/ch04_trees_and_graphs/Q4_08_First_Common_Ancestor/QuestionD.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/datastructure/bst/cracking/ch04_trees_and_graphs/Q4_08_First_Common_Ancestor/QuestionE.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/datastructure/bst/cracking/ch04_trees_and_graphs/Q4_08_First_Common_Ancestor/QuestionEBad.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/datastructure/bst/cracking/ch04_trees_and_graphs/Q4_08_First_Common_Ancestor/QuestionF.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/datastructure/bst/cracking/ch04_trees_and_graphs/Q4_08_First_Common_Ancestor/Tester.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/datastructure/bst/cracking/ch04_trees_and_graphs/Q4_09_BST_Sequences/Question.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/datastructure/bst/cracking/ch04_trees_and_graphs/Q4_10_Check_Subtree/QuestionA.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/datastructure/bst/cracking/ch04_trees_and_graphs/Q4_10_Check_Subtree/QuestionB.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/datastructure/bst/cracking/ch04_trees_and_graphs/Q4_11_Random_Node/Question.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/datastructure/bst/cracking/ch04_trees_and_graphs/Q4_11_Random_Node/Tree.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/datastructure/bst/cracking/ch04_trees_and_graphs/Q4_11_Random_Node/TreeNode.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/datastructure/bst/cracking/ch04_trees_and_graphs/Q4_12_Paths_with_Sum/QuestionA.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/datastructure/bst/cracking/ch04_trees_and_graphs/Q4_12_Paths_with_Sum/QuestionB.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/datastructure/bst/cracking/ch04_trees_and_graphs/Q4_12_Paths_with_Sum/Tester.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/datastructure/list/cracking/ch02_linked_lists/LinkedListNode.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/datastructure/list/cracking/ch02_linked_lists/Q2_01_Remove_Dups/QuestionA.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/datastructure/list/cracking/ch02_linked_lists/Q2_01_Remove_Dups/QuestionB.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/datastructure/list/cracking/ch02_linked_lists/Q2_01_Remove_Dups/QuestionC.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/datastructure/list/cracking/ch02_linked_lists/Q2_01_Remove_Dups/Tester.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/datastructure/list/cracking/ch02_linked_lists/Q2_02_Return_Kth_To_Last/QuestionA.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/datastructure/list/cracking/ch02_linked_lists/Q2_02_Return_Kth_To_Last/QuestionB.cpp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/datastructure/list/cracking/ch02_linked_lists/Q2_02_Return_Kth_To_Last/QuestionC.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/datastructure/list/cracking/ch02_linked_lists/Q2_02_Return_Kth_To_Last/QuestionD.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/datastructure/list/cracking/ch02_linked_lists/Q2_02_Return_Kth_To_Last/Tester.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/datastructure/list/cracking/ch02_linked_lists/Q2_03_Delete_Middle_Node/Question.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/datastructure/list/cracking/ch02_linked_lists/Q2_04_Partition/Question.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/datastructure/list/cracking/ch02_linked_lists/Q2_04_Partition/QuestionB.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/datastructure/list/cracking/ch02_linked_lists/Q2_04_Partition/QuestionC.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/datastructure/list/cracking/ch02_linked_lists/Q2_04_Partition/Tester.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/datastructure/list/cracking/ch02_linked_lists/Q2_05_Sum_Lists/PartialSum.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/datastructure/list/cracking/ch02_linked_lists/Q2_05_Sum_Lists/QuestionA.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/datastructure/list/cracking/ch02_linked_lists/Q2_05_Sum_Lists/QuestionB.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/datastructure/list/cracking/ch02_linked_lists/Q2_06_Palindrome/QuestionA.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/datastructure/list/cracking/ch02_linked_lists/Q2_06_Palindrome/QuestionB.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/datastructure/list/cracking/ch02_linked_lists/Q2_06_Palindrome/QuestionC.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/datastructure/list/cracking/ch02_linked_lists/Q2_06_Palindrome/Tester.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/datastructure/list/cracking/ch02_linked_lists/Q2_07_Intersection/Question.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/datastructure/list/cracking/ch02_linked_lists/Q2_08_Loop_Detection/Question.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/datastructure/queueandheap/cracking/ch03_stacks_and_queues/MyQueue.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/datastructure/queueandheap/cracking/ch03_stacks_and_queues/Q3_06_Animal_Shelter/Animal.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/datastructure/queueandheap/cracking/ch03_stacks_and_queues/Q3_06_Animal_Shelter/AnimalQueue.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/datastructure/queueandheap/cracking/ch03_stacks_and_queues/Q3_06_Animal_Shelter/Cat.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/datastructure/queueandheap/cracking/ch03_stacks_and_queues/Q3_06_Animal_Shelter/Dog.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/datastructure/queueandheap/cracking/ch03_stacks_and_queues/Q3_06_Animal_Shelter/Question.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/datastructure/queueandheap/cracking/ch03_stacks_and_queues/QueueTester.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/datastructure/stack/cracking/ch03_stacks_and_queues/MyStack.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/datastructure/stack/cracking/ch03_stacks_and_queues/Q3_01_Three_in_One/FixedMultiStack.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/datastructure/stack/cracking/ch03_stacks_and_queues/Q3_01_Three_in_One/FullStackException.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/datastructure/stack/cracking/ch03_stacks_and_queues/Q3_01_Three_in_One/MultiStack.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/datastructure/stack/cracking/ch03_stacks_and_queues/Q3_01_Three_in_One/QuestionA.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/datastructure/stack/cracking/ch03_stacks_and_queues/Q3_01_Three_in_One/QuestionB.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/datastructure/stack/cracking/ch03_stacks_and_queues/Q3_02_Stack_Min/NodeWithMin.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/datastructure/stack/cracking/ch03_stacks_and_queues/Q3_02_Stack_Min/Question.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/datastructure/stack/cracking/ch03_stacks_and_queues/Q3_02_Stack_Min/StackWithMin.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/datastructure/stack/cracking/ch03_stacks_and_queues/Q3_02_Stack_Min/StackWithMin2.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/datastructure/stack/cracking/ch03_stacks_and_queues/Q3_03_Stack_of_Plates/Node.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/datastructure/stack/cracking/ch03_stacks_and_queues/Q3_03_Stack_of_Plates/Question.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/datastructure/stack/cracking/ch03_stacks_and_queues/Q3_03_Stack_of_Plates/SetOfStacks.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/datastructure/stack/cracking/ch03_stacks_and_queues/Q3_03_Stack_of_Plates/Stack.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/datastructure/stack/cracking/ch03_stacks_and_queues/Q3_04_Queue_via_Stacks/MyQueue.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/datastructure/stack/cracking/ch03_stacks_and_queues/Q3_04_Queue_via_Stacks/Question.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/datastructure/stack/cracking/ch03_stacks_and_queues/Q3_05_Sort_Stack/Question.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/datastructure/stack/cracking/ch03_stacks_and_queues/StackTester.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/datastructure/string/cracking/ch01_arrays_and_strings/Q1_01_Is_Unique/QuestionA.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/datastructure/string/cracking/ch01_arrays_and_strings/Q1_01_Is_Unique/QuestionB.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/datastructure/string/cracking/ch01_arrays_and_strings/Q1_01_Is_Unique/Tester.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/datastructure/string/cracking/ch01_arrays_and_strings/Q1_02_Check_Permutation/QuestionA.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/datastructure/string/cracking/ch01_arrays_and_strings/Q1_02_Check_Permutation/QuestionB.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/datastructure/string/cracking/ch01_arrays_and_strings/Q1_03_URLify/Question.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/datastructure/string/cracking/ch01_arrays_and_strings/Q1_04_Palindrome_Permutation/Common.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/datastructure/string/cracking/ch01_arrays_and_strings/Q1_04_Palindrome_Permutation/QuestionA.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/datastructure/string/cracking/ch01_arrays_and_strings/Q1_04_Palindrome_Permutation/QuestionB.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/datastructure/string/cracking/ch01_arrays_and_strings/Q1_04_Palindrome_Permutation/QuestionC.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/datastructure/string/cracking/ch01_arrays_and_strings/Q1_04_Palindrome_Permutation/Tester.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/datastructure/string/cracking/ch01_arrays_and_strings/Q1_05_One_Away/QuestionA.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/datastructure/string/cracking/ch01_arrays_and_strings/Q1_05_One_Away/QuestionB.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/datastructure/string/cracking/ch01_arrays_and_strings/Q1_05_One_Away/Tester.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/datastructure/string/cracking/ch01_arrays_and_strings/Q1_06_String_Compression/QuestionA.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/datastructure/string/cracking/ch01_arrays_and_strings/Q1_06_String_Compression/QuestionB.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/datastructure/string/cracking/ch01_arrays_and_strings/Q1_06_String_Compression/QuestionC.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/datastructure/string/cracking/ch01_arrays_and_strings/Q1_06_String_Compression/Tester.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/datastructure/string/cracking/ch01_arrays_and_strings/Q1_09_String_Rotation/Question.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/datastructure/trie/alg4/trie/TST.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/datastructure/trie/alg4/trie/TrieSET.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/datastructure/trie/alg4/trie/TrieST.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/datastructure/trie/cracking/Trie.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/datastructure/trie/cracking/TrieNode.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/datastructure/trie/cracking/ch16_moderate/Q16_20_T9/HashMapList.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/datastructure/trie/cracking/ch16_moderate/Q16_20_T9/QuestionA.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/datastructure/trie/cracking/ch16_moderate/Q16_20_T9/QuestionB.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/datastructure/trie/cracking/ch16_moderate/Q16_20_T9/QuestionC.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/util/cracking/CtCILibrary/CtCILibrary/AssortedMethods.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/util/cracking/CtCILibrary/CtCILibrary/BTreePrinter.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/util/cracking/CtCILibrary/CtCILibrary/BitVector.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/algorithm/dynamicprogramming/codinginterviewguide/chapter_4_recursionanddp/Problem_06_HanoiProblem.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/algorithm/dynamicprogramming/codinginterviewguide/chapter_4_recursionanddp/Problem_17_NQueens.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/algorithm/math/graph/alg4/ch04/directed/BreadthFirstDirectedPaths.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/algorithm/math/graph/alg4/ch04/directed/BreadthFirstDirectedPaths.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/algorithm/math/graph/alg4/ch04/directed/DepthFirstOrder.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/algorithm/math/graph/alg4/ch04/directed/DepthFirstOrder.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/algorithm/math/graph/alg4/ch04/directed/DirectedCycleX.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/algorithm/math/graph/alg4/ch04/directed/DirectedCycleX.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/algorithm/math/graph/alg4/ch04/directed/GabowSCC.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/algorithm/math/graph/alg4/ch04/directed/GabowSCC.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/algorithm/math/graph/alg4/ch04/directed/KosarajuSharirSCC.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/algorithm/math/graph/alg4/ch04/directed/KosarajuSharirSCC.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/algorithm/math/graph/alg4/ch04/directed/TarjanSCC.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/algorithm/math/graph/alg4/ch04/directed/TarjanSCC.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/algorithm/math/graph/alg4/ch04/directed/TopologicalX.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/algorithm/math/graph/alg4/ch04/directed/TopologicalX.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/algorithm/math/graph/alg4/ch04/directed/WebCrawler.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/algorithm/math/graph/alg4/ch04/directed/WebCrawler.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/algorithm/math/graph/alg4/ch04/mst/KruskalMST.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/algorithm/math/graph/alg4/ch04/mst/KruskalMST.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/algorithm/math/graph/alg4/ch04/mst/LazyPrimMST.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/algorithm/math/graph/alg4/ch04/mst/LazyPrimMST.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/algorithm/math/graph/alg4/ch04/mst/PrimMST.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/algorithm/math/graph/alg4/ch04/mst/PrimMST.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/algorithm/math/graph/alg4/ch04/sp/BellmanFordSP.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/algorithm/math/graph/alg4/ch04/sp/BellmanFordSP.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/algorithm/math/graph/alg4/ch04/sp/DijkstraSP.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/algorithm/math/graph/alg4/ch04/sp/DijkstraSP.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/algorithm/math/graph/alg4/ch04/sp/DijkstraUndirectedSP.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/algorithm/math/graph/alg4/ch04/sp/DijkstraUndirectedSP.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/algorithm/math/graph/alg4/ch04/undirected/BipartiteX.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/algorithm/math/graph/alg4/ch04/undirected/BipartiteX.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/algorithm/math/graph/alg4/ch04/undirected/BreadthFirstPaths.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/algorithm/math/graph/alg4/ch04/undirected/BreadthFirstPaths.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/algorithm/math/graph/alg4/ch04/undirected/CC.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/algorithm/math/graph/alg4/ch04/undirected/CC.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/algorithm/math/graph/alg4/ch04/undirected/EulerianCycle.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/algorithm/math/graph/alg4/ch04/undirected/EulerianCycle.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/algorithm/math/graph/alg4/ch04/undirected/EulerianPath.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/algorithm/math/graph/alg4/ch04/undirected/EulerianPath.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/algorithm/math/graph/alg4/ch04/undirected/GraphGenerator.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/algorithm/math/graph/alg4/ch04/undirected/GraphGenerator.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/algorithm/math/graph/alg4/ch06/BipartiteMatching.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/algorithm/math/graph/alg4/ch06/BipartiteMatching.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/algorithm/math/graph/alg4/ch06/FordFulkerson.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/algorithm/math/graph/alg4/ch06/FordFulkerson.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/algorithm/math/graph/alg4/ch06/GlobalMincut.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/algorithm/math/graph/alg4/ch06/GlobalMincut.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/algorithm/math/graph/alg4/ch06/HopcroftKarp.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/algorithm/math/graph/alg4/ch06/HopcroftKarp.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/algorithm/math/simulate/alg4/ch06/CollisionSystem.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/algorithm/math/simulate/alg4/ch06/CollisionSystem.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/algorithm/recursive/codinginterviewguide/chapter_4_recursionanddp/Problem_01_FibonacciProblem.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/algorithm/recursive/codinginterviewguide/chapter_4_recursionanddp/Problem_02_MinPathSum.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/algorithm/recursive/codinginterviewguide/chapter_4_recursionanddp/Problem_03_CoinsMin.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/algorithm/recursive/codinginterviewguide/chapter_4_recursionanddp/Problem_04_CoinsWay.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/algorithm/recursive/codinginterviewguide/chapter_4_recursionanddp/Problem_05_LIS.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/algorithm/recursive/codinginterviewguide/chapter_4_recursionanddp/Problem_07_LCSubsequence.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/algorithm/recursive/codinginterviewguide/chapter_4_recursionanddp/Problem_08_LCSubstring.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/algorithm/recursive/codinginterviewguide/chapter_4_recursionanddp/Problem_09_EditCost.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/algorithm/recursive/codinginterviewguide/chapter_4_recursionanddp/Problem_10_StringCross.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/algorithm/recursive/codinginterviewguide/chapter_4_recursionanddp/Problem_11_DungeonGame.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/algorithm/recursive/codinginterviewguide/chapter_4_recursionanddp/Problem_12_NumberToLetter.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/algorithm/recursive/codinginterviewguide/chapter_4_recursionanddp/Problem_13_ExpressionNumber.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/algorithm/recursive/codinginterviewguide/chapter_4_recursionanddp/Problem_14_CardsInLine.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/algorithm/recursive/codinginterviewguide/chapter_4_recursionanddp/Problem_15_JumpGame.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/algorithm/recursive/codinginterviewguide/chapter_4_recursionanddp/Problem_16_LongestConsecutive.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/algorithm/recursive/codinginterviewguide/chapter_4_recursionanddp/Problem_17_NQueens.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/algorithm/dfs_backtracking/codinginterviewguide/chapter_4_recursionanddp/Problem_17_NQueens.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/algorithm/search/alg4/ch03/AVLTreeST.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/algorithm/search/alg4/ch03/AVLTreeST.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/algorithm/search/alg4/ch03/ArrayST.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/algorithm/search/alg4/ch03/ArrayST.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/algorithm/search/alg4/ch03/BST.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/algorithm/search/alg4/ch03/BST.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/algorithm/search/alg4/ch03/BinarySearchST.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/algorithm/search/alg4/ch03/BinarySearchST.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/algorithm/search/alg4/ch03/LinearProbingHashST.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/algorithm/search/alg4/ch03/LinearProbingHashST.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/algorithm/search/alg4/ch03/LookupIndex.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/algorithm/search/alg4/ch03/LookupIndex.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/algorithm/search/alg4/ch03/NonrecursiveBST.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/algorithm/search/alg4/ch03/NonrecursiveBST.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/algorithm/search/alg4/ch03/PatriciaSET.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/algorithm/search/alg4/ch03/PatriciaSET.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/algorithm/search/alg4/ch03/PatriciaST.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/algorithm/search/alg4/ch03/PatriciaST.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/algorithm/search/alg4/ch03/RedBlackBST.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/algorithm/search/alg4/ch03/RedBlackBST.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/algorithm/search/alg4/ch03/SeparateChainingHashST.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/algorithm/search/alg4/ch03/SeparateChainingHashST.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/algorithm/search/alg4/ch03/SequentialSearchST.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/algorithm/search/alg4/ch03/SequentialSearchST.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/algorithm/sort/alg4/ch02/SortTransactions.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/algorithm/sort/alg4/ch02/SortTransactions.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/datastructure/array/codinginterviewguide/chapter_8_arrayandmatrix/Problem_04_FindMinKNums.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/datastructure/queueandheap/codinginterviewguide/chapter_8_arrayandmatrix/Problem_04_FindMinKNums.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/datastructure/array/codinginterviewguide/chapter_8_arrayandmatrix/Problem_20_PrintMaxTopK.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/datastructure/queueandheap/codinginterviewguide/chapter_8_arrayandmatrix/Problem_20_PrintMaxTopK.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/datastructure/array/codinginterviewguide/chapter_8_arrayandmatrix/Problem_25_SmallestMissNum.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/algorithm/bfs_branchandbound/codinginterviewguide/chapter_8_arrayandmatrix/Problem_25_SmallestMissNum.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/datastructure/array/codinginterviewguide/chapter_8_arrayandmatrix/Problem_26_MaxGap.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/algorithm/sort/codinginterviewguide/chapter_8_arrayandmatrix/Problem_26_MaxGap.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/datastructure/bst/alg4/BST.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/datastructure/bst/alg4/BST.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/datastructure/bst/alg4/NonrecursiveBST.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/datastructure/bst/alg4/NonrecursiveBST.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/datastructure/hashmap/alg4/LinearProbingHashST.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/datastructure/hashmap/alg4/LinearProbingHashST.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/datastructure/hashmap/alg4/SeparateChainingHashST.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/datastructure/hashmap/alg4/SeparateChainingHashST.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/datastructure/queue/alg4/ch01/Josephus.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/datastructure/queueandheap/alg4/ch01/Josephus.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/datastructure/queue/alg4/ch01/LinkedQueue.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/datastructure/queueandheap/alg4/ch01/LinkedQueue.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/datastructure/queue/alg4/ch01/Queue.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/datastructure/queueandheap/alg4/ch01/Queue.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/datastructure/queue/alg4/ch01/ResizingArrayQueue.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/datastructure/queueandheap/alg4/ch01/ResizingArrayQueue.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/datastructure/queue/alg4/ch02/IndexMaxPQ.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/datastructure/queueandheap/alg4/ch02/IndexMaxPQ.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/datastructure/queue/alg4/ch02/IndexMinPQ.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/datastructure/queueandheap/alg4/ch02/IndexMinPQ.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/datastructure/queue/alg4/ch02/MaxPQ.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/datastructure/queueandheap/alg4/ch02/MaxPQ.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/datastructure/queue/alg4/ch02/MinPQ.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/datastructure/queueandheap/alg4/ch02/MinPQ.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/datastructure/queue/alg4/ch02/Multiway.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/datastructure/queueandheap/alg4/ch02/Multiway.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/datastructure/queue/alg4/ch09/BinomialMinPQ.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/datastructure/queueandheap/alg4/ch09/BinomialMinPQ.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/datastructure/queue/alg4/ch09/FibonacciMinPQ.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/datastructure/queueandheap/alg4/ch09/FibonacciMinPQ.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/datastructure/queue/alg4/ch09/IndexBinomialMinPQ.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/datastructure/queueandheap/alg4/ch09/IndexBinomialMinPQ.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/datastructure/queue/alg4/ch09/IndexFibonacciMinPQ.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/datastructure/queueandheap/alg4/ch09/IndexFibonacciMinPQ.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/datastructure/queue/alg4/ch09/IndexMultiwayMinPQ.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/datastructure/queueandheap/alg4/ch09/IndexMultiwayMinPQ.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/datastructure/queue/alg4/ch09/MultiwayMinPQ.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/datastructure/queueandheap/alg4/ch09/MultiwayMinPQ.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/datastructure/queue/codinginterviewguide/chapter_1_stackandqueue/Problem_01_GetMinStack.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/datastructure/queue/codinginterviewguide/chapter_1_stackandqueue/Problem_02_TwoStacksImplementQueue.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/datastructure/queue/codinginterviewguide/chapter_1_stackandqueue/Problem_03_ReverseStackUsingRecursive.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/datastructure/queue/codinginterviewguide/chapter_1_stackandqueue/Problem_04_DogCatQueue.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/datastructure/queueandheap/codinginterviewguide/chapter_1_stackandqueue/Problem_04_DogCatQueue.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/datastructure/queue/codinginterviewguide/chapter_1_stackandqueue/Problem_05_StackSortStack.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/datastructure/queue/codinginterviewguide/chapter_1_stackandqueue/Problem_06_HanoiStack.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/datastructure/queue/codinginterviewguide/chapter_1_stackandqueue/Problem_07_SlidingWindowMaxArray.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/datastructure/queueandheap/codinginterviewguide/chapter_1_stackandqueue/Problem_07_SlidingWindowMaxArray.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/datastructure/queue/codinginterviewguide/chapter_1_stackandqueue/Problem_08_MaxTree.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/datastructure/queue/codinginterviewguide/chapter_1_stackandqueue/Problem_09_MaximalRectangle.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/datastructure/queue/codinginterviewguide/chapter_1_stackandqueue/Problem_10_AllLessNumSubArray.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/datastructure/queueandheap/codinginterviewguide/chapter_1_stackandqueue/Problem_10_AllLessNumSubArray.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/datastructure/redblacktree/alg4/RedBlackBST.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/datastructure/redblacktree/alg4/RedBlackBST.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/datastructure/stack/codinginterviewguide/chapter_1_stackandqueue/Problem_04_DogCatQueue.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/datastructure/stack/codinginterviewguide/chapter_1_stackandqueue/Problem_07_SlidingWindowMaxArray.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/datastructure/stack/codinginterviewguide/chapter_1_stackandqueue/Problem_10_AllLessNumSubArray.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/datastructure/string/alg4/ch05/compression/Huffman.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/datastructure/string/alg4/ch05/compression/Huffman.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/datastructure/string/alg4/ch05/trie/TST.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/datastructure/string/alg4/ch05/trie/TST.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/datastructure/string/alg4/ch05/trie/TrieSET.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/datastructure/string/alg4/ch05/trie/TrieSET.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/datastructure/string/alg4/ch05/trie/TrieST.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/datastructure/string/alg4/ch05/trie/TrieST.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/datastructure/string/codinginterviewguide/chapter_5_stringproblem/Problem_21_PalindromeMinCut.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/algorithm/dynamicprogramming/codinginterviewguide/chapter_5_stringproblem/Problem_21_PalindromeMinCut.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/datastructure/string/codinginterviewguide/chapter_5_stringproblem/Problem_22_RegularExpressionMatch.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/algorithm/dynamicprogramming/codinginterviewguide/chapter_5_stringproblem/Problem_22_RegularExpressionMatch.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/datastructure/string/codinginterviewguide/chapter_5_stringproblem/Problem_23_TrieTree.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/datastructure/trie/codinginterviewguide/chapter_5_stringproblem/Problem_23_TrieTree.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/util/codinginterviewguide/chapter_9_others/Problem_01_Rand5ToRand7.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/algorithm/math/random/codinginterviewguide/chapter_9_others/Problem_01_Rand5ToRand7.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/util/codinginterviewguide/chapter_9_others/Problem_02_GCD.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/algorithm/math/numbertheory/codinginterviewguide/chapter_9_others/Problem_02_GCD.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/util/codinginterviewguide/chapter_9_others/Problem_03_FactorialProblem.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/algorithm/math/numbertheory/codinginterviewguide/chapter_9_others/Problem_03_FactorialProblem.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/util/codinginterviewguide/chapter_9_others/Problem_04_PointInRectangle.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/algorithm/math/others/codinginterviewguide/chapter_9_others/Problem_04_PointInRectangle.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/util/codinginterviewguide/chapter_9_others/Problem_05_PointInTriangle.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/algorithm/math/others/codinginterviewguide/chapter_9_others/Problem_05_PointInTriangle.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/util/codinginterviewguide/chapter_9_others/Problem_06_PaperFolding.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/algorithm/math/numbertheory/codinginterviewguide/chapter_9_others/Problem_06_PaperFolding.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/util/codinginterviewguide/chapter_9_others/Problem_07_ReservoirSampling.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/algorithm/math/numbertheory/codinginterviewguide/chapter_9_others/Problem_07_ReservoirSampling.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/util/codinginterviewguide/chapter_9_others/Problem_08_SetAllHashMap.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/datastructure/hashmap/codinginterviewguide/chapter_9_others/Problem_08_SetAllHashMap.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/util/codinginterviewguide/chapter_9_others/Problem_09_MaxABSBetweenLeftAndRight.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/datastructure/array/codinginterviewguide/chapter_9_others/Problem_09_MaxABSBetweenLeftAndRight.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/util/codinginterviewguide/chapter_9_others/Problem_10_LeastRecentlyUsedCache.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/datastructure/cache/codinginterviewguide/chapter_9_others/Problem_10_LeastRecentlyUsedCache.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/util/codinginterviewguide/chapter_9_others/Problem_11_RandomPool.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/algorithm/math/random/codinginterviewguide/chapter_9_others/Problem_11_RandomPool.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/util/codinginterviewguide/chapter_9_others/Problem_12_ProbabilityXPowerK.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/algorithm/math/random/codinginterviewguide/chapter_9_others/Problem_12_ProbabilityXPowerK.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/util/codinginterviewguide/chapter_9_others/Problem_13_PathsToNums.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/datastructure/array/codinginterviewguide/chapter_9_others/Problem_13_PathsToNums.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/util/codinginterviewguide/chapter_9_others/Problem_14_SmallestUnFormedSum.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/datastructure/array/codinginterviewguide/chapter_9_others/Problem_14_SmallestUnFormedSum.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/util/codinginterviewguide/chapter_9_others/Problem_15_NumberAndString.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/datastructure/array/codinginterviewguide/chapter_9_others/Problem_15_NumberAndString.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/util/codinginterviewguide/chapter_9_others/Problem_16_OneNumber.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/algorithm/math/numbertheory/codinginterviewguide/chapter_9_others/Problem_16_OneNumber.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/util/codinginterviewguide/chapter_9_others/Problem_17_PrintRandomM.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/algorithm/math/random/codinginterviewguide/chapter_9_others/Problem_17_PrintRandomM.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/util/codinginterviewguide/chapter_9_others/Problem_18_PalindromeNumber.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/algorithm/math/numbertheory/codinginterviewguide/chapter_9_others/Problem_18_PalindromeNumber.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/util/codinginterviewguide/chapter_9_others/Problem_19_SortedRatateArrayFindMin.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/datastructure/array/codinginterviewguide/chapter_9_others/Problem_19_SortedRatateArrayFindMin.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/util/codinginterviewguide/chapter_9_others/Problem_20_SortedRatateArrayFindNum.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/datastructure/array/codinginterviewguide/chapter_9_others/Problem_20_SortedRatateArrayFindNum.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/util/codinginterviewguide/chapter_9_others/Problem_21_ChineseExpression.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/datastructure/string/codinginterviewguide/chapter_9_others/Problem_21_ChineseExpression.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/util/codinginterviewguide/chapter_9_others/Problem_21_EnglishExpression.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/datastructure/string/codinginterviewguide/chapter_9_others/Problem_21_EnglishExpression.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/util/codinginterviewguide/chapter_9_others/Problem_22_CandyProblem.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/datastructure/array/codinginterviewguide/chapter_9_others/Problem_22_CandyProblem.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/util/codinginterviewguide/chapter_9_others/Problem_23_ReceiveAndPrintOrderLine.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/datastructure/hashmap/codinginterviewguide/chapter_9_others/Problem_23_ReceiveAndPrintOrderLine.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/util/codinginterviewguide/chapter_9_others/Problem_24_HeapWithoutDilatation.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/datastructure/queueandheap/codinginterviewguide/chapter_9_others/Problem_24_HeapWithoutDilatation.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/util/codinginterviewguide/chapter_9_others/Problem_24_HeapWithoutDilatationForTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/datastructure/queueandheap/codinginterviewguide/chapter_9_others/Problem_24_HeapWithoutDilatationForTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/util/codinginterviewguide/chapter_9_others/Problem_25_MadianQuick.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/datastructure/queueandheap/codinginterviewguide/chapter_9_others/Problem_25_MadianQuick.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/util/codinginterviewguide/chapter_9_others/Problem_26_FindUpMedian.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/datastructure/array/codinginterviewguide/chapter_9_others/Problem_26_FindUpMedian.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/util/codinginterviewguide/chapter_9_others/Problem_27_FindKthMinNumber.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/datastructure/array/codinginterviewguide/chapter_9_others/Problem_27_FindKthMinNumber.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/util/codinginterviewguide/chapter_9_others/Problem_28_TopKSumCrossTwoArrays.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/datastructure/array/codinginterviewguide/chapter_9_others/Problem_28_TopKSumCrossTwoArrays.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/util/codinginterviewguide/chapter_9_others/Problem_29_TopKTimes1.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/datastructure/queueandheap/codinginterviewguide/chapter_9_others/Problem_29_TopKTimes1.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/util/codinginterviewguide/chapter_9_others/Problem_29_TopKTimes2.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/datastructure/queueandheap/codinginterviewguide/chapter_9_others/Problem_29_TopKTimes2.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/util/codinginterviewguide/chapter_9_others/Problem_30_ManacherAlgorithm.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/datastructure/string/codinginterviewguide/chapter_9_others/Problem_30_ManacherAlgorithm.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/util/codinginterviewguide/chapter_9_others/Problem_31_KMPAlgorithm.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/datastructure/string/codinginterviewguide/chapter_9_others/Problem_31_KMPAlgorithm.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/util/codinginterviewguide/chapter_9_others/Problem_32_ThrowChessPiecesProblem.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/algorithm/math/others/codinginterviewguide/chapter_9_others/Problem_32_ThrowChessPiecesProblem.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/util/codinginterviewguide/chapter_9_others/Problem_33_ArtistProblem.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/algorithm/parallel/codinginterviewguide/chapter_9_others/Problem_33_ArtistProblem.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/util/codinginterviewguide/chapter_9_others/Problem_34_PostOfficeProblem.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/algorithm/math/others/codinginterviewguide/chapter_9_others/Problem_34_PostOfficeProblem.java" afterDir="false" />
+    </list>
+    <ignored path="$PROJECT_DIR$/out/" />
+    <ignored path="$PROJECT_DIR$/target/" />
+    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="DefaultGradleProjectSettings">
+    <option name="isMigrated" value="true" />
+  </component>
+  <component name="FileEditorManager">
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/datastructure/queueandheap/cracking/ch17_hard/Q17_20_Continuous_Median/Question.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-836">
+              <caret line="6" column="13" selection-start-line="6" selection-start-column="13" selection-end-line="6" selection-end-column="13" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/datastructure/array/cracking/ch17_hard/Q17_21_Volume_of_Histogram/QuestionA.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-589">
+              <caret line="2" column="13" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/datastructure/array/cracking/ch17_hard/Q17_21_Volume_of_Histogram/QuestionB.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="38">
+              <caret line="2" column="13" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/algorithm/bfs_branchandbound/cracking/ch17_hard/Q17_22_Word_Transformer/QuestionA.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="190">
+              <caret line="23" column="4" lean-forward="true" selection-start-line="23" selection-start-column="4" selection-end-line="23" selection-end-column="4" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/algorithm/bfs_branchandbound/cracking/ch17_hard/Q17_22_Word_Transformer/QuestionC.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="189">
+              <caret line="102" column="27" lean-forward="true" selection-start-line="102" selection-start-column="27" selection-end-line="102" selection-end-column="27" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/algorithm/bfs_branchandbound/cracking/ch17_hard/Q17_23_Max_Black_Square/QuestionEff.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="228">
+              <caret line="12" column="65" lean-forward="true" selection-start-line="12" selection-start-column="65" selection-end-line="12" selection-end-column="65" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/algorithm/dfs_backtracking/cracking/ch17_hard/Q17_25_Word_Rectangle/Question.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-152">
+              <caret line="6" column="13" selection-start-line="6" selection-start-column="13" selection-end-line="6" selection-end-column="13" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/algorithm/search/cracking/ch17_hard/Q17_26_Sparse_Similarity/QuestionC.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-1064">
+              <caret line="22" column="13" lean-forward="true" selection-start-line="22" selection-start-column="13" selection-end-line="22" selection-end-column="13" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/main/java/algorithm/search/cracking/ch17_hard/Q17_26_Sparse_Similarity/QuestionB.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="664">
+              <caret line="65" column="42" selection-start-line="65" selection-start-column="42" selection-end-line="65" selection-end-column="42" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/datastructure/array/cracking/ch17_hard/Q17_21_Volume_of_Histogram/QuestionC.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="38">
+              <caret line="2" column="13" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="FindInProjectRecents">
+    <findStrings>
+      <find>jdk</find>
+      <find>GraphX</find>
+      <find>Event</find>
+    </findStrings>
+    <replaceStrings>
+      <replace>Graph</replace>
+    </replaceStrings>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="IdeDocumentHistory">
+    <option name="CHANGED_PATHS">
+      <list>
+        <option value="$PROJECT_DIR$/src/main/java/util/alg4/chother/Polynomial.java" />
+        <option value="$PROJECT_DIR$/src/main/java/algorithm/search/alg4/ch03/AVLTreeST.java" />
+        <option value="$PROJECT_DIR$/src/main/java/algorithm/search/alg4/ch03/PatriciaST.java" />
+        <option value="$PROJECT_DIR$/src/main/java/datastructure/fenwicktree/alg4/ch09/FenwickTree.java" />
+        <option value="$PROJECT_DIR$/src/main/java/util/alg4/chother/FarthestPair.java" />
+        <option value="$PROJECT_DIR$/src/main/java/algorithm/math/computationalgeometry/alg4/GaussianElimination.java" />
+        <option value="$PROJECT_DIR$/src/main/java/algorithm/backtracking/codinginterviewguide/chapter_4_recursionanddp/Problem_01_FibonacciProblem.java" />
+        <option value="$PROJECT_DIR$/src/main/java/algorithm/dynamicprogramming/codinginterviewguide/chapter_5_stringproblem/Problem_21_PalindromeMinCut.java" />
+        <option value="$PROJECT_DIR$/src/main/java/datastructure/trie/alg4/trie/TrieST.java" />
+        <option value="$PROJECT_DIR$/src/main/java/datastructure/trie/codinginterviewguide/chapter_5_stringproblem/Problem_23_TrieTree.java" />
+        <option value="$PROJECT_DIR$/src/main/java/datastructure/queue/codinginterviewguide/chapter_8_arrayandmatrix/Problem_04_FindMinKNums.java" />
+        <option value="$PROJECT_DIR$/src/main/java/datastructure/queueandheap/codinginterviewguide/chapter_8_arrayandmatrix/Problem_04_FindMinKNums.java" />
+        <option value="$PROJECT_DIR$/src/main/java/datastructure/queueandheap/codinginterviewguide/chapter_8_arrayandmatrix/Problem_20_PrintMaxTopK.java" />
+        <option value="$PROJECT_DIR$/src/main/java/algorithm/bfs_branchandbound/codinginterviewguide/chapter_8_arrayandmatrix/Problem_25_SmallestMissNum.java" />
+        <option value="$PROJECT_DIR$/src/main/java/algorithm/math/random/codinginterviewguide/chapter_9_others/Problem_01_Rand5ToRand7.java" />
+        <option value="$PROJECT_DIR$/src/main/java/algorithm/math/numbertheory/codinginterviewguide/chapter_9_others/Problem_03_FactorialProblem.java" />
+        <option value="$PROJECT_DIR$/src/main/java/datastructure/queueandheap/codinginterviewguide/chapter_9_others/Problem_25_MadianQuick.java" />
+        <option value="$PROJECT_DIR$/src/main/java/datastructure/array/codinginterviewguide/chapter_9_others/Problem_26_FindUpMedian.java" />
+        <option value="$PROJECT_DIR$/src/main/java/datastructure/array/cracking/ch01_arrays_and_strings/Q1_03_URLify/Question.java" />
+        <option value="$PROJECT_DIR$/src/main/java/util/cracking/CtCILibrary/CtCILibrary/Trie.java" />
+        <option value="$PROJECT_DIR$/src/main/java/datastructure/string/cracking/ch01_arrays_and_strings/Q1_04_Palindrome_Permutation/QuestionB.java" />
+        <option value="$PROJECT_DIR$/src/main/java/datastructure/stack/cracking/ch03_stacks_and_queues/Introduction/MyQueue.java" />
+        <option value="$PROJECT_DIR$/src/main/java/datastructure/queueandheap/cracking/ch03_stacks_and_queues/Introduction/MyQueue.java" />
+        <option value="$PROJECT_DIR$/src/main/java/datastructure/bst/cracking/ch04_trees_and_graphs/Introduction/Traversals.java" />
+        <option value="$PROJECT_DIR$/src/main/java/algorithm/math/graph/cracking/ch04_trees_and_graphs/Introduction/Traversals.java" />
+        <option value="$PROJECT_DIR$/src/main/java/algorithm/math/bitoperation/cracking/ch05_bit_manipulation/Sample_Code/RightShifts.java" />
+        <option value="$PROJECT_DIR$/src/main/java/algorithm/math/others/cracking/ch06_math_and_logic_puzzles/Introduction/PrimeNumbers.java" />
+        <option value="$PROJECT_DIR$/src/main/java/algorithm/recursive/cracking/ch08_recursion_and_dynamic_programming/Q8_11_Coins/Tester.java" />
+        <option value="$PROJECT_DIR$/src/main/java/algorithm/dynamicprogramming/cracking/ch08_recursion_and_dynamic_programming/Q8_11_Coins/Tester.java" />
+        <option value="$PROJECT_DIR$/src/main/java/algorithm/bigdataprocess/cracking/ch09_scalability_and_memory_limits/Q9_05_Cache/Node.java" />
+        <option value="$PROJECT_DIR$/src/main/java/datastructure/list/cracking/ch02_linked_lists/LinkedListNode.java" />
+        <option value="$PROJECT_DIR$/src/main/java/datastructure/list/cracking/ch02_linked_lists/Q2_04_Partition/Tester.java" />
+        <option value="$PROJECT_DIR$/src/main/java/datastructure/list/cracking/ch02_linked_lists/Q2_04_Partition/Question.java" />
+        <option value="$PROJECT_DIR$/src/main/java/datastructure/list/cracking/ch02_linked_lists/Q2_04_Partition/QuestionB.java" />
+        <option value="$PROJECT_DIR$/src/main/java/datastructure/list/cracking/ch02_linked_lists/Q2_04_Partition/QuestionC.java" />
+        <option value="$PROJECT_DIR$/src/main/java/datastructure/stack/cracking/ch03_stacks_and_queues/QueueTester.java" />
+        <option value="$PROJECT_DIR$/src/main/java/datastructure/stack/cracking/ch03_stacks_and_queues/StackTester.java" />
+        <option value="$PROJECT_DIR$/src/main/java/datastructure/queueandheap/cracking/ch03_stacks_and_queues/QueueTester.java" />
+        <option value="$PROJECT_DIR$/src/main/java/algorithm/math/graph/cracking/ch04_trees_and_graphs/Q4_01_Route_Between_Nodes/Question.java" />
+        <option value="$PROJECT_DIR$/src/main/java/algorithm/search/cracking/ch08_recursion_and_dynamic_programming/Q8_03_Magic_Index/QuestionB.java" />
+        <option value="$PROJECT_DIR$/src/main/java/algorithm/dfs_backtracking/cracking/ch08_recursion_and_dynamic_programming/Q8_04_Power_Set/QuestionB.java" />
+        <option value="$PROJECT_DIR$/src/main/java/algorithm/dfs_backtracking/cracking/ch08_recursion_and_dynamic_programming/Q8_07_Permutations_Without_Dups/QuestionC.java" />
+        <option value="$PROJECT_DIR$/src/main/java/algorithm/dfs_backtracking/cracking/ch08_recursion_and_dynamic_programming/Q8_09_Parens/QuestionB.java" />
+        <option value="$PROJECT_DIR$/src/main/java/algorithm/dfs_backtracking/cracking/ch08_recursion_and_dynamic_programming/Q8_10_Paint_Fill/Question.java" />
+        <option value="$PROJECT_DIR$/src/main/java/algorithm/dfs_backtracking/cracking/ch08_recursion_and_dynamic_programming/Q8_12_Eight_Queens/Question.java" />
+        <option value="$PROJECT_DIR$/src/main/java/algorithm/dfs_backtracking/cracking/ch08_recursion_and_dynamic_programming/Q8_14_Boolean_Evaluation/QuestionC.java" />
+        <option value="$PROJECT_DIR$/src/main/java/algorithm/math/bitoperation/cracking/ch16_moderate/Q16_01_Number_Swapper/Question.java" />
+        <option value="$PROJECT_DIR$/src/main/java/datastructure/trie/cracking/ch16_moderate/Q16_20_T9/QuestionC.java" />
+        <option value="$PROJECT_DIR$/src/main/java/datastructure/trie/cracking/Trie.java" />
+        <option value="$PROJECT_DIR$/src/main/java/datastructure/trie/cracking/ch16_moderate/Q16_20_T9/HashMapList.java" />
+        <option value="$PROJECT_DIR$/src/main/java/algorithm/search/cracking/ch17_hard/Q17_26_Sparse_Similarity/QuestionB.java" />
+      </list>
+    </option>
+  </component>
+  <component name="MavenImportPreferences">
+    <option name="importingSettings">
+      <MavenImportingSettings>
+        <option name="importAutomatically" value="true" />
+      </MavenImportingSettings>
+    </option>
+  </component>
+  <component name="ProjectFrameBounds">
+    <option name="x" value="480" />
+    <option name="y" value="37" />
+    <option name="width" value="1405" />
+    <option name="height" value="980" />
+  </component>
+  <component name="ProjectLevelVcsManager">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
+  <component name="ProjectView">
+    <navigator proportions="" version="1">
+      <hideEmptyPackages ProjectPane="false" />
+      <foldersAlwaysOnTop value="true" />
+    </navigator>
+    <panes>
+      <pane id="PackagesPane" />
+      <pane id="ProjectPane">
+        <subPane>
+          <expand>
+            <path>
+              <item name="algorithm" type="b2602c69:ProjectViewProjectNode" />
+              <item name="algorithm" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="algorithm" type="b2602c69:ProjectViewProjectNode" />
+              <item name="algorithm" type="462c0819:PsiDirectoryNode" />
+              <item name=".idea" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="algorithm" type="b2602c69:ProjectViewProjectNode" />
+              <item name="algorithm" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="algorithm" type="b2602c69:ProjectViewProjectNode" />
+              <item name="algorithm" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="algorithm" type="b2602c69:ProjectViewProjectNode" />
+              <item name="algorithm" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="algorithm" type="b2602c69:ProjectViewProjectNode" />
+              <item name="algorithm" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="algorithm" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="algorithm" type="b2602c69:ProjectViewProjectNode" />
+              <item name="algorithm" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="algorithm" type="462c0819:PsiDirectoryNode" />
+              <item name="bfs_branchandbound" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="algorithm" type="b2602c69:ProjectViewProjectNode" />
+              <item name="algorithm" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="algorithm" type="462c0819:PsiDirectoryNode" />
+              <item name="bfs_branchandbound" type="462c0819:PsiDirectoryNode" />
+              <item name="cracking" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="algorithm" type="b2602c69:ProjectViewProjectNode" />
+              <item name="algorithm" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="algorithm" type="462c0819:PsiDirectoryNode" />
+              <item name="dfs_backtracking" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="algorithm" type="b2602c69:ProjectViewProjectNode" />
+              <item name="algorithm" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="algorithm" type="462c0819:PsiDirectoryNode" />
+              <item name="dfs_backtracking" type="462c0819:PsiDirectoryNode" />
+              <item name="cracking" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="algorithm" type="b2602c69:ProjectViewProjectNode" />
+              <item name="algorithm" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="algorithm" type="462c0819:PsiDirectoryNode" />
+              <item name="divideandconquer" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="algorithm" type="b2602c69:ProjectViewProjectNode" />
+              <item name="algorithm" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="algorithm" type="462c0819:PsiDirectoryNode" />
+              <item name="divideandconquer" type="462c0819:PsiDirectoryNode" />
+              <item name="cracking" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="algorithm" type="b2602c69:ProjectViewProjectNode" />
+              <item name="algorithm" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="algorithm" type="462c0819:PsiDirectoryNode" />
+              <item name="dynamicprogramming" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="algorithm" type="b2602c69:ProjectViewProjectNode" />
+              <item name="algorithm" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="algorithm" type="462c0819:PsiDirectoryNode" />
+              <item name="dynamicprogramming" type="462c0819:PsiDirectoryNode" />
+              <item name="cracking" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="algorithm" type="b2602c69:ProjectViewProjectNode" />
+              <item name="algorithm" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="algorithm" type="462c0819:PsiDirectoryNode" />
+              <item name="math" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="algorithm" type="b2602c69:ProjectViewProjectNode" />
+              <item name="algorithm" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="algorithm" type="462c0819:PsiDirectoryNode" />
+              <item name="math" type="462c0819:PsiDirectoryNode" />
+              <item name="bitoperation" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="algorithm" type="b2602c69:ProjectViewProjectNode" />
+              <item name="algorithm" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="algorithm" type="462c0819:PsiDirectoryNode" />
+              <item name="math" type="462c0819:PsiDirectoryNode" />
+              <item name="bitoperation" type="462c0819:PsiDirectoryNode" />
+              <item name="cracking" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="algorithm" type="b2602c69:ProjectViewProjectNode" />
+              <item name="algorithm" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="algorithm" type="462c0819:PsiDirectoryNode" />
+              <item name="math" type="462c0819:PsiDirectoryNode" />
+              <item name="graph" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="algorithm" type="b2602c69:ProjectViewProjectNode" />
+              <item name="algorithm" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="algorithm" type="462c0819:PsiDirectoryNode" />
+              <item name="math" type="462c0819:PsiDirectoryNode" />
+              <item name="graph" type="462c0819:PsiDirectoryNode" />
+              <item name="cracking" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="algorithm" type="b2602c69:ProjectViewProjectNode" />
+              <item name="algorithm" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="algorithm" type="462c0819:PsiDirectoryNode" />
+              <item name="math" type="462c0819:PsiDirectoryNode" />
+              <item name="numbertheory" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="algorithm" type="b2602c69:ProjectViewProjectNode" />
+              <item name="algorithm" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="algorithm" type="462c0819:PsiDirectoryNode" />
+              <item name="math" type="462c0819:PsiDirectoryNode" />
+              <item name="numbertheory" type="462c0819:PsiDirectoryNode" />
+              <item name="cracking" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="algorithm" type="b2602c69:ProjectViewProjectNode" />
+              <item name="algorithm" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="algorithm" type="462c0819:PsiDirectoryNode" />
+              <item name="math" type="462c0819:PsiDirectoryNode" />
+              <item name="others" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="algorithm" type="b2602c69:ProjectViewProjectNode" />
+              <item name="algorithm" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="algorithm" type="462c0819:PsiDirectoryNode" />
+              <item name="math" type="462c0819:PsiDirectoryNode" />
+              <item name="others" type="462c0819:PsiDirectoryNode" />
+              <item name="cracking" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="algorithm" type="b2602c69:ProjectViewProjectNode" />
+              <item name="algorithm" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="algorithm" type="462c0819:PsiDirectoryNode" />
+              <item name="math" type="462c0819:PsiDirectoryNode" />
+              <item name="random" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="algorithm" type="b2602c69:ProjectViewProjectNode" />
+              <item name="algorithm" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="algorithm" type="462c0819:PsiDirectoryNode" />
+              <item name="math" type="462c0819:PsiDirectoryNode" />
+              <item name="random" type="462c0819:PsiDirectoryNode" />
+              <item name="cracking" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="algorithm" type="b2602c69:ProjectViewProjectNode" />
+              <item name="algorithm" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="algorithm" type="462c0819:PsiDirectoryNode" />
+              <item name="math" type="462c0819:PsiDirectoryNode" />
+              <item name="random" type="462c0819:PsiDirectoryNode" />
+              <item name="cracking" type="462c0819:PsiDirectoryNode" />
+              <item name="ch17_hard" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="algorithm" type="b2602c69:ProjectViewProjectNode" />
+              <item name="algorithm" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="algorithm" type="462c0819:PsiDirectoryNode" />
+              <item name="recursive" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="algorithm" type="b2602c69:ProjectViewProjectNode" />
+              <item name="algorithm" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="algorithm" type="462c0819:PsiDirectoryNode" />
+              <item name="recursive" type="462c0819:PsiDirectoryNode" />
+              <item name="cracking" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="algorithm" type="b2602c69:ProjectViewProjectNode" />
+              <item name="algorithm" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="algorithm" type="462c0819:PsiDirectoryNode" />
+              <item name="search" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="algorithm" type="b2602c69:ProjectViewProjectNode" />
+              <item name="algorithm" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="algorithm" type="462c0819:PsiDirectoryNode" />
+              <item name="search" type="462c0819:PsiDirectoryNode" />
+              <item name="cracking" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="algorithm" type="b2602c69:ProjectViewProjectNode" />
+              <item name="algorithm" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="algorithm" type="462c0819:PsiDirectoryNode" />
+              <item name="sort" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="algorithm" type="b2602c69:ProjectViewProjectNode" />
+              <item name="algorithm" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="algorithm" type="462c0819:PsiDirectoryNode" />
+              <item name="sort" type="462c0819:PsiDirectoryNode" />
+              <item name="cracking" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="algorithm" type="b2602c69:ProjectViewProjectNode" />
+              <item name="algorithm" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="datastructure" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="algorithm" type="b2602c69:ProjectViewProjectNode" />
+              <item name="algorithm" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="datastructure" type="462c0819:PsiDirectoryNode" />
+              <item name="array" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="algorithm" type="b2602c69:ProjectViewProjectNode" />
+              <item name="algorithm" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="datastructure" type="462c0819:PsiDirectoryNode" />
+              <item name="array" type="462c0819:PsiDirectoryNode" />
+              <item name="cracking" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="algorithm" type="b2602c69:ProjectViewProjectNode" />
+              <item name="algorithm" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="datastructure" type="462c0819:PsiDirectoryNode" />
+              <item name="array" type="462c0819:PsiDirectoryNode" />
+              <item name="cracking" type="462c0819:PsiDirectoryNode" />
+              <item name="ch17_hard" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="algorithm" type="b2602c69:ProjectViewProjectNode" />
+              <item name="algorithm" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="datastructure" type="462c0819:PsiDirectoryNode" />
+              <item name="bst" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="algorithm" type="b2602c69:ProjectViewProjectNode" />
+              <item name="algorithm" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="datastructure" type="462c0819:PsiDirectoryNode" />
+              <item name="bst" type="462c0819:PsiDirectoryNode" />
+              <item name="cracking" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="algorithm" type="b2602c69:ProjectViewProjectNode" />
+              <item name="algorithm" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="datastructure" type="462c0819:PsiDirectoryNode" />
+              <item name="cache" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="algorithm" type="b2602c69:ProjectViewProjectNode" />
+              <item name="algorithm" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="datastructure" type="462c0819:PsiDirectoryNode" />
+              <item name="cache" type="462c0819:PsiDirectoryNode" />
+              <item name="cracking" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="algorithm" type="b2602c69:ProjectViewProjectNode" />
+              <item name="algorithm" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="datastructure" type="462c0819:PsiDirectoryNode" />
+              <item name="hashmap" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="algorithm" type="b2602c69:ProjectViewProjectNode" />
+              <item name="algorithm" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="datastructure" type="462c0819:PsiDirectoryNode" />
+              <item name="hashmap" type="462c0819:PsiDirectoryNode" />
+              <item name="cracking" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="algorithm" type="b2602c69:ProjectViewProjectNode" />
+              <item name="algorithm" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="datastructure" type="462c0819:PsiDirectoryNode" />
+              <item name="list" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="algorithm" type="b2602c69:ProjectViewProjectNode" />
+              <item name="algorithm" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="datastructure" type="462c0819:PsiDirectoryNode" />
+              <item name="list" type="462c0819:PsiDirectoryNode" />
+              <item name="cracking" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="algorithm" type="b2602c69:ProjectViewProjectNode" />
+              <item name="algorithm" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="datastructure" type="462c0819:PsiDirectoryNode" />
+              <item name="queueandheap" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="algorithm" type="b2602c69:ProjectViewProjectNode" />
+              <item name="algorithm" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="datastructure" type="462c0819:PsiDirectoryNode" />
+              <item name="queueandheap" type="462c0819:PsiDirectoryNode" />
+              <item name="cracking" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="algorithm" type="b2602c69:ProjectViewProjectNode" />
+              <item name="algorithm" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="datastructure" type="462c0819:PsiDirectoryNode" />
+              <item name="redblacktree" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="algorithm" type="b2602c69:ProjectViewProjectNode" />
+              <item name="algorithm" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="datastructure" type="462c0819:PsiDirectoryNode" />
+              <item name="segmenttree" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="algorithm" type="b2602c69:ProjectViewProjectNode" />
+              <item name="algorithm" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="datastructure" type="462c0819:PsiDirectoryNode" />
+              <item name="stack" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="algorithm" type="b2602c69:ProjectViewProjectNode" />
+              <item name="algorithm" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="datastructure" type="462c0819:PsiDirectoryNode" />
+              <item name="stack" type="462c0819:PsiDirectoryNode" />
+              <item name="cracking" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="algorithm" type="b2602c69:ProjectViewProjectNode" />
+              <item name="algorithm" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="datastructure" type="462c0819:PsiDirectoryNode" />
+              <item name="string" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="algorithm" type="b2602c69:ProjectViewProjectNode" />
+              <item name="algorithm" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="datastructure" type="462c0819:PsiDirectoryNode" />
+              <item name="string" type="462c0819:PsiDirectoryNode" />
+              <item name="alg4" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="algorithm" type="b2602c69:ProjectViewProjectNode" />
+              <item name="algorithm" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="datastructure" type="462c0819:PsiDirectoryNode" />
+              <item name="string" type="462c0819:PsiDirectoryNode" />
+              <item name="codinginterviewguide" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="algorithm" type="b2602c69:ProjectViewProjectNode" />
+              <item name="algorithm" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="datastructure" type="462c0819:PsiDirectoryNode" />
+              <item name="string" type="462c0819:PsiDirectoryNode" />
+              <item name="cracking" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="algorithm" type="b2602c69:ProjectViewProjectNode" />
+              <item name="algorithm" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="datastructure" type="462c0819:PsiDirectoryNode" />
+              <item name="string" type="462c0819:PsiDirectoryNode" />
+              <item name="cracking" type="462c0819:PsiDirectoryNode" />
+              <item name="ch16_moderate" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="algorithm" type="b2602c69:ProjectViewProjectNode" />
+              <item name="algorithm" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="datastructure" type="462c0819:PsiDirectoryNode" />
+              <item name="trie" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="algorithm" type="b2602c69:ProjectViewProjectNode" />
+              <item name="algorithm" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="datastructure" type="462c0819:PsiDirectoryNode" />
+              <item name="trie" type="462c0819:PsiDirectoryNode" />
+              <item name="cracking" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="algorithm" type="b2602c69:ProjectViewProjectNode" />
+              <item name="algorithm" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="util" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="algorithm" type="b2602c69:ProjectViewProjectNode" />
+              <item name="algorithm" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="util" type="462c0819:PsiDirectoryNode" />
+              <item name="cracking" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="algorithm" type="b2602c69:ProjectViewProjectNode" />
+              <item name="algorithm" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="util" type="462c0819:PsiDirectoryNode" />
+              <item name="cracking" type="462c0819:PsiDirectoryNode" />
+              <item name="Big O" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="algorithm" type="b2602c69:ProjectViewProjectNode" />
+              <item name="algorithm" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="util" type="462c0819:PsiDirectoryNode" />
+              <item name="cracking" type="462c0819:PsiDirectoryNode" />
+              <item name="CtCILibrary" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="algorithm" type="b2602c69:ProjectViewProjectNode" />
+              <item name="algorithm" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="util" type="462c0819:PsiDirectoryNode" />
+              <item name="cracking" type="462c0819:PsiDirectoryNode" />
+              <item name="CtCILibrary" type="462c0819:PsiDirectoryNode" />
+              <item name="CtCILibrary" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="algorithm" type="b2602c69:ProjectViewProjectNode" />
+              <item name="algorithm" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="resources" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="algorithm" type="b2602c69:ProjectViewProjectNode" />
+              <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
+            </path>
+          </expand>
+          <select />
+        </subPane>
+      </pane>
+      <pane id="Scope" />
+    </panes>
+  </component>
+  <component name="PropertiesComponent">
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/main/java/datastructure/trie/cracking" />
+    <property name="project.structure.last.edited" value="Artifacts" />
+    <property name="project.structure.proportion" value="0.15" />
+    <property name="project.structure.side.proportion" value="0.2" />
+    <property name="settings.editor.selected.configurable" value="reference.projectsettings.compiler.javacompiler" />
+  </component>
+  <component name="RecentsManager">
+    <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
+      <recent name="algorithm.search.cracking.ch17_hard" />
+      <recent name="algorithm.dfs_backtracking.cracking.ch17_hard" />
+      <recent name="algorithm.dynamicprogramming.cracking.ch17_hard" />
+      <recent name="algorithm.bfs_branchandbound.cracking.ch17_hard" />
+      <recent name="datastructure.array.cracking.ch17_hard" />
+    </key>
+    <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="datastructure.trie.cracking.ch16_moderate.Q16_20_T9" />
+      <recent name="datastructure.list.cracking.ch02_linked_lists" />
+      <recent name="datastructure.fenwicktree.alg4.ch09" />
+      <recent name="algorithm.search.alg4.ch03" />
+      <recent name="datastructure.hashmap.alg4" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="E:\wz\algorithm\src\main\java\datastructure\trie\cracking" />
+      <recent name="E:\wz\algorithm\src\main\java\datastructure\trie\cracking\ch16_moderate" />
+      <recent name="E:\wz\algorithm\src\main\java\algorithm\search\cracking\ch08_recursion_and_dynamic_programming" />
+      <recent name="E:\wz\algorithm\src\main\java\algorithm\math\graph\cracking\ch04_trees_and_graphs" />
+      <recent name="E:\wz\algorithm\src\main\java\datastructure\queueandheap\cracking\ch03_stacks_and_queues" />
+    </key>
+  </component>
+  <component name="RunDashboard">
+    <option name="ruleStates">
+      <list>
+        <RuleState>
+          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
+        </RuleState>
+        <RuleState>
+          <option name="name" value="StatusDashboardGroupingRule" />
+        </RuleState>
+      </list>
+    </option>
+  </component>
+  <component name="RunManager" selected="Application.Counter">
+    <configuration name="Average" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="util.alg4.ch01.Average" />
+      <module name="algorithm" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="datastructure.stack.alg4.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="MakeNoErrorCheck" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Counter" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="util.alg4.ch01.Counter" />
+      <module name="algorithm" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="datastructure.stack.alg4.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="RandomSeq" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="util.alg4.ch01.RandomSeq" />
+      <module name="algorithm" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="datastructure.stack.alg4.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <list>
+      <item itemvalue="Application.Average" />
+      <item itemvalue="Application.RandomSeq" />
+      <item itemvalue="Application.Counter" />
+    </list>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Application.Counter" />
+        <item itemvalue="Application.RandomSeq" />
+        <item itemvalue="Application.Average" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="e136a5ca-c75c-48b6-8d35-68e66e0116c5" name="Default Changelist" comment="" />
+      <created>1564583866099</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1564583866099</updated>
+    </task>
+    <task id="LOCAL-00001" summary="alg4 modify">
+      <created>1564647459594</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1564647459595</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
+    <servers />
+  </component>
+  <component name="ToolWindowManager">
+    <frame x="384" y="30" width="1124" height="784" extended-state="0" />
+    <layout>
+      <window_info active="true" content_ui="combo" x="514" y="59" width="508" height="706" id="Project" order="0" sideWeight="0.72392637" visible="true" weight="0.37992495" />
+      <window_info id="Structure" order="1" sideWeight="0.2760736" side_tool="true" visible="true" weight="0.37992495" />
+      <window_info id="Image Layers" order="2" />
+      <window_info id="Designer" order="3" />
+      <window_info id="UI Designer" order="4" />
+      <window_info id="Capture Tool" order="5" />
+      <window_info id="Favorites" order="6" side_tool="true" />
+      <window_info anchor="bottom" id="Message" order="0" />
+      <window_info anchor="bottom" id="Find" order="1" weight="0.75766873" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.3297546" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
+      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
+      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
+      <window_info anchor="bottom" id="TODO" order="6" />
+      <window_info anchor="bottom" id="Terminal" order="7" />
+      <window_info anchor="bottom" id="Event Log" order="8" side_tool="true" />
+      <window_info anchor="bottom" id="Version Control" order="9" />
+      <window_info anchor="bottom" id="Thumbnails" order="10" weight="0.3286119" />
+      <window_info anchor="bottom" id="Messages" order="11" weight="0.22546013" />
+      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
+      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+      <window_info anchor="right" id="Palette" order="3" />
+      <window_info anchor="right" id="Maven" order="4" />
+      <window_info anchor="right" id="Theme Preview" order="5" />
+      <window_info anchor="right" id="Capture Analysis" order="6" />
+      <window_info anchor="right" id="Palette&#9;" order="7" />
+    </layout>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="alg4 modify" />
+    <option name="LAST_COMMIT_MESSAGE" value="alg4 modify" />
+  </component>
+  <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/src/main/java/datastructure/trie/cracking/ch16_moderate/Q16_20_T9/QuestionC.java">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/datastructure/trie/cracking/TrieNode.java">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/datastructure/trie/cracking/Trie.java">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/datastructure/trie/cracking/ch16_moderate/Q16_20_T9/HashMapList.java">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/algorithm/search/cracking/ch16_moderate/Q16_21_Sum_Swap/QuestionA.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-190">
+          <caret line="2" column="13" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/algorithm/search/cracking/ch16_moderate/Q16_21_Sum_Swap/QuestionB.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-76">
+          <caret line="2" column="13" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/algorithm/search/cracking/ch16_moderate/Q16_21_Sum_Swap/QuestionC.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="19">
+          <caret line="4" column="13" selection-start-line="4" selection-start-column="13" selection-end-line="4" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/algorithm/search/cracking/ch16_moderate/Q16_21_Sum_Swap/QuestionD.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-551">
+          <caret line="5" column="13" selection-start-line="5" selection-start-column="13" selection-end-line="5" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/algorithm/math/others/cracking/ch16_moderate/Q16_22_Langtons_Ant/Question.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="38">
+          <caret line="2" column="13" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/algorithm/math/others/cracking/ch16_moderate/Q16_22_Langtons_Ant/Board.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-799">
+          <caret line="4" column="13" selection-start-line="4" selection-start-column="13" selection-end-line="4" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/algorithm/search/cracking/ch16_moderate/Q16_24_Pairs_With_Sum/QuestionA.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="76">
+          <caret line="4" column="13" selection-start-line="4" selection-start-column="13" selection-end-line="4" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/algorithm/search/cracking/ch16_moderate/Q16_24_Pairs_With_Sum/QuestionB.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="76">
+          <caret line="6" column="13" selection-start-line="6" selection-start-column="13" selection-end-line="6" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/algorithm/search/cracking/ch16_moderate/Q16_24_Pairs_With_Sum/QuestionC.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="76">
+          <caret line="5" column="13" selection-start-line="5" selection-start-column="13" selection-end-line="5" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/datastructure/stack/cracking/ch16_moderate/Q16_26_Calculator/QuestionA.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="285">
+          <caret line="15" column="33" lean-forward="true" selection-start-line="15" selection-start-column="33" selection-end-line="15" selection-end-column="33" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/datastructure/stack/cracking/ch16_moderate/Q16_26_Calculator/QuestionB.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="437">
+          <caret line="101" column="13" lean-forward="true" selection-start-line="101" selection-start-column="13" selection-end-line="101" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/algorithm/math/bitoperation/cracking/ch17_hard/Q17_01_Add_Without_Plus/QuestionA.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="38">
+          <caret line="2" column="13" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/algorithm/math/bitoperation/cracking/ch17_hard/Q17_01_Add_Without_Plus/QuestionB.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="209">
+          <caret line="11" column="12" selection-start-line="11" selection-start-column="12" selection-end-line="11" selection-end-column="12" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/algorithm/math/random/cracking/ch17_hard/Q17_02_Shuffle/Question.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="76">
+          <caret line="6" column="13" selection-start-line="6" selection-start-column="13" selection-end-line="6" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/algorithm/divideandconquer/cracking/ch17_hard/Q17_04_Missing_Number/BitInteger.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-557">
+          <caret line="2" column="13" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/algorithm/divideandconquer/cracking/ch17_hard/Q17_04_Missing_Number/Question.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-494">
+          <caret line="5" column="13" selection-start-line="5" selection-start-column="13" selection-end-line="5" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/datastructure/array/cracking/ch17_hard/Q17_05_Letters_and_Numbers/QuestionA.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="152">
+          <caret line="23" column="4" lean-forward="true" selection-start-line="23" selection-start-column="4" selection-end-line="23" selection-end-column="4" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/algorithm/dynamicprogramming/cracking/ch17_hard/Q17_08_Circus_Tower/QuestionA.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-437">
+          <caret line="5" column="13" selection-start-line="5" selection-start-column="13" selection-end-line="5" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/algorithm/dynamicprogramming/cracking/ch17_hard/Q17_08_Circus_Tower/QuestionB.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-95">
+          <caret line="5" column="13" selection-start-line="5" selection-start-column="13" selection-end-line="5" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/datastructure/queueandheap/cracking/ch17_hard/Q17_09_Kth_Multiple/QuestionC.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="114">
+          <caret line="7" column="35" lean-forward="true" selection-start-line="7" selection-start-column="35" selection-end-line="7" selection-end-column="35" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/datastructure/array/cracking/ch17_hard/Q17_10_Majority_Element/QuestionA.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="38">
+          <caret line="2" column="13" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/datastructure/array/cracking/ch17_hard/Q17_10_Majority_Element/QuestionB.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="38">
+          <caret line="2" column="13" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/algorithm/search/cracking/ch17_hard/Q17_11_Word_Distance/QuestionA.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-38">
+          <caret line="4" column="13" selection-start-line="4" selection-start-column="13" selection-end-line="4" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/algorithm/search/cracking/ch17_hard/Q17_11_Word_Distance/QuestionB.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="208">
+          <caret line="43" column="36" lean-forward="true" selection-start-line="43" selection-start-column="36" selection-end-line="43" selection-end-column="36" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/datastructure/bst/cracking/ch17_hard/Q17_12_BiNode/QuestionC.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="152">
+          <caret line="71" column="9" lean-forward="true" selection-start-line="71" selection-start-column="9" selection-end-line="71" selection-end-column="9" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/algorithm/dynamicprogramming/cracking/ch17_hard/Q17_13_ReSpace/QuestionB.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="266">
+          <caret line="22" lean-forward="true" selection-start-line="22" selection-end-line="22" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/algorithm/sort/cracking/ch17_hard/Q17_14_Smallest_K/QuestionD.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-1007">
+          <caret line="6" column="13" selection-start-line="6" selection-start-column="13" selection-end-line="6" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/algorithm/sort/cracking/ch17_hard/Q17_14_Smallest_K/QuestionC.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-1217">
+          <caret line="6" column="13" selection-start-line="6" selection-start-column="13" selection-end-line="6" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/algorithm/sort/cracking/ch17_hard/Q17_14_Smallest_K/QuestionB.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="165">
+          <caret line="25" column="69" lean-forward="true" selection-start-line="25" selection-start-column="69" selection-end-line="25" selection-end-column="69" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/algorithm/dynamicprogramming/cracking/ch17_hard/Q17_15_Longest_Word/Question.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-95">
+          <caret line="5" column="13" selection-start-line="5" selection-start-column="13" selection-end-line="5" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/algorithm/dynamicprogramming/cracking/ch17_hard/Q17_16_The_Masseuse/QuestionD.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="38">
+          <caret line="2" column="13" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/algorithm/dynamicprogramming/cracking/ch17_hard/Q17_16_The_Masseuse/QuestionC.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="38">
+          <caret line="2" column="13" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/datastructure/trie/cracking/ch17_hard/Q17_17_Multi_Search/QuestionC.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="76">
+          <caret line="6" column="13" selection-start-line="6" selection-start-column="13" selection-end-line="6" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/datastructure/hashmap/cracking/ch17_hard/Q17_18_Shortest_Supersequence/QuestionE.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-1064">
+          <caret line="4" column="13" selection-start-line="4" selection-start-column="13" selection-end-line="4" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/algorithm/math/others/cracking/ch17_hard/Q17_19_Missing_Two/QuestionB.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="38">
+          <caret line="2" column="13" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/algorithm/math/others/cracking/ch17_hard/Q17_19_Missing_Two/QuestionA.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-310">
+          <caret line="4" column="13" selection-start-line="4" selection-start-column="13" selection-end-line="4" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/algorithm/math/others/cracking/ch17_hard/Q17_19_Missing_Two/QuestionC.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-1008">
+          <caret line="2" column="13" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/datastructure/queueandheap/cracking/ch17_hard/Q17_20_Continuous_Median/Question.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-836">
+          <caret line="6" column="13" selection-start-line="6" selection-start-column="13" selection-end-line="6" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/datastructure/array/cracking/ch17_hard/Q17_21_Volume_of_Histogram/QuestionA.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-589">
+          <caret line="2" column="13" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/datastructure/array/cracking/ch17_hard/Q17_21_Volume_of_Histogram/QuestionC.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="38">
+          <caret line="2" column="13" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/datastructure/array/cracking/ch17_hard/Q17_21_Volume_of_Histogram/QuestionB.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="38">
+          <caret line="2" column="13" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/algorithm/bfs_branchandbound/cracking/ch17_hard/Q17_22_Word_Transformer/QuestionA.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="190">
+          <caret line="23" column="4" lean-forward="true" selection-start-line="23" selection-start-column="4" selection-end-line="23" selection-end-column="4" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/algorithm/bfs_branchandbound/cracking/ch17_hard/Q17_22_Word_Transformer/QuestionC.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="189">
+          <caret line="102" column="27" lean-forward="true" selection-start-line="102" selection-start-column="27" selection-end-line="102" selection-end-column="27" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/algorithm/bfs_branchandbound/cracking/ch17_hard/Q17_23_Max_Black_Square/QuestionEff.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="228">
+          <caret line="12" column="65" lean-forward="true" selection-start-line="12" selection-start-column="65" selection-end-line="12" selection-end-column="65" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/algorithm/dfs_backtracking/cracking/ch17_hard/Q17_25_Word_Rectangle/Question.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-152">
+          <caret line="6" column="13" selection-start-line="6" selection-start-column="13" selection-end-line="6" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/algorithm/search/cracking/ch17_hard/Q17_26_Sparse_Similarity/QuestionC.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-1064">
+          <caret line="22" column="13" lean-forward="true" selection-start-line="22" selection-start-column="13" selection-end-line="22" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/algorithm/search/cracking/ch17_hard/Q17_26_Sparse_Similarity/QuestionB.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="664">
+          <caret line="65" column="42" selection-start-line="65" selection-start-column="42" selection-end-line="65" selection-end-column="42" />
+        </state>
+      </provider>
+    </entry>
+  </component>
+  <component name="masterDetails">
+    <states>
+      <state key="ArtifactsStructureConfigurable.UI">
+        <settings>
+          <artifact-editor />
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="FacetStructureConfigurable.UI">
+        <settings>
+          <last-edited>No facets are configured</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="GlobalLibrariesConfigurable.UI">
+        <settings>
+          <last-edited>scala-sdk-2.12.8 (2)</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="JdkListConfigurable.UI">
+        <settings>
+          <last-edited>1.8</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="ModuleStructureConfigurable.UI">
+        <settings>
+          <last-edited>algorithm</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="ProjectJDKs.UI">
+        <settings>
+          <last-edited>1.8</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="ProjectLibrariesConfigurable.UI">
+        <settings>
+          <last-edited>Maven: gov.nist.math:jama:1.0.3</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+    </states>
+  </component>
+</project>

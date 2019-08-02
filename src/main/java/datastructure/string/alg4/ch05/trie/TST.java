@@ -38,7 +38,7 @@
 
 package datastructure.string.alg4.ch05.trie;
 
-import datastructure.queue.alg4.ch01.Queue;
+import datastructure.queueandheap.alg4.ch01.Queue;
 import util.alg4.library.StdIn;
 import util.alg4.library.StdOut;
 

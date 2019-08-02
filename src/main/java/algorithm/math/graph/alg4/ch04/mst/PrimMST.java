@@ -39,8 +39,8 @@
 package algorithm.math.graph.alg4.ch04.mst;
 
 import datastructure.disjointsets.alg4.ch01.UF;
-import datastructure.queue.alg4.ch01.Queue;
-import datastructure.queue.alg4.ch02.IndexMinPQ;
+import datastructure.queueandheap.alg4.ch01.Queue;
+import datastructure.queueandheap.alg4.ch02.IndexMinPQ;
 import util.alg4.library.In;
 import util.alg4.library.StdOut;
 

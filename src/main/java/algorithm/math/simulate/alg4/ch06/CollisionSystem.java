@@ -18,7 +18,7 @@
 
 package algorithm.math.simulate.alg4.ch06;
 
-import datastructure.queue.alg4.ch02.MinPQ;
+import datastructure.queueandheap.alg4.ch02.MinPQ;
 import util.alg4.library.StdDraw;
 import util.alg4.library.StdIn;
 

@@ -24,7 +24,7 @@ package algorithm.math.graph.alg4.ch06;
 import algorithm.math.graph.alg4.ch04.mst.Edge;
 import algorithm.math.graph.alg4.ch04.mst.EdgeWeightedGraph;
 import datastructure.disjointsets.alg4.ch01.UF;
-import datastructure.queue.alg4.ch02.IndexMaxPQ;
+import datastructure.queueandheap.alg4.ch02.IndexMaxPQ;
 import util.alg4.library.In;
 import util.alg4.library.StdOut;
 

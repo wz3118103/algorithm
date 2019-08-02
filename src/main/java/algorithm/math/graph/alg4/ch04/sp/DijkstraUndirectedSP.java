@@ -39,7 +39,7 @@ package algorithm.math.graph.alg4.ch04.sp;
 
 import algorithm.math.graph.alg4.ch04.mst.Edge;
 import algorithm.math.graph.alg4.ch04.mst.EdgeWeightedGraph;
-import datastructure.queue.alg4.ch02.IndexMinPQ;
+import datastructure.queueandheap.alg4.ch02.IndexMinPQ;
 import datastructure.stack.alg4.Stack;
 import util.alg4.library.In;
 import util.alg4.library.StdOut;

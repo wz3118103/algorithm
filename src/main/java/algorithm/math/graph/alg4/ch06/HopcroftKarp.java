@@ -14,7 +14,7 @@ package algorithm.math.graph.alg4.ch06;
 import algorithm.math.graph.alg4.ch04.undirected.BipartiteX;
 import algorithm.math.graph.alg4.ch04.undirected.Graph;
 import algorithm.math.graph.alg4.ch04.undirected.GraphGenerator;
-import datastructure.queue.alg4.ch01.Queue;
+import datastructure.queueandheap.alg4.ch01.Queue;
 import datastructure.stack.alg4.Stack;
 import util.alg4.library.StdOut;
 

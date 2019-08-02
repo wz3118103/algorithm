@@ -48,7 +48,7 @@
  ******************************************************************************/
 
 import algorithm.search.alg4.ch03.SET;
-import datastructure.queue.alg4.ch01.Queue;
+import datastructure.queueandheap.alg4.ch01.Queue;
 import util.alg4.library.In;
 import util.alg4.library.StdOut;
 
