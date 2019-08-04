@@ -11,20 +11,16 @@
  */
 package algorithm.math.numbertheory.offer;
 
-import com.jchanghong.code.util.UtilAssert;
-import org.junit.Test;
+public class Java44_DigitsInSequence {
 
-public class Java44_DigitsInSequence extends UtilAssert {
-
-    int digit(int k) {
+    public static int digit(int k) {
         return 0;
     }
 
-    @Test
-    public void test() throws Exception {
+    public static void main(String[] args) {
         //数字以0123456789101112131415
-        eq(digit(5), 5);
-        eq(digit(13), 1);
-        eq(digit(19), 4);
+        System.out.println("value-" + digit(5) + "; target-5");
+        System.out.println("value-" + digit(13) + "; target-1");
+        System.out.println("value-" + digit(19) + "; target-4");
     }
 }

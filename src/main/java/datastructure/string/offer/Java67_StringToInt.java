@@ -10,19 +10,15 @@
  */
 package datastructure.string.offer;
 
-import org.junit.Assert;
-import org.junit.Test;
-
 public class Java67_StringToInt {
-    public int str2Int(String string) {
+    public static int str2Int(String string) {
         return 0;
     }
 
-    @Test
-    public void test() throws Exception {
-        Assert.assertEquals(str2Int("2"), 2);
-        Assert.assertEquals(str2Int("22"), 22);
-        Assert.assertEquals(str2Int("-22"), -22);
-        Assert.assertEquals(str2Int("44422"), 44422);
+    public static void main(String[] args) {
+        System.out.println("value-" + str2Int("2") + "; target-2");
+        System.out.println("value-" + str2Int("22") + "; target-22");
+        System.out.println("value-" + str2Int("-22") + "; target:-22");
+        System.out.println("value-" + str2Int("44422") + "; target-44422");
     }
 }

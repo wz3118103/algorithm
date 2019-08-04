@@ -10,18 +10,14 @@
  */
 package datastructure.string.offer;
 
-import com.jchanghong.code.util.UtilAssert;
-import org.junit.Test;
+public class Java50_01_FirstNotRepeatingChar {
 
-public class Java50_01_FirstNotRepeatingChar extends UtilAssert {
-
-    char first(String text) {
+    public static char first(String text) {
         return 'f';
     }
 
-    @Test
-    public void test() throws Exception {
-        eq(first("abaccdeff"), 'b');
-        eq(first("aabbvf"), 'v');
+    public static void main(String[] args) {
+        System.out.println("value-" + first("abaccdeff") + "; target-b");
+        System.out.println("value-" + first("aabbvf") + "; target-v");
     }
 }

@@ -10,25 +10,21 @@
  */
 package datastructure.array.offer;
 
-import com.jchanghong.code.util.UtilAssert;
-import org.junit.Test;
-
 import java.util.HashSet;
 import java.util.Set;
 
-public class Java57_01_TwoNumbersWithSum extends UtilAssert {
-    public Pair function(int[] number, int sum) {
+public class Java57_01_TwoNumbersWithSum {
+    public static Pair function(int[] number, int sum) {
         return null;
     }
 
-    @Test
-    public void test() throws Exception {
+    public static void main(String[] args) {
         int[] ints = {1, 2, 3, 4, 5, 6};
         Set<Pair> set = new HashSet<>();
         set.add(new Pair(1, 6));
         set.add(new Pair(2, 5));
         set.add(new Pair(3, 4));
-        isTrue(set.contains(function(ints, 7)));
+        System.out.println("value-" + set.contains(function(ints, 7)) + "; target-true");
     }
 
     static class Pair {

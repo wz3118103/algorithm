@@ -10,22 +10,16 @@
  */
 package datastructure.bst.offer;
 
-import com.jchanghong.code.util.TreeNode;
-import com.jchanghong.code.util.TreeUtil;
-import com.jchanghong.code.util.UtilAssert;
-import org.junit.Test;
-
 import java.util.Arrays;
 
-public class Java36_ConvertBinarySearchTree extends UtilAssert {
+public class Java36_ConvertBinarySearchTree  {
 
-    TreeNode convert(TreeNode head) {
+    public static TreeNode convert(TreeNode head) {
         return null;
     }
 
-    @Test
-    public void test() throws Exception {
+    public static void main(String[] args) {
         TreeNode node = TreeUtil.construct(Arrays.asList(2, 1, 3));
-        isTrue(convert(node) == node.left);
+        System.out.println("value-" + convert(node) == node.left + "; target-true");
     }
 }

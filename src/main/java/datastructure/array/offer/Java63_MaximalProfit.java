@@ -12,18 +12,14 @@
  */
 package datastructure.array.offer;
 
-import org.junit.Assert;
-import org.junit.Test;
-
 public class Java63_MaximalProfit {
-    public int max(int[] ints) {
+    public static int max(int[] ints) {
 
         return -1;
     }
 
-    @Test
-    public void test() throws Exception {
+    public static void main(String[] args) {
         int[] ints = {9, 11, 8, 5, 7, 12, 16, 14};
-        Assert.assertEquals(max(ints), 11);
+        System.out.println("value-" + max(ints) + "; target-11");
     }
 }

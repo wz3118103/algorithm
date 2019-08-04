@@ -9,21 +9,17 @@
  */
 package datastructure.array.offer;
 
-import com.jchanghong.code.util.UtilAssert;
-import org.junit.Test;
-
-public class Java29_PrintMatrix extends UtilAssert {
+public class Java29_PrintMatrix {
     //元素之间没有任何其他符号
-    String print(int[][] ints) {
+    public static String print(int[][] ints) {
         return "";
     }
 
-    @Test
-    public void test() throws Exception {
+    public static void main(String[] args) {
         int[][] ints = {
                 {1, 2},
                 {3, 4}
         };
-        eq(print(ints), "1243");
+        System.out.println("value-" + print(ints) + "; target-1243");
     }
 }

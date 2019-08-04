@@ -17,22 +17,19 @@
  */
 package algorithm.dfs_backtracking.offer;
 
-import org.junit.Assert;
-import org.junit.Test;
-
 public class Java12_StringPathInMatrix {
 
-    public boolean havePath(char[][] chars, String string) {
+    public static  boolean havePath(char[][] chars, String string) {
         return false;
     }
 
-    @Test
-    public void test() throws Exception {
+    public static void main(String[] args) {
         char[][] chars = {{'a', 'b', 't', 'g'},
                 {'c', 'f', 'c', 's'},
                 {'j', 'd', 'e', 'h'}
         };
-        Assert.assertEquals(havePath(chars, "bfce"), true);
-        Assert.assertEquals(havePath(chars, "abfb"), false);
+
+        System.out.println("value-" + havePath(chars, "bfce") + "; target-true");
+        System.out.println("value-" + havePath(chars, "abfb") + "; target-false");
     }
 }

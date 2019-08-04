@@ -10,21 +10,17 @@
  */
 package algorithm.math.numbertheory.offer;
 
-import org.junit.Assert;
-import org.junit.Test;
-
 public class Java16_Power {
 
-    public double Power(double base, int exponent) {
+    public static  double Power(double base, int exponent) {
         return 0.0;
     }
 
-    public boolean equels(double d1, double d2) {
+    public static  boolean equels(double d1, double d2) {
         return Math.abs(d1 - d2) < 0.0000000000001;
     }
 
-    @Test
-    public void test() throws Exception {
-        Assert.assertTrue(equels(Power(2.3, 4), Math.pow(2.3, 4)));
+    public static void main(String[] args) {
+        System.out.println("value-" + Power(2.3, 4) + "; target-" + Math.pow(2.3, 4));
     }
 }

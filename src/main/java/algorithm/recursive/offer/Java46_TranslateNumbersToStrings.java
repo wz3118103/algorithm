@@ -12,17 +12,13 @@
  */
 package algorithm.recursive.offer;
 
-import com.jchanghong.code.util.UtilAssert;
-import org.junit.Test;
-
-public class Java46_TranslateNumbersToStrings extends UtilAssert {
-    int number(int number) {
+public class Java46_TranslateNumbersToStrings {
+    public static int number(int number) {
         return 0;
     }
 
-    @Test
-    public void test() throws Exception {
-        eq(number(12258), 5);
-        eq(number(0), 1);
+    public static void main(String[] args) {
+        System.out.println("value-" + number(12258) + "; target-5");
+        System.out.println("value-" + number(0) + "; target-1");
     }
 }

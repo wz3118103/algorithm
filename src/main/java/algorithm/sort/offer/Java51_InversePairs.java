@@ -10,17 +10,13 @@
  */
 package algorithm.sort.offer;
 
-import com.jchanghong.code.util.UtilAssert;
-import org.junit.Test;
-
-public class Java51_InversePairs extends UtilAssert {
-    int number(int[] ints) {
+public class Java51_InversePairs{
+    public static int number(int[] ints) {
         return 0;
     }
 
-    @Test
-    public void test() throws Exception {
+    public static void main(String[] args) {
         int[] ints = {7, 5, 6, 4};
-        eq(number(ints), 5);
+        System.out.println("value-" + number(ints) + "; target-5");
     }
 }

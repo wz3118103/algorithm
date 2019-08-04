@@ -10,21 +10,16 @@
  */
 package datastructure.bst.offer;
 
-import com.jchanghong.code.util.TreeNodeParent;
-import org.junit.Assert;
-import org.junit.Test;
-
 public class Java08_NextNodeInBinaryTrees {
-    public TreeNodeParent getnext(TreeNodeParent head, TreeNodeParent node) {
+    public static TreeNodeParent getnext(TreeNodeParent head, TreeNodeParent node) {
         return null;
     }
 
-    @Test
-    public void test() throws Exception {
-        Assert.assertEquals(getnext(null, null), null);
+    public static void main(String[] args) {
+        System.out.println("value-" + getnext(null, null) + "; target-null");
         TreeNodeParent head = new TreeNodeParent(null, 2, null, null);
         head.left = new TreeNodeParent(head, 1, null, null);
         head.right = new TreeNodeParent(head, 2, null, null);
-        Assert.assertEquals(getnext(head, head.left), head);
+        System.out.println("value-" + getnext(head, head.left) + "; target-" + head);
     }
 }

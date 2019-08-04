@@ -10,23 +10,18 @@
  */
 package datastructure.list.offer;
 
-import com.jchanghong.code.util.LinkNode;
-import org.junit.Assert;
-import org.junit.Test;
-
 public class Java18_01_DeleteNodeInList {
 
-    public boolean removeMe(LinkNode head, LinkNode me) {
+    public static  boolean removeMe(LinkNode head, LinkNode me) {
         return false;
     }
 
-    @Test
-    public void test() throws Exception {
+    public static void main(String[] args) {
         LinkNode head = new LinkNode(1, null);
         head.next = new LinkNode(2, null);
         head.next.next = new LinkNode(3, null);
-        Assert.assertEquals(removeMe(head, null), false);
-        Assert.assertEquals(removeMe(head, head.next), true);
-        Assert.assertEquals(head.next.values.intValue(), 3);
+        System.out.println("value-" + removeMe(head, null) + "; target-false");
+        System.out.println("value-" + removeMe(head, head.next) + "; target-true");
+        System.out.println("value-" + head.next.values.intValue() + "; target-3");
     }
 }

@@ -10,18 +10,14 @@
  */
 package algorithm.dynamicprogramming.offer;
 
-import com.jchanghong.code.util.UtilAssert;
-import org.junit.Test;
-
-public class Java48_LongestSubstringWithoutDup extends UtilAssert {
-    String sub(String text) {
+public class Java48_LongestSubstringWithoutDup  {
+    public static String sub(String text) {
         return text;
     }
 
-    @Test
-    public void test() throws Exception {
-        eq(sub("abc"), "abc");
-        eq(sub("abcbc"), "abc");
-        eq(sub("aabcdff"), "abcdf");
+    public static void main(String[] args) {
+        System.out.println("value-" + sub("abc") + "; target-abc");
+        System.out.println("value-" + sub("abcbc") + "; target-abc");
+        System.out.println("value-" + sub("aabcdff") + "; target-abcdf");
     }
 }

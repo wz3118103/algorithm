@@ -12,17 +12,14 @@
  */
 package datastructure.string.offer;
 
-import org.junit.Assert;
-import org.junit.Test;
-
 public class Java19_RegularExpressionsMatching {
-    private boolean match(String reg, String text) {
+    public static  boolean match(String reg, String text) {
 
         return text != null && reg != null && matchCore(reg, text);
 
     }
 
-    private boolean matchCore(String reg, String text) {
+    private static boolean matchCore(String reg, String text) {
         if (reg.length()==0&&text.length()==0) {
             return true;
         }
@@ -33,11 +30,10 @@ public class Java19_RegularExpressionsMatching {
 
     }
 
-    @Test
-    public void test() throws Exception {
-        Assert.assertTrue(match("aaa", "a.a"));
-        Assert.assertTrue(match("aaa", "ab*ac*a"));
-        Assert.assertFalse(match("aaa", "aa.a"));
-        Assert.assertFalse(match("aaa", "ab*a"));
+    public static void main(String[] args) {
+        System.out.println("value-" + match("aaa", "a.a") + "; target-true");
+        System.out.println("value-" + match("aaa", "ab*ac*a") + "; target-true");
+        System.out.println("value-" + match("aaa", "aa.a") + "; target-false");
+        System.out.println("value-" + match("aaa", "ab*a") + "; target-false");
     }
 }

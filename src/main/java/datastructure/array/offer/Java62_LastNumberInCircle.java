@@ -10,17 +10,13 @@
  */
 package datastructure.array.offer;
 
-import org.junit.Assert;
-import org.junit.Test;
-
 public class Java62_LastNumberInCircle {
-    public int lastNumber(int[] ints, int m) {
+    public static int lastNumber(int[] ints, int m) {
         return -1;
     }
 
-    @Test
-    public void test() throws Exception {
+    public static void main(String[] args) {
         int[] ints = {0, 1, 2, 3, 4};
-        Assert.assertEquals(lastNumber(ints, 3), 3);
+        System.out.println("value-" + lastNumber(ints, 3) + "; target-3");
     }
 }

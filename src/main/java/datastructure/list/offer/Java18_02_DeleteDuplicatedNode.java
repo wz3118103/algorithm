@@ -10,22 +10,16 @@
  */
 package datastructure.list.offer;
 
-import com.jchanghong.code.util.LinkListUtil;
-import com.jchanghong.code.util.LinkNode;
-import org.junit.Assert;
-import org.junit.Test;
-
 public class Java18_02_DeleteDuplicatedNode {
 
-    public LinkNode removeDeplicated(LinkNode head) {
+    public static  LinkNode removeDeplicated(LinkNode head) {
         return head;
     }
 
-    @Test
-    public void test() throws Exception {
+    public static void main(String[] args) {
         LinkNode linkNode = LinkListUtil.construct(1, 2, 3, 4);
-        Assert.assertTrue(LinkListUtil.equels(linkNode, removeDeplicated(linkNode)));
+        System.out.println("value-" + LinkListUtil.equels(linkNode, removeDeplicated(linkNode)) + "; target-true");
         LinkNode linkNode2 = LinkListUtil.construct(1, 2, 2, 3, 4);
-        Assert.assertTrue(LinkListUtil.equels(removeDeplicated(linkNode2), linkNode));
+        System.out.println("value-" + LinkListUtil.equels(removeDeplicated(linkNode2), linkNode) + "; target-true");
     }
 }

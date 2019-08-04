@@ -9,22 +9,17 @@
  */
 package datastructure.bst.offer;
 
-import com.jchanghong.code.util.TreeNode;
-import com.jchanghong.code.util.TreeUtil;
-import org.junit.Assert;
-import org.junit.Test;
-
 import java.util.Arrays;
 
 public class Java27_MirrorOfBinaryTree {
-    public TreeNode mirror(TreeNode head) {
+    public static TreeNode mirror(TreeNode head) {
         if (head==null){
             return null;
         }
         mirrorCore(head);
         return head;
     }
-    private void mirrorCore(TreeNode head) {
+    private static void mirrorCore(TreeNode head) {
         if (head==null) {
             return;
         }
@@ -42,11 +37,10 @@ public class Java27_MirrorOfBinaryTree {
         }
     }
 
-    @Test
-    public void test() throws Exception {
+    public static void main(String[] args) {
         TreeNode head = TreeUtil.construct(Arrays.asList(1, 2, 3));
         TreeNode h1 = TreeUtil.construct(Arrays.asList(1, 3, 2));
-        Assert.assertTrue(TreeUtil.valuesEqual(head, mirror(h1)));
+        System.out.println("value-" + TreeUtil.valuesEqual(head, mirror(h1)) + "; target-true");
 
     }
 }

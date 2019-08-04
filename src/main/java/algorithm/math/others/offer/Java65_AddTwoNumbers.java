@@ -10,17 +10,14 @@
  */
 package algorithm.math.others.offer;
 
-import org.junit.Assert;
-import org.junit.Test;
-
 public class Java65_AddTwoNumbers {
-    public int sum(int int1, int int2) {
+    public static  int sum(int int1, int int2) {
         return 0;
     }
 
-    @Test
-    public void test() throws Exception {
-        Assert.assertEquals(sum(1, 2), 3);
-        Assert.assertEquals(sum(1, 222), 223);
+    public static void main(String[] args) {
+        System.out.println("value-" + sum(1, 2) + "; target-3");
+        System.out.println("value-" + sum(1, 222) + "; target-223");
+
     }
 }

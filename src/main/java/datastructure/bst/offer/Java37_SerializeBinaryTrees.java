@@ -9,28 +9,22 @@
  */
 package datastructure.bst.offer;
 
-import com.jchanghong.code.util.TreeNode;
-import com.jchanghong.code.util.TreeUtil;
-import com.jchanghong.code.util.UtilAssert;
-import org.junit.Test;
-
 import java.util.Arrays;
 
-public class Java37_SerializeBinaryTrees extends UtilAssert {
+public class Java37_SerializeBinaryTrees {
 
-    String serialize(TreeNode head) {
+    public static String serialize(TreeNode head) {
         return "";
     }
 
-    TreeNode deSerize(String string) {
+    public static TreeNode deSerize(String string) {
         return null;
     }
 
-    @Test
-    public void test() throws Exception {
+    public static void main(String[] args) {
         TreeNode head = TreeUtil.construct(Arrays.asList(1, 2, 3, 4, 5, 6));
         String s = serialize(head);
         TreeNode h2 = deSerize(s);
-        isTrue(TreeUtil.valuesEqual(head, h2));
+        System.out.println("value-" + TreeUtil.valuesEqual(head, h2) + "; target-true");
     }
 }

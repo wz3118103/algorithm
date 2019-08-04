@@ -10,32 +10,26 @@
  */
 package datastructure.bst.offer;
 
-import com.jchanghong.code.util.TreeNode;
-import com.jchanghong.code.util.TreeUtil;
-import com.jchanghong.code.util.UtilAssert;
-import org.junit.Test;
-
 import java.util.List;
 
-public class Java34_PathInTree extends UtilAssert {
+public class Java34_PathInTree {
     /*
     如下的路径有“12”和“13”
     *       1
 
       2            3
     * */
-    List<String> path(TreeNode head, int sum) {
+    public static List<String> path(TreeNode head, int sum) {
         return null;
     }
 
-    @Test
-    public void test() throws Exception {
+    public static void main(String[] args) {
         TreeNode head = TreeUtil.construct2(10, 5, 12, 4, 7);
 //        TreeUtil.print2(head);
         List<String> list = path(head, 22);
-        eq(list.size(), 2);
-        isTrue(list.contains("1012"));
-        isTrue(list.contains("1057"));
+        System.out.println("value-" + list.size() + "; target-2");
+        System.out.println("value-" + list.contains("1012") + "; target-true");
+        System.out.println("value-" + list.contains("1057") + "; target-true");
 
     }
 }

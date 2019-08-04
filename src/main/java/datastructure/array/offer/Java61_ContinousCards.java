@@ -10,26 +10,21 @@
  */
 package datastructure.array.offer;
 
-import org.junit.Assert;
-import org.junit.Test;
-
 public class Java61_ContinousCards {
     //0是王
-    public boolean continous(int[] cards) {
+    public static boolean continous(int[] cards) {
         return false;
     }
 
-    @Test
-    public void test() throws Exception {
-
+    public static void main(String[] args) {
         int[] ints = {2, 3, 4, 5, 6};
-        Assert.assertTrue(continous(ints));
+        System.out.println("value-" + continous(ints) + "; target-true");
         ints = new int[]{10, 11, 12, 13, 0};
-        Assert.assertTrue(continous(ints));
+        System.out.println("value-" + continous(ints) + "; target-true");
         ints = new int[]{10, 11, 12, 0, 0};
-        Assert.assertTrue(continous(ints));
+        System.out.println("value-" + continous(ints) + "; target-true");
         ints = new int[]{10, 11, 2, 0, 0};
-        Assert.assertFalse(continous(ints));
+        System.out.println("value-" + continous(ints) + "; target-false");
 
     }
 }

@@ -11,20 +11,15 @@
  */
 package algorithm.search.offer;
 
-import org.junit.Assert;
-import org.junit.Test;
-
 public class Java11_MinNumberInRotatedArray {
-    public int min(int[] ints) {
+    public static int min(int[] ints) {
         return Integer.MIN_VALUE;
     }
 
-    @Test
-    public void test() throws Exception {
+    public static void main(String[] args) {
         int[] ints = new int[]{3, 4, 5, 1, 2};
-        Assert.assertEquals(min(ints), 1);
-        ints = new int[]{
-                3, 4, 5, 0, 1, 2};
-        Assert.assertEquals(min(ints), 0);
+        System.out.println("value-" + min(ints) +"; target-1");
+        ints = new int[]{3, 4, 5, 0, 1, 2};
+        System.out.println("value-" + min(ints) +"; target-0");
     }
 }

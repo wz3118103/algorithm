@@ -10,23 +10,18 @@
  */
 package algorithm.math.others.offer;
 
-import com.jchanghong.code.util.Const;
-import org.junit.Assert;
-import org.junit.Test;
-
 public class Java64_Accumulate {
-    public int sum(int n) {
+    public static  int sum(int n) {
         return -1;
     }
 
-    @Test
-    public void test() throws Exception {
+    public static void main(String[] args) {
         System.out.println(sumtest(10));
         System.out.println(sumtest(100));
-        Const.integerList.forEach(a -> Assert.assertEquals(sumtest(a), sum(a)));
+        Const.integerList.forEach(a ->  System.out.println("value-" + sumtest(a) + "; target-" + sum(a)));
     }
 
-    public int sumtest(int n) {
+    public static int sumtest(int n) {
         return (1 + n) * n / 2;
     }
 }

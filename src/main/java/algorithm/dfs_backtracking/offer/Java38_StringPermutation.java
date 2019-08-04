@@ -10,23 +10,19 @@
  */
 package algorithm.dfs_backtracking.offer;
 
-import com.jchanghong.code.util.UtilAssert;
-import org.junit.Test;
-
 import java.util.HashSet;
 import java.util.Set;
 
-public class Java38_StringPermutation extends UtilAssert {
-    Set<String> allString(String text) {
+public class Java38_StringPermutation {
+    public static Set<String> allString(String text) {
         Set<String> strings = new HashSet<>();
         return strings;
     }
 
-    @Test
-    public void test() throws Exception {
+    public static void main(String[] args) {
         Set<String> strings = allString("abc");
-        eq(strings.size(), 6);
-        isTrue(strings.contains("acb"));
+        System.out.println("value-" + strings.size() + "; target-6");
+        System.out.println("value-" + strings.contains("acb") + "; target-true");
 
     }
 }

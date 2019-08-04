@@ -10,16 +10,13 @@
  */
 package datastructure.stack.offer;
 
-import org.junit.Assert;
-import org.junit.Test;
-
 import java.util.AbstractQueue;
 import java.util.Iterator;
 import java.util.Queue;
 import java.util.Stack;
 
 public class Java09_QueueWithTwoStacks {
-    public Queue<Integer> getQuene() {
+    public static  Queue<Integer> getQuene() {
         Queue<Integer> queue = new MyQuene<>();
         //实现下面那个函数
 //        queue.poll();
@@ -27,14 +24,13 @@ public class Java09_QueueWithTwoStacks {
         return queue;
     }
 
-    @Test
-    public void test() throws Exception {
+    public static void main(String[] args) {
         Queue<Integer> queue = getQuene();
         for (int i = 0; i < 1000; i++) {
             queue.offer(i);
         }
         for (int i = 0; i < 1000; i++) {
-            Assert.assertEquals(queue.poll().intValue(), i);
+            System.out.println("value-" + queue.poll().intValue() + "; target-" + i);
         }
 
     }

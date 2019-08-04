@@ -10,24 +10,18 @@
  */
 package datastructure.bst.offer;
 
-import com.jchanghong.code.util.TreeNode;
-import com.jchanghong.code.util.TreeUtil;
-import org.junit.Assert;
-import org.junit.Test;
-
 import java.util.Arrays;
 
 public class Java28_SymmetricalBinaryTree {
-    public boolean isSym(TreeNode head) {
+    public static boolean isSym(TreeNode head) {
         return false;
     }
 
-    @Test
-    public void test() throws Exception {
+    public static void main(String[] args) {
         TreeNode head = TreeUtil.construct(Arrays.asList(1, 2, 2));
         TreeNode h1 = TreeUtil.construct(Arrays.asList(1, 3, 2));
-        Assert.assertTrue(isSym(head));
-        Assert.assertFalse(isSym(h1));
+        System.out.println("value-" + isSym(head) + "; target-true");
+        System.out.println("value-" + isSym(h1) + "; target-false");
 
     }
 }

@@ -11,17 +11,13 @@
  */
 package datastructure.string.offer;
 
-import com.jchanghong.code.util.UtilAssert;
-import org.junit.Test;
-
-public class Java58_01_ReverseWordsInSentence extends UtilAssert {
-    String reverseWord(String text) {
+public class Java58_01_ReverseWordsInSentence {
+    public static String reverseWord(String text) {
         return "";
     }
 
-    @Test
-    public void test() throws Exception {
-        eq(reverseWord("I am a student. "), "student. a am I");
-        eq(reverseWord("am"), "am");
+    public static void main(String[] args) {
+        System.out.println("value-" + reverseWord("I am a student. ") + "; target-student. a am I");
+        System.out.println("value-" + reverseWord("am") + "; target-ma");
     }
 }

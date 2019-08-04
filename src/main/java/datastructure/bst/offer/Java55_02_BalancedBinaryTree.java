@@ -10,24 +10,18 @@
  */
 package datastructure.bst.offer;
 
-import com.jchanghong.code.util.TreeNode;
-import com.jchanghong.code.util.TreeUtil;
-import com.jchanghong.code.util.UtilAssert;
-import org.junit.Test;
-
 import java.util.Arrays;
 
-public class Java55_02_BalancedBinaryTree extends UtilAssert {
-    public boolean binary(TreeNode head) {
+public class Java55_02_BalancedBinaryTree {
+    public static  boolean binary(TreeNode head) {
         return false;
     }
 
-    @Test
-    public void test() throws Exception {
+    public static void main(String[] args) {
         TreeNode node = TreeUtil.construct(Arrays.asList(1, 2, 3));
-        isTrue(binary(node));
+        System.out.println("value-" + binary(node) + "; target-true");
         TreeNode node1 = TreeUtil.construct2(1, 2, -1, 3);
-        isFalse(binary(node1));
+        System.out.println("value-" + binary(node1) + "; target-false");
 
     }
 }

@@ -11,18 +11,14 @@
  */
 package algorithm.math.numbertheory.offer;
 
-import com.jchanghong.code.util.UtilAssert;
-import org.junit.Test;
+public class Java45_SortArrayForMinNumber {
 
-public class Java45_SortArrayForMinNumber extends UtilAssert {
-
-    String min(int[] ints) {
+    public static String min(int[] ints) {
         return "";
     }
 
-    @Test
-    public void test() throws Exception {
+    public static void main(String[] args) {
         int[] ints = {3, 32, 321};
-        eq(min(ints), "321323");
+        System.out.println("value-" + min(ints) + "; target-321323");
     }
 }

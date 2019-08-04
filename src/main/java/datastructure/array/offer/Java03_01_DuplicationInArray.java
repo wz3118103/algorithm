@@ -7,12 +7,8 @@
  */
 package datastructure.array.offer;
 
-import org.junit.Test;
-
 import java.util.Arrays;
 import java.util.List;
-
-import static org.junit.Assert.assertEquals;
 
 public class Java03_01_DuplicationInArray {
 
@@ -21,12 +17,11 @@ public class Java03_01_DuplicationInArray {
         return 0;
     }
 
-    @Test
-    public void findDuplication() throws Exception {
+    public static void main(String[] args) {
         int[] ints1 = new int[]{1, 2, 3, 4, 5, 2};
-        assertEquals(2, Java03_01_DuplicationInArray.findDuplication(ints1));
+        System.out.println("value-" + findDuplication(ints1) + "; target-2");
         ints1 = new int[]{2, 3, 4, 5, 1, 1, 2, 1};
         List<Integer> list = Arrays.asList(2, 1);
-        assertEquals(list.contains(Java03_01_DuplicationInArray.findDuplication(ints1)), true);
+        System.out.println("value-" + list.contains(findDuplication(ints1)) + "; target-true");
     }
 }

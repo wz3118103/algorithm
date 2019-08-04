@@ -11,23 +11,19 @@
  */
 package datastructure.list.offer;
 
-import com.jchanghong.code.util.UtilAssert;
-import org.junit.Test;
-
-public class Java35_CopyComplexList extends UtilAssert {
-    Node copy(Node head) {
+public class Java35_CopyComplexList {
+    public static Node copy(Node head) {
         return null;
     }
 
-    @Test
-    public void test() throws Exception {
+    public static void main(String[] args) {
         Node hed = new Node(1, null, null);
         hed.left = new Node(2, null, null);
         hed.left.left = new Node(3, null, null);
         hed.other = hed.left.left;
         Node copy = copy(hed);
-        eq(copy.v, hed.v);
-        eq(copy.other.v, hed.other.v);
+        System.out.println("value-" + copy.v + "; target-" + hed.v);
+        System.out.println("value-" + copy.other.v + "; target-" + hed.other.v);
     }
 
     static class Node {

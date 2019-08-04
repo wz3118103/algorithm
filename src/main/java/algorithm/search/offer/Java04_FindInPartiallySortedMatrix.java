@@ -11,19 +11,28 @@
  */
 package algorithm.search.offer;
 
-import org.junit.Test;
-
-import static org.junit.Assert.assertEquals;
-
 public class Java04_FindInPartiallySortedMatrix {
 
-    public static boolean find(int[][] array, int number) {
-
+    public static boolean find(int[][] array, int target) {
+        if (array == null) {
+            return false;
+        }
+        int row = 0;
+        int column = array[0].length-1;
+        while (row < array.length && column >= 0){
+            if(array[row][column] == target) {
+                return true;
+            }
+            if(array[row][column] > target) {
+                column--;
+            } else {
+                row++;
+            }
+        }
         return false;
     }
 
-    @Test
-    public void find() throws Exception {
+    public static void main(String[] args){
         int[][] ints = new int[][]{{1, 2, 3}, {4, 5, 6}, {7, 8, 9}};
         for (int i = 0; i < ints.length; i++) {
             for (int j = 0; j < ints[i].length; j++) {
@@ -33,8 +42,8 @@ public class Java04_FindInPartiallySortedMatrix {
         }
         int number = 3;
         Java04_FindInPartiallySortedMatrix.find(ints, number);
-        assertEquals(Java04_FindInPartiallySortedMatrix.find(ints, number), true);
+        System.out.println(Java04_FindInPartiallySortedMatrix.find(ints, number));
         number = 10;
-        assertEquals(Java04_FindInPartiallySortedMatrix.find(ints, number), false);
+        System.out.println(Java04_FindInPartiallySortedMatrix.find(ints, number));
     }
 }

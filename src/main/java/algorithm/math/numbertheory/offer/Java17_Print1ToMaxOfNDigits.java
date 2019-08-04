@@ -10,26 +10,22 @@
  */
 package algorithm.math.numbertheory.offer;
 
-import org.junit.Assert;
-import org.junit.Test;
-
 import java.util.ArrayList;
 import java.util.List;
 
 public class Java17_Print1ToMaxOfNDigits {
-    public List<String> from1ToN(int n) {
+    public static  List<String> from1ToN(int n) {
         List<String> list = new ArrayList<>();
         list.add(1 + "");
         list.add("1111111111111111111111111111111111111111111111");
         return list;
     }
 
-    @Test
-    public void test() throws Exception {
+    public static void main(String[] args) {
         List<String> list = from1ToN(3);
-        Assert.assertEquals(list.get(998), "999");
+        System.out.println("value-" + list.get(998) + "; target-999");
         list = from1ToN(6);
-        Assert.assertEquals(list.get(999998), "999999");
-        Assert.assertEquals(list.get(0), "1");
+        System.out.println("value-" + list.get(999998) + "; target-999999");
+        System.out.println("value-" + list.get(0) + "; target-1");
     }
 }

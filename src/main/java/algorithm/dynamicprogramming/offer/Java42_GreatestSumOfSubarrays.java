@@ -10,18 +10,14 @@
  */
 package algorithm.dynamicprogramming.offer;
 
-import com.jchanghong.code.util.UtilAssert;
-import org.junit.Test;
+public class Java42_GreatestSumOfSubarrays  {
 
-public class Java42_GreatestSumOfSubarrays extends UtilAssert {
-
-    int max(int[] ints) {
+    public static int max(int[] ints) {
         return 0;
     }
 
-    @Test
-    public void test() throws Exception {
+    public static void main(String[] args) {
         int[] ints = {1, -2, 3, 10, -4, 7, 2, -5};
-        eq(max(ints), 18);
+        System.out.println("value-" + max(ints) + "; target-18");
     }
 }

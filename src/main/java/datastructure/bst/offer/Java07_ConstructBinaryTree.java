@@ -12,26 +12,20 @@
  */
 package datastructure.bst.offer;
 
-import com.jchanghong.code.util.TreeNode;
-import com.jchanghong.code.util.TreeUtil;
-import org.junit.Assert;
-import org.junit.Test;
-
 import java.util.Arrays;
 import java.util.List;
 
 public class Java07_ConstructBinaryTree {
-    public TreeNode construct(List<Integer> center, List<Integer> befor) {
+    public static TreeNode construct(List<Integer> center, List<Integer> befor) {
         return null;
     }
 
-    @Test
-    public void test() throws Exception {
+    public static void main(String[] args) {
         List<Integer> center = Arrays.asList(2, 1, 3);
         List<Integer> befor = Arrays.asList(1, 2, 3);
         TreeNode head = new TreeNode(1, null, null);
         head.left = new TreeNode(2, null, null);
         head.right = new TreeNode(3, null, null);
-        Assert.assertEquals(TreeUtil.valuesEqual(construct(center, befor), head), true);
+        System.out.println("value-" + TreeUtil.valuesEqual(construct(center, befor), head) + "; target-true");
     }
 }

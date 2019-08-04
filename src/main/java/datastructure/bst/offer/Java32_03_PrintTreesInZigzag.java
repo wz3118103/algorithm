@@ -11,27 +11,21 @@
  */
 package datastructure.bst.offer;
 
-import com.jchanghong.code.util.TreeNode;
-import com.jchanghong.code.util.TreeUtil;
-import com.jchanghong.code.util.UtilAssert;
-import org.junit.Test;
-
 import java.util.List;
 
-public class Java32_03_PrintTreesInZigzag extends UtilAssert {
+public class Java32_03_PrintTreesInZigzag  {
     //一个元素代表一行，元素之间不加任何符号。
-    List<String> print(TreeNode head) {
+    public static List<String> print(TreeNode head) {
         return null;
     }
 
-    @Test
-    public void test() throws Exception {
+    public static void main(String[] args) {
         TreeNode head = TreeUtil.construct2(1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15);
         List<String> list = print(head);
-        eq(list.size(), 4);
-        eq(list.get(0), "1");
-        eq(list.get(1), "32");
-        eq(list.get(2), "4567");
-        eq(list.get(3), "15141312111098");
+        System.out.println("value-" + list.size() + "; target-4");
+        System.out.println("value-" + list.get(0) + "; target-1");
+        System.out.println("value-" + list.get(1) + "; target-32");
+        System.out.println("value-" + list.get(2) + "; target-4567");
+        System.out.println("value-" + list.get(3) + "; target-15141312111098");
     }
 }

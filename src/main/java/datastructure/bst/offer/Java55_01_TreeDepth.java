@@ -10,23 +10,17 @@
  */
 package datastructure.bst.offer;
 
-import com.jchanghong.code.util.TreeNode;
-import com.jchanghong.code.util.TreeUtil;
-import com.jchanghong.code.util.UtilAssert;
-import org.junit.Test;
-
 import java.util.Arrays;
 
-public class Java55_01_TreeDepth extends UtilAssert {
-    public int treeDepth(TreeNode head) {
+public class Java55_01_TreeDepth {
+    public static int treeDepth(TreeNode head) {
         return -1;
     }
 
-    @Test
-    public void test() throws Exception {
+    public static void main(String[] args) {
         TreeNode node = TreeUtil.construct(Arrays.asList(1, 2, 3));
-        eq(treeDepth(node), 2);
+        System.out.println("value-" + treeDepth(node) + "; target-2");
         node = TreeUtil.construct(Arrays.asList(1, 2, 3, 4));
-        eq(treeDepth(node), 3);
+        System.out.println("value-" + treeDepth(node) + "; target-3");
     }
 }

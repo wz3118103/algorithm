@@ -10,24 +10,30 @@
  */
 package datastructure.string.offer;
 
-import org.junit.Test;
-
-import static org.junit.Assert.assertEquals;
-
 public class Java05_ReplaceSpaces {
 
-    public static String replace(String text) {
-        return null;
+    public static String replace(String str) {
+        if (str == null) {
+            return null;
+        }
+        StringBuilder sb = new StringBuilder();
+        for (int i = 0; i < str.length(); i++) {
+            if (String.valueOf(str.charAt(i)).equals(" ")) {
+                sb.append("%20");
+            } else {
+                sb.append(str.charAt(i));
+            }
+        }
+        return String.valueOf(sb);
     }
 
-    @Test
-    public void replace() throws Exception {
+    public static void main(String[] args) {
         String s1 = "i love you";
         String s2 = "i%20love%20you";
-        assertEquals(Java05_ReplaceSpaces.replace(s1), s2);
+        System.out.println("value-" + replace(s1) + "; target-" + s2);
         s1 = "  hello";
         s2 = "%20%20hello";
-        assertEquals(Java05_ReplaceSpaces.replace(s1), s2);
+        System.out.println("value-" + Java05_ReplaceSpaces.replace(s1) + "; target-" + s2);
 
     }
 }

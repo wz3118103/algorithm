@@ -11,19 +11,15 @@
  */
 package datastructure.array.offer;
 
-import com.jchanghong.code.util.UtilAssert;
-import org.junit.Test;
-
-public class Java39_MoreThanHalfNumber extends UtilAssert {
+public class Java39_MoreThanHalfNumber {
     //-1表示错误
-    int half(int[] ints) {
+    public static int half(int[] ints) {
         return 0;
     }
 
-    @Test
-    public void test() throws Exception {
-        eq(half(new int[]{1, 2, 3, 4}), -1);
+    public static void main(String[] args) {
+        System.out.println("value-" + half(new int[]{1, 2, 3, 4}) + "; target:-1");
         int[] ints = {1, 2, 3, 2, 2, 2, 5, 4, 2};
-        eq(half(ints), 2);
+        System.out.println("value-" + half(ints) + "; target-2");
     }
 }

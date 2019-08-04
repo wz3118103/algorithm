@@ -11,14 +11,11 @@
  */
 package datastructure.string.offer;
 
-import org.junit.Assert;
-import org.junit.Test;
-
 import java.io.StringReader;
 import java.util.Scanner;
 
 public class Java20_NumericStrings {
-    public boolean isNumber(String string) {
+     public static  boolean isNumber(String string) {
         Scanner scanner = new Scanner(new StringReader(string));
         int state = 0;
 
@@ -46,14 +43,13 @@ public class Java20_NumericStrings {
         return true;
     }
 
-    @Test
-    public void test() throws Exception {
-        Assert.assertTrue(isNumber("+100"));
-        Assert.assertFalse(isNumber("++100"));
-        Assert.assertTrue(isNumber("5e2"));
-        Assert.assertTrue(isNumber("3.1233"));
-        Assert.assertFalse(isNumber("12e"));
-        Assert.assertFalse(isNumber("11e3.13"));
-        Assert.assertFalse(isNumber("1.2.3"));
+    public static void main(String[] args) {
+        System.out.println("value-" + isNumber("+100") + "; target-true");
+        System.out.println("value-" + isNumber("++100") + "; target-false");
+        System.out.println("value-" + isNumber("5e2") + "; target-true");
+        System.out.println("value-" + isNumber("3.1233") + "; target-true");
+        System.out.println("value-" + isNumber("12e") + "; target-false");
+        System.out.println("value-" + isNumber("11e3.13") + "; target-false");
+        System.out.println("value-" + isNumber("1.2.3") + "; target-false");
     }
 }

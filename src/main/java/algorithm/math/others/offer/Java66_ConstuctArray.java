@@ -10,27 +10,23 @@
  */
 package algorithm.math.others.offer;
 
-import org.junit.Assert;
-import org.junit.Test;
-
 import java.util.Arrays;
 
 public class Java66_ConstuctArray {
-    public int[] constrct(int[] a) {
+    public static  int[] constrct(int[] a) {
         return null;
     }
 
-    @Test
-    public void test() throws Exception {
+    public static void main(String[] args) {
         int[] ints = {1, 2, 3};
-        Assert.assertTrue(Arrays.equals(ints, new int[]{1, 2, 3}));
+        System.out.println("value-" + Arrays.equals(constrct(ints), new int[]{1, 2, 3}) + "; target-true");
         ints = new int[]{1, 2, 3, 4, 5, 6, 6, 7, 7};
-        Assert.assertTrue(Arrays.equals(function1(ints), constrct(ints)));
+        System.out.println("value-" + Arrays.equals(function1(ints), constrct(ints)) + "; target-true");
         ints = new int[]{1, 2, 0};
-        Assert.assertTrue(Arrays.equals(new int[]{0, 0, 2}, constrct(ints)));
+        System.out.println("value-" + Arrays.equals(new int[]{0, 0, 2}, constrct(ints)) + "; target-true");
     }
 
-    private int[] function1(int[] a) {
+    private static int[] function1(int[] a) {
         int sun = 1;
         for (int i : a) {
             sun *= i;

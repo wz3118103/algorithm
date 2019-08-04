@@ -11,17 +11,14 @@
  */
 package algorithm.search.offer;
 
-import com.jchanghong.code.util.UtilAssert;
-import org.junit.Test;
 
-public class Java53_02_MissingNumber extends UtilAssert {
-    int missing(int[] ints, int n) {
+public class Java53_02_MissingNumber {
+    public static int missing(int[] ints, int n) {
         return 0;
     }
 
-    @Test
-    public void test() throws Exception {
+    public static void main(String[] args) {
         int[] ints = {0, 1, 2, 4};
-        eq(missing(ints, 5), 3);
+        System.out.println("value-" + missing(ints, 5) + "; target-3");
     }
 }

@@ -13,7 +13,7 @@
 package algorithm.dfs_backtracking.offer;
 
 public class Java13_RobotMove {
-    int number(int[][] ints) {
+    public static int number(int[][] ints) {
         return 0;
     }
 }

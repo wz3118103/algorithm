@@ -11,27 +11,23 @@
  */
 package datastructure.queueandheap.offer;
 
-import com.jchanghong.code.util.UtilAssert;
-import org.junit.Test;
-
 import java.io.StringReader;
 import java.util.Scanner;
 
-public class Java41_StreamMedian extends UtilAssert {
-    int media(Scanner scanner, int readnumber) {
+public class Java41_StreamMedian  {
+    public static int media(Scanner scanner, int readnumber) {
         return 0;
     }
 
-    @Test
-    public void test() throws Exception {
+    public static void main(String[] args) {
         Scanner scanner = new Scanner(new StringReader("1 2 3 4 5"));
         while (scanner.hasNext()) {
             scanner.nextInt();
 //            System.out.println(scanner.nextInt());
         }
-        eq(media(scanner, 1), 1);
-        eq(media(scanner, 2), 3 / 2);
-        eq(media(scanner, 4), 5 / 2);
-        eq(media(scanner, 5), 3);
+        System.out.println("value-" + media(scanner, 1) + "; target-1");
+        System.out.println("value-" + media(scanner, 2) + "; target-3/2");
+        System.out.println("value-" + media(scanner, 4) + "; target-5/2");
+        System.out.println("value-" + media(scanner, 5) + "; target-3");
     }
 }

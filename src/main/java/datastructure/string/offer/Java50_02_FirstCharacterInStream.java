@@ -11,23 +11,19 @@
  */
 package datastructure.string.offer;
 
-import com.jchanghong.code.util.UtilAssert;
-import org.junit.Test;
-
 import java.io.Reader;
 import java.io.StringReader;
 
-public class Java50_02_FirstCharacterInStream extends UtilAssert {
+public class Java50_02_FirstCharacterInStream {
 
-    char first(Reader reader, int readNumber) {
+    public static char first(Reader reader, int readNumber) {
         return 1;
     }
 
-    @Test
-    public void test() throws Exception {
+    public static void main(String[] args) {
         Reader reader = new StringReader("google");
-        eq(first(reader, 2), 'g');
+        System.out.println("value-" + first(reader, 2) + "; target-g");
         reader = new StringReader("google");
-        eq(first(reader, 6), 'l');
+        System.out.println("value-" + first(reader, 6) + "; target-l");
     }
 }

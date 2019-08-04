@@ -12,13 +12,10 @@
  */
 package datastructure.stack.offer;
 
-import com.jchanghong.code.util.UtilAssert;
-import org.junit.Test;
-
 import java.util.Stack;
 
-public class Java31_StackPushPopOrder extends UtilAssert {
-    boolean popOrder(int[] push, int[] pop) {
+public class Java31_StackPushPopOrder  {
+    public static boolean popOrder(int[] push, int[] pop) {
         if (pop!=null&&push!=null&&pop.length!=0){
             int pushPointer = 0;
             int popPointer = 0;
@@ -44,12 +41,11 @@ public class Java31_StackPushPopOrder extends UtilAssert {
         return false;
     }
 
-    @Test
-    public void test() throws Exception {
+    public static void main(String[] args) {
         int[] ints1 = {1, 2, 3, 4, 5};
         int[] ints2 = {4, 5, 3, 2, 1};
         int[] ints3 = {4, 3, 5, 1, 2};
-        isTrue(popOrder(ints1, ints2));
-        isFalse(popOrder(ints1, ints3));
+        System.out.println("value-" + popOrder(ints1, ints2) + "; target-true");
+        System.out.println("value-" + popOrder(ints1, ints3) + "; target-false");
     }
 }

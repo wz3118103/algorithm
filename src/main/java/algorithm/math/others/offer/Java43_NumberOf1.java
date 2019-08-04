@@ -10,17 +10,14 @@
  */
 package algorithm.math.others.offer;
 
-import com.jchanghong.code.util.UtilAssert;
-import org.junit.Test;
-
-public class Java43_NumberOf1 extends UtilAssert {
-    int numberOf1(int n) {
+public class Java43_NumberOf1  {
+    public static int numberOf1(int n) {
         return 0;
     }
 
-    @Test
-    public void test() throws Exception {
-        eq(numberOf1(12), 5);
-        eq(numberOf1(10), 2);
+    public static void main(String[] args) {
+        System.out.println("value-" + numberOf1(12) + "; target-5");
+        System.out.println("value-" + numberOf1(10) + "; target-2");
+
     }
 }

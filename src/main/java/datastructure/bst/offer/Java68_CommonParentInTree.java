@@ -9,18 +9,13 @@
  */
 package datastructure.bst.offer;
 
-import com.jchanghong.code.util.TreeNode;
-import org.junit.Assert;
-import org.junit.Test;
-
 public class Java68_CommonParentInTree {
 
-    public TreeNode parent(TreeNode node1, TreeNode node2) {
+    public static TreeNode parent(TreeNode node1, TreeNode node2) {
         return null;
     }
 
-    @Test
-    public void test() throws Exception {
+    public static void main(String[] args) {
         TreeNode head = new TreeNode(1, null, null);
         head.left = new TreeNode(2, null, null);
         TreeNode left = new TreeNode(3, null, null);
@@ -28,7 +23,7 @@ public class Java68_CommonParentInTree {
         TreeNode right = new TreeNode(4, null, null);
         head.left.right = right;
 //        TreeUtil.print(head);
-        Assert.assertTrue(parent(right, left) == head.left);
+        System.out.println("value-" + parent(right, left) == head.left + "; target-true");
 
     }
 }

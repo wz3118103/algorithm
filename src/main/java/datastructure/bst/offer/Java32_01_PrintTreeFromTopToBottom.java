@@ -9,21 +9,15 @@
  */
 package datastructure.bst.offer;
 
-import com.jchanghong.code.util.TreeNode;
-import com.jchanghong.code.util.TreeUtil;
-import com.jchanghong.code.util.UtilAssert;
-import org.junit.Test;
-
-public class Java32_01_PrintTreeFromTopToBottom extends UtilAssert {
+public class Java32_01_PrintTreeFromTopToBottom {
     //元素之间没有任何其他符号。比如1,2 打印就是“12”
-    String print(TreeNode node) {
+    public static String print(TreeNode node) {
         return "";
     }
 
-    @Test
-    public void test() throws Exception {
+    public static void main(String[] args) {
         TreeNode node = TreeUtil.construct2(1, 2, 3, 4, 5, 6, 7, 8);
-        eq(print(node), "12345678");
+        System.out.println("value-" + print(node) + "; target-12345678");
 
     }
 }

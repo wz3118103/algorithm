@@ -12,20 +12,16 @@
  */
 package algorithm.dynamicprogramming.offer;
 
-import org.junit.Assert;
-import org.junit.Test;
-
 public class Java14_CuttingRope {
     //-1表示参数错误
-    public int max(int n) {
+    public static  int max(int n) {
         return 0;
     }
 
-    @Test
-    public void test() throws Exception {
-        Assert.assertEquals(max(0), -1);
-        Assert.assertEquals(max(-1), -1);
-        Assert.assertEquals(max(8), 18);
+    public static void main(String[] args) {
+        System.out.println("value-" + max(0) + "; target:-1");
+        System.out.println("value-" + max(-1) + "; target:-1");
+        System.out.println("value-" + max(8) + "; target:18");
 
     }
 }

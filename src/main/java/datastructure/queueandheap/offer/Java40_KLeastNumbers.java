@@ -10,22 +10,18 @@
  */
 package datastructure.queueandheap.offer;
 
-import com.jchanghong.code.util.UtilAssert;
-import org.junit.Test;
-
 import java.util.Arrays;
 
-public class Java40_KLeastNumbers extends UtilAssert {
-    int[] kth(int[] ints, int k) {
+public class Java40_KLeastNumbers  {
+    public static int[] kth(int[] ints, int k) {
         return null;
     }
 
-    @Test
-    public void test() throws Exception {
+    public static void main(String[] args) {
         int[] ints = {4, 5, 1, 6, 2, 7, 3, 8};
-        eq(kth(ints, 4).length, 4);
+        System.out.println("value-" + kth(ints, 4).length + "; target-4");
         int[] k = kth(ints, 4);
         Arrays.sort(k);
-        isTrue(Arrays.equals(k, new int[]{1, 2, 3, 4}));
+        System.out.println("value-" + Arrays.equals(k, new int[]{1, 2, 3, 4}) + "; target-true");
     }
 }

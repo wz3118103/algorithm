@@ -10,21 +10,17 @@
  */
 package algorithm.math.bitoperation.offer;
 
-import org.junit.Assert;
-import org.junit.Test;
-
 public class Java15_NumberOf1InBinary {
-    public int number(int n) {
+    public static  int number(int n) {
         return -1;
     }
 
-    @Test
-    public void test() throws Exception {
+    public static void main(String[] args) {
         //9-1001
         //8-1000
         //7-111
-        Assert.assertEquals(number(9), 2);
-        Assert.assertEquals(number(8), 1);
-        Assert.assertEquals(number(7), 3);
+        System.out.println("value-" + number(9) + "; target-2");
+        System.out.println("value-" + number(8) + "; target-1");
+        System.out.println("value-" + number(7) + "; target-3");
     }
 }

@@ -11,17 +11,13 @@
  */
 package datastructure.string.offer;
 
-import org.junit.Assert;
-import org.junit.Test;
-
 public class Java58_02_LeftRotateString {
-    public String leftRotate(String text, int number) {
+    public static  String leftRotate(String text, int number) {
         return "";
     }
 
-    @Test
-    public void test() throws Exception {
-        Assert.assertEquals(leftRotate("abcdefg", 2), "cdefgab");
-        Assert.assertEquals(leftRotate("abcdefg", 1), "bcdefga");
+    public static void main(String[] args) {
+        System.out.println("value-" + leftRotate("abcdefg", 2) + "; target-cdefgab");
+        System.out.println("value-" + leftRotate("abcdefg", 1) + "; target-bcdefga");
     }
 }

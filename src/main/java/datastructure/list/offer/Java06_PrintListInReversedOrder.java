@@ -9,22 +9,18 @@
  */
 package datastructure.list.offer;
 
-import org.junit.Assert;
-import org.junit.Test;
-
 public class Java06_PrintListInReversedOrder {
-    public String print2String(Node head) {
+    public static  String print2String(Node head) {
         return "";
     }
 
-    @Test
-    public void test() throws Exception {
+    public static void main(String[] args) {
         Node head = new Node(1, null);
         head.next = new Node(2, null);
         StringBuilder builder = new StringBuilder();
         builder.append(2 + "");
         builder.append(1);
-        Assert.assertEquals(builder.toString(), print2String(head));
+        System.out.println("value-" + builder.toString() + "; target-" + print2String(head));
     }
 
     static class Node {

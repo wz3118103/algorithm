@@ -10,18 +10,14 @@
  */
 package datastructure.array.offer;
 
-import com.jchanghong.code.util.UtilAssert;
-import org.junit.Test;
+public class Java56_02_NumberAppearingOnce {
 
-public class Java56_02_NumberAppearingOnce extends UtilAssert {
-
-    public int once(int[] ints) {
+    public static int once(int[] ints) {
         return -1;
     }
 
-    @Test
-    public void test() throws Exception {
+    public static void main(String[] args) {
         int[] ints = {1, 2, 2, 2};
-        eq(once(ints), 1);
+        System.out.println("value-" + once(ints) + "; target-1");
     }
 }

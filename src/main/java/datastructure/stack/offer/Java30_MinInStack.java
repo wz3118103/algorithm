@@ -10,22 +10,18 @@
  */
 package datastructure.stack.offer;
 
-import com.jchanghong.code.util.UtilAssert;
-import org.junit.Test;
+public class Java30_MinInStack  {
 
-public class Java30_MinInStack extends UtilAssert {
-
-    @Test
-    public void test() throws Exception {
+    public static void main(String[] args) {
         MyStack myStack = new MyStack();
         myStack.push(1);
-        eq(myStack.min(), 1);
-        eq(myStack.pop(), 1);
+        System.out.println("value-" + myStack.min() + "; target-1");
+        System.out.println("value-" + myStack.pop() + "; target-1");
         myStack.push(2);
         myStack.push(3);
-        eq(myStack.min(), 2);
+        System.out.println("value-" + myStack.min() + "; target-2");
         myStack.pop();
-        eq(myStack.min(), 2);
+        System.out.println("value-" + myStack.min() + "; target-2");
     }
 
     //实现下面3个函数

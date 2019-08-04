@@ -10,19 +10,17 @@
  */
 package datastructure.array.offer;
 
-import org.junit.Assert;
-import org.junit.Test;
-
-
 public class Java21_ReorderArray {
-    public void reorderArray(int[] ints) {
+    public static void reorderArray(int[] ints) {
         int begin = 0;
         int end = ints.length-1;
         while (begin<end) {
-            while (begin<end&&(ints[begin]&0x1)!=0)
+            while (begin<end&&(ints[begin]&0x1)!=0) {
                 begin++;
-            while (begin<end&&(ints[end]&0x1)==0)
+            }
+            while (begin<end&&(ints[end]&0x1)==0) {
                 end--;
+            }
 
             int temp = ints[begin];
             ints[begin] = ints[end];
@@ -30,20 +28,19 @@ public class Java21_ReorderArray {
         }
     }
 
-    @Test
-    public void test() throws Exception {
+    public static void main(String[] args) {
         int[] ints = {1, 2, 3, 4, 5, 5};
-        Assert.assertFalse(trueArray(ints));
+        System.out.println("value-" + trueArray(ints) + "; target-false");
         reorderArray(ints);
-        Assert.assertTrue(trueArray(ints));
+        System.out.println("value-" + trueArray(ints) + "; target-true");
         ints = new int[]{3, 4, 5, 55, 55, 55, 88, 88};
-        Assert.assertFalse(trueArray(ints));
+        System.out.println("value-" + trueArray(ints) + "; target-false");
         reorderArray(ints);
-        Assert.assertTrue(trueArray(ints));
+        System.out.println("value-" + trueArray(ints) + "; target-true");
     }
 
     //前半是奇数，后面是偶数。
-    private boolean trueArray(int[] ints) {
+    private static boolean trueArray(int[] ints) {
         int indexo = 0;
         for (int i = 0; i < ints.length; i++) {
             if (ints[i] % 2 == 0) {
