@@ -15,7 +15,7 @@ public class TreeUtil {
         if (head == null) {
             return null;
         } else {
-            TreeNode node = new TreeNode(head.values, null, null);
+            TreeNode node = new TreeNode(head.value, null, null);
             node.left = clone(head.left);
             node.right = clone(head.right);
             return node;
@@ -29,7 +29,7 @@ public class TreeUtil {
         if (tree1 == null || tree2 == null) {
             return false;
         }
-        if (tree1.values.equals(tree2.values)) {
+        if (tree1.value.equals(tree2.value)) {
             return valuesEqual(tree1.left, tree2.left) && valuesEqual(tree1.right, tree2.right);
         } else {
             return false;
@@ -70,7 +70,7 @@ public class TreeUtil {
         int nextlinenumber = 0;
         while (queue.peek() != null) {
             node = queue.poll();
-            System.out.print(node.values + " ");
+            System.out.print(node.value + " ");
             linenumber--;
             if (node.left != null) {
                 nextlinenumber++;
@@ -143,7 +143,7 @@ public class TreeUtil {
                     nextlinenumber = 0;
                 }
             } else {
-                builder.append(node.values + "  ");
+                builder.append(node.value + "  ");
                 linenumber--;
                 nextlinenumber++;
                 queue.offer(node.left);

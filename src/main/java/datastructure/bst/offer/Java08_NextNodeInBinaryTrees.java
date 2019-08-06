@@ -11,15 +11,34 @@
 package datastructure.bst.offer;
 
 public class Java08_NextNodeInBinaryTrees {
-    public static TreeNodeParent getnext(TreeNodeParent head, TreeNodeParent node) {
-        return null;
+    public static TreeNodeParent getnext(TreeNodeParent node) {
+        if (node == null) {
+            return null;
+        }
+        TreeNodeParent next = null;
+        if (node.right != null) {
+            TreeNodeParent right = node.right;
+            while (node.left != null) {
+                right = right.left;
+            }
+            next = right;
+        } else if (node.parent != null) {
+            TreeNodeParent current = node;
+            TreeNodeParent paraent = node.parent;
+            while (paraent != null && current == paraent.right) {
+                current = paraent;
+                paraent = paraent.parent;
+            }
+            next = paraent;
+        }
+        return next;
     }
 
     public static void main(String[] args) {
-        System.out.println("value-" + getnext(null, null) + "; target-null");
+        System.out.println("value-" + getnext( null) + "; target-null");
         TreeNodeParent head = new TreeNodeParent(null, 2, null, null);
         head.left = new TreeNodeParent(head, 1, null, null);
         head.right = new TreeNodeParent(head, 2, null, null);
-        System.out.println("value-" + getnext(head, head.left) + "; target-" + head);
+        System.out.println("value-" + getnext(head.left) + "; target-" + head);
     }
 }

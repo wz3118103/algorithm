@@ -11,16 +11,23 @@
 package algorithm.math.bitoperation.offer;
 
 public class Java15_NumberOf1InBinary {
-    public static  int number(int n) {
-        return -1;
+    public static  int numberOf1_S1(int n) {
+        int count = 0;
+
+        while (n != 0) {
+            ++count;
+            n = (n - 1) & n;
+        }
+
+        return count;
     }
 
     public static void main(String[] args) {
         //9-1001
         //8-1000
         //7-111
-        System.out.println("value-" + number(9) + "; target-2");
-        System.out.println("value-" + number(8) + "; target-1");
-        System.out.println("value-" + number(7) + "; target-3");
+        System.out.println("value-" + numberOf1_S1(9) + "; target-2");
+        System.out.println("value-" + numberOf1_S1(8) + "; target-1");
+        System.out.println("value-" + numberOf1_S1(7) + "; target-3");
     }
 }

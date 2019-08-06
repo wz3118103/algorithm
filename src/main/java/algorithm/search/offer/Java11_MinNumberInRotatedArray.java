@@ -12,8 +12,40 @@
 package algorithm.search.offer;
 
 public class Java11_MinNumberInRotatedArray {
-    public static int min(int[] ints) {
-        return Integer.MIN_VALUE;
+    public static int min(int[] array) {
+        if(array == null || array.length <= 0){
+            throw new IllegalArgumentException();
+        }
+        int left = 0;
+        int right = array.length - 1;
+        int mid = 0;
+
+        while (array[left] >= array[right]) {
+            if (right - left == 1) {
+                mid = right;
+                break;
+            }
+            mid = ((right - left) >> 2) + left;
+            if (array[left] == array[right] && array[mid] == array[left]) {
+                return minInorder(array, left, right);
+            }
+            if (array[mid] >= array[left]) {
+                left = mid;
+            } else if (array[mid] <= array[right]) {
+                right = mid;
+            }
+        }
+        return array[mid];
+    }
+
+    private static int minInorder(int[] array, int left, int right) {
+        int result = array[left];
+        for (int i = left + 1; i <= right; ++i) {
+            if (result > array[i]) {
+                result = array[i];
+            }
+        }
+        return result;
     }
 
     public static void main(String[] args) {

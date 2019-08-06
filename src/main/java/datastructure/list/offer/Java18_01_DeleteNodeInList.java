@@ -12,16 +12,28 @@ package datastructure.list.offer;
 
 public class Java18_01_DeleteNodeInList {
 
-    public static  boolean removeMe(LinkNode head, LinkNode me) {
-        return false;
+    public static  void remove(LinkNode head, LinkNode delete) {
+        if (head == null || delete == null) {
+            return;
+        }
+
+        if (delete.next != null) {
+            LinkNode next = delete.next;
+            delete.values = next.values;
+            delete.next = next.next;
+        } else if (head == delete) {
+            head = delete = null;
+        } else {
+            LinkNode node = head;
+            while (node.next != delete) {
+                node = node.next;
+            }
+            node.next = null;
+            delete = null;
+        }
+
     }
 
     public static void main(String[] args) {
-        LinkNode head = new LinkNode(1, null);
-        head.next = new LinkNode(2, null);
-        head.next.next = new LinkNode(3, null);
-        System.out.println("value-" + removeMe(head, null) + "; target-false");
-        System.out.println("value-" + removeMe(head, head.next) + "; target-true");
-        System.out.println("value-" + head.next.values.intValue() + "; target-3");
     }
 }

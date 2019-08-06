@@ -7,24 +7,32 @@
  * // 面试题21：调整数组顺序使奇数位于偶数前面
  * // 题目：输入一个整数数组，实现一个函数来调整该数组中数字的顺序，使得所有
  * // 奇数位于数组的前半部分，所有偶数位于数组的后半部分。
+ *
+ * 思路：
+ *   TODO:加入方法引用，进行泛化！
  */
-package datastructure.array.offer;
+package algorithm.sort.offer;
 
 public class Java21_ReorderArray {
     public static void reorderArray(int[] ints) {
+        if (ints == null || ints.length <= 0) {
+            return;
+        }
         int begin = 0;
-        int end = ints.length-1;
-        while (begin<end) {
-            while (begin<end&&(ints[begin]&0x1)!=0) {
+        int end = ints.length - 1;
+        while (begin < end) {
+            while (begin < end && (ints[begin] & 0x1)!=0) {
                 begin++;
             }
-            while (begin<end&&(ints[end]&0x1)==0) {
+            while (begin < end && (ints[end] & 0x1) == 0) {
                 end--;
             }
 
-            int temp = ints[begin];
-            ints[begin] = ints[end];
-            ints[end] = temp;
+            if (begin < end) {
+                int temp = ints[begin];
+                ints[begin] = ints[end];
+                ints[end] = temp;
+            }
         }
     }
 

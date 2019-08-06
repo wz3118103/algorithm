@@ -9,15 +9,31 @@
  */
 package datastructure.bst.offer;
 
+import java.util.LinkedList;
+
 public class Java32_01_PrintTreeFromTopToBottom {
-    //元素之间没有任何其他符号。比如1,2 打印就是“12”
-    public static String print(TreeNode node) {
-        return "";
+    public static void printFromTopToBottom(TreeNode root) {
+        if (root == null) {
+            return;
+        }
+
+        LinkedList<TreeNode> queue = new LinkedList<>();
+        queue.offer(root);
+        while (!queue.isEmpty()) {
+            TreeNode node = queue.poll();
+            System.out.printf("%d ", node.value);
+            if (node.left != null) {
+                queue.offer(node.left);
+            }
+            if (node.right != null) {
+                queue.offer(node.right);
+            }
+        }
     }
 
     public static void main(String[] args) {
         TreeNode node = TreeUtil.construct2(1, 2, 3, 4, 5, 6, 7, 8);
-        System.out.println("value-" + print(node) + "; target-12345678");
+        printFromTopToBottom(node);
 
     }
 }

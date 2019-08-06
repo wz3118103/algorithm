@@ -8,11 +8,11 @@ package datastructure.list.offer;
  * \
  */
 public class LinkNode {
-    public Integer values;
+    public Integer value;
     public LinkNode next;
 
-    public LinkNode(Integer values, LinkNode next) {
-        this.values = values;
+    public LinkNode(Integer value, LinkNode next) {
+        this.value = value;
         this.next = next;
     }
 }

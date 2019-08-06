@@ -10,19 +10,42 @@
  */
 package datastructure.bst.offer;
 
-import java.util.List;
+import java.util.LinkedList;
 
 public class Java32_02_PrintTreesInLines {
-    //一个元素代表一行，元素之间不加任何符号。
-    public static List<String> print(TreeNode head) {
-        return null;
+    public static void print(TreeNode root) {
+        if (root == null) {
+            return;
+        }
+
+        LinkedList<TreeNode> queue = new LinkedList<>();
+        queue.offer(root);
+        // 下一层结点的数目
+        int nextLevel = 0;
+        // 当前层中还没有打印的数量
+        int print = 1;
+        while (!queue.isEmpty()) {
+            TreeNode node = queue.poll();
+            System.out.printf("%d ", node.value);
+            if (node.left != null) {
+                queue.offer(node.left);
+                ++nextLevel;
+            }
+            if (node.right != null) {
+                queue.offer(node.right);
+                ++nextLevel;
+            }
+            --print;
+            if (print == 0) {
+                System.out.println();
+                print = nextLevel;
+                nextLevel = 0;
+            }
+        }
     }
 
     public static void main(String[] args) {
         TreeNode head = TreeUtil.construct2(1, 2, 3);
-        List<String> list = print(head);
-        System.out.println("value-" + list.size() + "; target-2");
-        System.out.println("value-" + list.get(0) + "; target-1");
-        System.out.println("value-" + list.get(1) + "; target-23");
+        print(head);
     }
 }

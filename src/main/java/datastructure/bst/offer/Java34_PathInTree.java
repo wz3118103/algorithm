@@ -10,26 +10,51 @@
  */
 package datastructure.bst.offer;
 
+import java.util.ArrayList;
 import java.util.List;
 
 public class Java34_PathInTree {
-    /*
-    如下的路径有“12”和“13”
-    *       1
+    private static int currentSum = 0;
 
-      2            3
-    * */
-    public static List<String> path(TreeNode head, int sum) {
-        return null;
+    public static List<String> findPath(TreeNode root, int sum) {
+        List<String> paths = new ArrayList<>();
+        List<Integer> path = new ArrayList<>();
+        findPathCore(root, sum, path, paths);
+        return paths;
+    }
+
+    public static void findPathCore(TreeNode root, int sum,
+                                    List<Integer> path, List<String> paths) {
+        currentSum += root.value;
+        path.add(root.value);
+
+        boolean isLeaf = root.left == null && root.right == null;
+        if (isLeaf & currentSum == sum) {
+            StringBuilder pathStr = new StringBuilder();
+            for (int i = 0; i < path.size(); ++i) {
+                pathStr.append(path.get(i));
+                pathStr.append(" ");
+            }
+            paths.add(pathStr.toString());
+        }
+
+        if (root.left != null) {
+            findPathCore(root.left, sum, path, paths);
+        }
+        if (root.right != null) {
+            findPathCore(root.right, sum, path, paths);
+        }
+        currentSum -= root.value;
+        path.remove(path.size() - 1);
     }
 
     public static void main(String[] args) {
         TreeNode head = TreeUtil.construct2(10, 5, 12, 4, 7);
 //        TreeUtil.print2(head);
-        List<String> list = path(head, 22);
+        List<String> list = findPath(head, 22);
         System.out.println("value-" + list.size() + "; target-2");
-        System.out.println("value-" + list.contains("1012") + "; target-true");
-        System.out.println("value-" + list.contains("1057") + "; target-true");
+        System.out.println("value-" + list.contains("10 12 ") + "; target-true");
+        System.out.println("value-" + list.contains("10 5 7 ") + "; target-true");
 
     }
 }

@@ -12,8 +12,31 @@ package algorithm.math.numbertheory.offer;
 
 public class Java16_Power {
 
-    public static  double Power(double base, int exponent) {
-        return 0.0;
+    public static  double power(double base, int exponent) {
+        if (equels(base, 0.0) && exponent < 0) {
+            throw new IllegalArgumentException();
+        }
+        int absExponent = Math.abs(exponent);
+        double result = powerWithUnsignedExponent(base, absExponent);
+        if (exponent < 0) {
+            result = 1.0 / result;
+        }
+
+        return result;
+    }
+
+    private static double powerWithUnsignedExponent(double base, int exponent) {
+        if (exponent == 0)
+            return 1;
+        if (exponent == 1)
+            return base;
+
+        double result = powerWithUnsignedExponent(base, exponent >> 1);
+        result *= result;
+        if ((exponent & 0x1) == 1)
+            result *= base;
+
+        return result;
     }
 
     public static  boolean equels(double d1, double d2) {
@@ -21,6 +44,6 @@ public class Java16_Power {
     }
 
     public static void main(String[] args) {
-        System.out.println("value-" + Power(2.3, 4) + "; target-" + Math.pow(2.3, 4));
+        System.out.println("value-" + power(2.3, 4) + "; target-" + Math.pow(2.3, 4));
     }
 }

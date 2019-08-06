@@ -12,33 +12,37 @@
  */
 package datastructure.stack.offer;
 
+import java.util.ArrayDeque;
 import java.util.Stack;
 
-public class Java31_StackPushPopOrder  {
+public class Java31_StackPushPopOrder {
     public static boolean popOrder(int[] push, int[] pop) {
-        if (pop!=null&&push!=null&&pop.length!=0){
-            int pushPointer = 0;
-            int popPointer = 0;
+        if (pop == null || push == null || push.length == 0 || pop.length == 0 ||
+                push.length != pop.length) {
+            throw new IllegalArgumentException();
+        }
 
-            Stack<Integer> stack = new Stack<>();
+        boolean bPossible = false;
+        ArrayDeque<Integer> stack = new ArrayDeque<>();
+        int pushPointer = 0;
+        int popPointer = 0;
 
-            while (popPointer <pop.length){
-                while (stack.empty()||stack.peek()!=pop[popPointer]) {
-                    if (pushPointer == push.length){
-                        break;
-                    }
-                    stack.push(push[pushPointer]);
-                    pushPointer++;
-                }
-                if (stack.peek()!=pop[popPointer]) {
+        while (popPointer < pop.length) {
+            // 当辅助栈的栈顶元素不是要弹出的元素时，先压入栈
+            while (stack.isEmpty() || stack.peek() != pop[popPointer]) {
+                if (pushPointer == push.length) {
                     break;
                 }
-                stack.pop();
-                popPointer++;
+                stack.push(push[pushPointer]);
+                pushPointer++;
             }
-            return stack.empty() && popPointer == pop.length;
+            if (stack.peek() != pop[popPointer]) {
+                break;
+            }
+            stack.pop();
+            popPointer++;
         }
-        return false;
+        return stack.isEmpty() && popPointer == pop.length;
     }
 
     public static void main(String[] args) {

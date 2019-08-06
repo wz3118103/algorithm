@@ -12,8 +12,25 @@ package algorithm.dynamicprogramming.offer;
 
 public class Java42_GreatestSumOfSubarrays  {
 
-    public static int max(int[] ints) {
-        return 0;
+    public static int max(int[] array) {
+        if (array == null || array.length <= 0) {
+            throw new IllegalArgumentException();
+        }
+        int sum = 0;
+        int max = 0;
+        for (int i = 0; i < array.length; i++) {
+
+            if(sum <= 0){      //如果当前连续n项的和小于等于0,则没必要与后面的元素相加
+                sum = array[i];      //Sum重新赋值
+            }else{
+                sum += array[i];     //如果Sum的值大于0,则继续与后面的元素相加,
+            }
+            if(sum > max){         //每次改变Sum的值都有与max进行比较
+                max = sum;       //如果Sum的值大于max,则将Sum的值赋值给max
+            }
+        }
+        return max;
+
     }
 
     public static void main(String[] args) {

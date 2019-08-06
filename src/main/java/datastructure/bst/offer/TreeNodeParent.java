@@ -8,13 +8,10 @@ package datastructure.bst.offer;
  * \
  */
 public class TreeNodeParent {
-
-
     public TreeNodeParent parent;
     public Integer values;
     public TreeNodeParent left;
     public TreeNodeParent right;
-
     public TreeNodeParent(TreeNodeParent parent, Integer values, TreeNodeParent left, TreeNodeParent right) {
         this.parent = parent;
         this.values = values;

@@ -10,10 +10,7 @@
  */
 package datastructure.stack.offer;
 
-import java.util.AbstractQueue;
-import java.util.Iterator;
-import java.util.Queue;
-import java.util.Stack;
+import java.util.*;
 
 public class Java09_QueueWithTwoStacks {
     public static  Queue<Integer> getQuene() {
@@ -37,8 +34,8 @@ public class Java09_QueueWithTwoStacks {
 
     static class MyQuene<T> extends AbstractQueue<T> {
 
-        private Stack<T> stack1 = new Stack<>();
-        private Stack<T> stack2 = new Stack<>();
+        ArrayDeque<T> stack1 = new ArrayDeque<>();
+        ArrayDeque<T> stack2 = new ArrayDeque<>();
 
         @Override
         public Iterator<T> iterator() {
@@ -50,16 +47,23 @@ public class Java09_QueueWithTwoStacks {
             return 0;
         }
 
-        //需要实现-----------------------
         @Override
         public boolean offer(T t) {
-            return false;
+            stack1.push(t);
+            return true;
         }
 
-        //需要实现-----------------------
         @Override
         public T poll() {
-            return null;
+            if (stack1.isEmpty() && stack2.isEmpty()) {
+                throw new IllegalStateException("queue is empty");
+            }
+            if (stack2.isEmpty()) {
+                while (!stack1.isEmpty()) {
+                    stack2.push(stack1.pop());
+                }
+            }
+            return stack2.pop();
         }
 
         @Override
@@ -67,4 +71,9 @@ public class Java09_QueueWithTwoStacks {
             return null;
         }
     }
+
+
+
 }
+
+

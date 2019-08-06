@@ -11,15 +11,48 @@
 package datastructure.bst.offer;
 
 public class Java33_SquenceOfBST  {
-    public static boolean aftersort(int[] ints) {
-        return false;
+    public static boolean aftersort(int[] sequence, int begin, int length) {
+        if (sequence == null || length <= 0) {
+            return false;
+        }
+
+        int root = sequence[begin + length - 1];
+        // 在二叉搜索树中左子树的结点小于根节点
+        int i = begin;
+        for (; i < begin + length - 1; ++i) {
+            if (sequence[i] > root) {
+                break;
+            }
+        }
+
+        // 右子树结点必须都大于根节点
+        int j = i;
+        for (; j < begin + length - 1; ++j) {
+            if (sequence[j] < root) {
+                return false;
+            }
+        }
+
+        // 判断左子树是不是二叉搜索树
+        boolean left = true;
+        if (i > begin) {
+            left = aftersort(sequence, begin, i);
+        }
+
+        // 判断右子树是不是二叉搜索树
+        boolean right = true;
+        if (i < begin + length - 1) {
+            right = aftersort(sequence, i, length - i - 1);
+        }
+
+        return (left && right);
     }
 
     public static void main(String[] args) {
         int[] ints = {5, 7, 6, 9, 11, 10, 8};
-        System.out.println("value-" + aftersort(ints) + "; target-true");
+        System.out.println("value-" + aftersort(ints, 0, ints.length) + "; target-true");
         ints = new int[]{7, 4, 6, 5};
-        System.out.println("value-" + aftersort(ints) + "; target-false");
+        System.out.println("value-" + aftersort(ints, 0, ints.length) + "; target-false");
 
     }
 }

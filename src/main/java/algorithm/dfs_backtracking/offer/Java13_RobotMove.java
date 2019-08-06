@@ -13,7 +13,43 @@
 package algorithm.dfs_backtracking.offer;
 
 public class Java13_RobotMove {
-    public static int number(int[][] ints) {
-        return 0;
+    public static int movingCount(int threshold, int rows, int cols) {
+        if (threshold < 0 || rows <= 0 || cols <= 0) {
+            return 0;
+        }
+        boolean[][] visited = new boolean[rows][cols];
+        for (int i = 0; i < rows; ++i) {
+            for (int j = 0; j < cols; ++j) {
+                visited[i][j] = false;
+            }
+        }
+        int count = movingCountCore(threshold, rows, cols, 0, 0, visited);
+
+        return count;
+    }
+
+    private static int movingCountCore(int threshold, int rows, int cols, int row,
+                                       int col, boolean[][] visited) {
+        int count = 0;
+        if (row >= 0 && row < rows && col >= 0 && col < cols &&
+            getDigitSum(row) + getDigitSum(col) <= threshold &&
+            !visited[row][col]) {
+            visited[row][col] = true;
+
+            count = 1 + movingCountCore(threshold, rows, cols, row - 1, col, visited) +
+                    movingCountCore(threshold, rows, cols, row + 1, col, visited) +
+                    movingCountCore(threshold, rows, cols, row , col - 1, visited) +
+                    movingCountCore(threshold, rows, cols, row, col + 1, visited);
+        }
+        return count;
+    }
+
+    private static int getDigitSum(int num) {
+        int sum = 0;
+        while (num > 0) {
+            sum += num % 10;
+            num /= 10;
+        }
+        return sum;
     }
 }

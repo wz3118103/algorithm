@@ -14,15 +14,31 @@ import java.util.HashSet;
 import java.util.Set;
 
 public class Java38_StringPermutation {
-    public static Set<String> allString(String text) {
+    public static Set<String> permutation(String text) {
         Set<String> strings = new HashSet<>();
+        permutationCore(text.toCharArray(), 0, strings);
         return strings;
     }
 
-    public static void main(String[] args) {
-        Set<String> strings = allString("abc");
-        System.out.println("value-" + strings.size() + "; target-6");
-        System.out.println("value-" + strings.contains("acb") + "; target-true");
+    private static void permutationCore(char[] text, int index, Set<String> result){
+        if (index == text.length) {
+            result.add(text.toString());
+            return;
+        }
 
+        for (int i = index; i != text.length; ++i) {
+            swap(text, index, i);
+            permutationCore(text, index + 1, result);
+            swap(text, index, i);
+        }
+    }
+
+    private static void swap(char[] txt, int i, int j) {
+        char tmp = txt[i];
+        txt[i] = txt[j];
+        txt[j] = tmp;
+    }
+
+    public static void main(String[] args) {
     }
 }

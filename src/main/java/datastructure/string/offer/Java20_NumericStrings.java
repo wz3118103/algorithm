@@ -11,36 +11,53 @@
  */
 package datastructure.string.offer;
 
-import java.io.StringReader;
-import java.util.Scanner;
 
 public class Java20_NumericStrings {
-     public static  boolean isNumber(String string) {
-        Scanner scanner = new Scanner(new StringReader(string));
-        int state = 0;
+    private static class StrPos {
+        private String str;
+        private int index;
 
-        while (scanner.hasNext()) {
-            if (state == 0) {
-                if (scanner.hasNextDouble()) {
-                    state = 1;
-                    scanner.nextDouble();
-                } else {
-                    return false;
-                }
-            }
-
-            if (state == 1) {
-                if (scanner.hasNextByte()) {
-                    state = 0;
-                    char c = (char) scanner.nextByte();
-                    if (c != 'e'&&c !='E'){
-                        return false;
-                    }
-                    continue;
-                }
-            }
+        public StrPos(String str, int index) {
+            this.str = str;
+            this.index = index;
         }
-        return true;
+    }
+
+    public static boolean isNumber(String str) {
+         if (str == null) {
+             return false;
+         }
+
+         StrPos strPos = new StrPos(str, 0);
+
+         boolean numeric = scanInteger(strPos);
+         if (str.charAt(strPos.index) == '.') {
+             strPos.index++;
+             numeric = scanUnsignedInteger(strPos) || numeric;
+         }
+
+         if (str.charAt(strPos.index) == 'e' || str.charAt(strPos.index) == 'E') {
+             strPos.index++;
+             numeric = numeric && scanInteger(strPos);
+         }
+
+         return numeric && strPos.index == str.length();
+    }
+
+    private static boolean scanInteger(StrPos strPos) {
+        if (strPos.str.charAt(strPos.index) == '+' || strPos.str.charAt(strPos.index) == '-') {
+            strPos.index++;
+        }
+        return scanUnsignedInteger(strPos);
+    }
+
+    private static boolean scanUnsignedInteger(StrPos strPos) {
+        int before = strPos.index;
+        while (strPos.index != strPos.str.length() && strPos.str.charAt(strPos.index) >= '0' &&
+                strPos.str.charAt(strPos.index) <= '9') {
+            strPos.index++;
+        }
+        return strPos.index > before;
     }
 
     public static void main(String[] args) {

@@ -12,14 +12,43 @@ package datastructure.list.offer;
 
 public class Java18_02_DeleteDuplicatedNode {
 
-    public static  LinkNode removeDeplicated(LinkNode head) {
-        return head;
+    public static  void removeDuplication(LinkNode head) {
+        if (head == null) {
+            return;
+        }
+        LinkNode pre = null;
+        LinkNode node = head;
+        while (node != null) {
+            LinkNode next = node.next;
+            boolean needDelete = false;
+            if (next != null && next.value == node.value) {
+                needDelete = true;
+            }
+            if (!needDelete) {
+                pre = node;
+                node = node.next;
+            } else {
+                int value = node.value;
+                LinkNode delete = node;
+                while (delete != null && delete.value == value) {
+                    next = delete.next;
+                    delete = next;
+                }
+
+                if (pre == null) {
+                    head = next;
+                } else {
+                    pre.next = next;
+                }
+                node = next;
+            }
+        }
     }
 
     public static void main(String[] args) {
         LinkNode linkNode = LinkListUtil.construct(1, 2, 3, 4);
-        System.out.println("value-" + LinkListUtil.equels(linkNode, removeDeplicated(linkNode)) + "; target-true");
+        removeDuplication(linkNode);
         LinkNode linkNode2 = LinkListUtil.construct(1, 2, 2, 3, 4);
-        System.out.println("value-" + LinkListUtil.equels(removeDeplicated(linkNode2), linkNode) + "; target-true");
+        removeDuplication(linkNode2);
     }
 }

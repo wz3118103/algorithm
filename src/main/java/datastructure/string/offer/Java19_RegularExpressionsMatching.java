@@ -13,19 +13,36 @@
 package datastructure.string.offer;
 
 public class Java19_RegularExpressionsMatching {
-    public static  boolean match(String reg, String text) {
+    public static  boolean match(String str, String pattern) {
 
-        return text != null && reg != null && matchCore(reg, text);
+        return str != null && pattern != null && matchCore(str, 0, pattern, 0);
 
     }
 
-    private static boolean matchCore(String reg, String text) {
-        if (reg.length()==0&&text.length()==0) {
+    private static boolean matchCore(String str, int strPos, String pattern, int patternPos) {
+        if (str.length() == strPos && pattern.length() == patternPos) {
             return true;
         }
-        if (text.length() == 0&&reg.length()!=0){
+        if (str.length() != strPos && pattern.length() == patternPos){
             return false;
         }
+
+        if (pattern.charAt(patternPos + 1) == '*') {
+            if (pattern.charAt(patternPos) == str.charAt(strPos) ||
+                    (pattern.charAt(patternPos) == '.' && strPos != str.length())) {
+                return matchCore(str, strPos + 1, pattern, patternPos + 2) ||
+                        matchCore(str, strPos + 1, pattern, patternPos) ||
+                        matchCore(str, strPos, pattern, patternPos + 2);
+            } else {
+                return matchCore(str, strPos, pattern, patternPos + 2);
+            }
+        }
+
+        if (str.charAt(strPos) == pattern.charAt(patternPos) || (pattern.charAt(patternPos) == '.' &&
+                strPos != str.length())) {
+            return matchCore(str, strPos + 1, pattern, patternPos + 1);
+        }
+
         return false;
 
     }

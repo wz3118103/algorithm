@@ -14,8 +14,38 @@ import java.util.Arrays;
 
 public class Java36_ConvertBinarySearchTree  {
 
-    public static TreeNode convert(TreeNode head) {
-        return null;
+    public static TreeNode convert(TreeNode root) {
+        TreeNode lastNodeInList = convertCore(root);
+
+        TreeNode listHead = lastNodeInList;
+        while (listHead != null && listHead.left != null) {
+            listHead = listHead.left;
+        }
+        return listHead;
+    }
+
+    public static TreeNode convertCore(TreeNode node){
+        if (node == null) {
+            return null;
+        }
+
+        TreeNode lastNodeInList = null;
+
+        TreeNode current = node;
+        if (current.left != null) {
+            lastNodeInList = convertCore(current.left);
+        }
+
+        current.left = lastNodeInList;
+        if (lastNodeInList != null) {
+            lastNodeInList.right = current;
+        }
+        lastNodeInList = current;
+        if (current.right != null) {
+            lastNodeInList = convertCore(current.right);
+        }
+
+        return lastNodeInList;
     }
 
     public static void main(String[] args) {

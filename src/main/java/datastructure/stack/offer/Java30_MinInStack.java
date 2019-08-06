@@ -1,40 +1,41 @@
 /**
- * //==================================================================
- * // ����ָOffer�����������Թپ������ͱ���⡷����
- * // ���ߣ��κ���
- * //==================================================================
- * <p>
- * // ������30������min������ջ
- * // ��Ŀ������ջ�����ݽṹ�����ڸ�������ʵ��һ���ܹ��õ�ջ����СԪ�ص�min
- * // �������ڸ�ջ�У�����min��push��pop��ʱ�临�Ӷȶ���O(1)��
+ // 面试题30：包含min函数的栈
+ // 题目：定义栈的数据结构，请在该类型中实现一个能够得到栈的最小元素的min
+ // 函数。在该栈中，调用min、push及pop的时间复杂度都是O(1)。
  */
 package datastructure.stack.offer;
 
+import java.util.ArrayDeque;
+
 public class Java30_MinInStack  {
 
-    public static void main(String[] args) {
-        MyStack myStack = new MyStack();
-        myStack.push(1);
-        System.out.println("value-" + myStack.min() + "; target-1");
-        System.out.println("value-" + myStack.pop() + "; target-1");
-        myStack.push(2);
-        myStack.push(3);
-        System.out.println("value-" + myStack.min() + "; target-2");
-        myStack.pop();
-        System.out.println("value-" + myStack.min() + "; target-2");
-    }
 
-    //实现下面3个函数
-    static class MyStack {
-        public void push(int i) {
+    static class  StackWithMin<T extends Comparable<T>> {
+        private ArrayDeque<T> data = new ArrayDeque<>();
+        private ArrayDeque<T> min = new ArrayDeque<>();
+
+        public void push(T value) {
+            data.push(value);
+            if (min.size() == 0 || value.compareTo(min.peek()) < 0) {
+                min.push(value);
+            } else {
+                min.push(min.peek());
+            }
         }
 
-        public int pop() {
-            return 0;
+        public void pop() {
+            if (data.size() <= 0 && min.size() <= 0) {
+                throw new IllegalStateException();
+            }
+            data.pop();
+            min.pop();
         }
 
-        public int min() {
-            return -1;
+        public T min() {
+            if (data.size() <= 0 && min.size() <= 0) {
+                throw new IllegalStateException();
+            }
+            return min.peek();
         }
 
     }

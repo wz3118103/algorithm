@@ -11,21 +11,56 @@
  */
 package datastructure.bst.offer;
 
-import java.util.List;
+import java.util.ArrayDeque;
+import java.util.ArrayList;
 
 public class Java32_03_PrintTreesInZigzag  {
     //一个元素代表一行，元素之间不加任何符号。
-    public static List<String> print(TreeNode head) {
-        return null;
+    public static void print(TreeNode root) {
+        if (root == null) {
+            return;
+        }
+
+        ArrayList<ArrayDeque<TreeNode>> levels = new ArrayList<>(2);
+        levels.add(new ArrayDeque<>());
+        levels.add(new ArrayDeque<>());
+
+        int current = 0;
+        int next = 1;
+        levels.get(current).push(root);
+        while(!levels.get(0).isEmpty() || !levels.get(1).isEmpty()) {
+            TreeNode node = levels.get(current).peek();
+            levels.get(current).pop();
+
+            System.out.printf("%d ", node.value);
+            if (current == 0) {
+                if (node.left != null) {
+                    levels.get(next).push(node.left);
+                }
+                if (node.right != null) {
+                    levels.get(next).push(node.right);
+                }
+            } else {
+                if (node.right != null) {
+                    levels.get(next).push(node.right);
+                }
+                if (node.left != null) {
+                    levels.get(next).push(node.left);
+                }
+            }
+
+            if (levels.get(current).isEmpty()) {
+                System.out.println();
+                current = 1 - current;
+                next = 1 - next;
+            }
+
+        }
+
     }
 
     public static void main(String[] args) {
         TreeNode head = TreeUtil.construct2(1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15);
-        List<String> list = print(head);
-        System.out.println("value-" + list.size() + "; target-4");
-        System.out.println("value-" + list.get(0) + "; target-1");
-        System.out.println("value-" + list.get(1) + "; target-32");
-        System.out.println("value-" + list.get(2) + "; target-4567");
-        System.out.println("value-" + list.get(3) + "; target-15141312111098");
+        print(head);
     }
 }

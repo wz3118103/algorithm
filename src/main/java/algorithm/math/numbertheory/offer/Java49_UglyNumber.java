@@ -12,8 +12,26 @@
 package algorithm.math.numbertheory.offer;
 
 public class Java49_UglyNumber {
-    public static int uglyNumber(int kth) {
-        return 0;
+    public static int uglyNumber(int num) {
+        int[] uglyNumber = new int[num];
+        uglyNumber[0] = 1;
+        int uglyIndex = 0, multiply2 = 0, multiply3 = 0, multiply5 = 0;
+        while (uglyIndex + 1< num){
+            uglyNumber[++uglyIndex] = min(uglyNumber[multiply2] * 2,uglyNumber[multiply3] * 3,uglyNumber[multiply5] * 5);
+            //2*3=6，3*2=6，会有重复值，因此下面需要使用if，而不能用if-else
+            if(uglyNumber[multiply2] * 2==uglyNumber[uglyIndex])
+                multiply2++;
+            if(uglyNumber[multiply3] * 3==uglyNumber[uglyIndex])
+                multiply3++;
+            if(uglyNumber[multiply5] * 5==uglyNumber[uglyIndex])
+                multiply5++;
+        }
+        return uglyNumber[num-1];
+    }
+
+    private static int min(int x,int y,int z){
+        int temp = x<y?x:y;
+        return temp<z?temp:z;
     }
 
     public static void main(String[] args) {

@@ -12,20 +12,41 @@
  */
 package datastructure.bst.offer;
 
-import java.util.Arrays;
-import java.util.List;
-
 public class Java07_ConstructBinaryTree {
-    public static TreeNode construct(List<Integer> center, List<Integer> befor) {
-        return null;
+
+    public static TreeNode construct(int[] pre,int[] in) {
+        if (pre == null || in == null || pre.length <= 0 || in.length <= 0 || pre.length != in.length) {
+            throw new IllegalArgumentException();
+        }
+        TreeNode root = reConstructBinaryTree(pre,0,pre.length - 1,in,0,in.length - 1);
+        return root;
     }
 
+    private static TreeNode reConstructBinaryTree(int [] pre,int startPre,int endPre,int [] in,int startIn,int endIn) {
+
+        if(startPre > endPre || startIn > endIn) {
+            return null;
+        }
+        TreeNode root = new TreeNode(pre[startPre]);
+
+        for(int i = startIn;i <= endIn; i++) {
+            if (in[i] == pre[startPre]) {
+                root.left = reConstructBinaryTree(pre, startPre + 1, startPre + i - startIn, in, startIn, i - 1);
+                root.right = reConstructBinaryTree(pre, i - startIn + startPre + 1, endPre, in, i + 1, endIn);
+                break;
+            }
+        }
+
+        return root;
+    }
+
+
     public static void main(String[] args) {
-        List<Integer> center = Arrays.asList(2, 1, 3);
-        List<Integer> befor = Arrays.asList(1, 2, 3);
+        int[] center = {2, 1, 3};
+        int[] before = {1, 2, 3};
         TreeNode head = new TreeNode(1, null, null);
         head.left = new TreeNode(2, null, null);
         head.right = new TreeNode(3, null, null);
-        System.out.println("value-" + TreeUtil.valuesEqual(construct(center, befor), head) + "; target-true");
+        System.out.println("value-" + TreeUtil.valuesEqual(construct(center, before), head) + "; target-true");
     }
 }

@@ -9,38 +9,50 @@
  */
 package datastructure.bst.offer;
 
-import java.util.Arrays;
+import java.util.ArrayDeque;
 
 public class Java27_MirrorOfBinaryTree {
-    public static TreeNode mirror(TreeNode head) {
-        if (head==null){
-            return null;
+    public static void mirrorRecursively(TreeNode node) {
+        if (node == null || (node.left == null && node.right == null)){
+            return;
         }
-        mirrorCore(head);
-        return head;
+
+        TreeNode tmp = node.left;
+        node.left = node.right;
+        node.right = tmp;
+
+        if (node.left != null) {
+            mirrorRecursively(node.left);
+        }
+        if (node.right != null) {
+            mirrorRecursively(node.right);
+        }
     }
-    private static void mirrorCore(TreeNode head) {
-        if (head==null) {
+
+    public static void mirrorIteratively(TreeNode root) {
+        if (root == null) {
             return;
         }
-        if (head.left==null&&head.right==null){
-            return;
-        }
-        TreeNode temp = head.left;
-        head.left=head.right;
-        head.right=temp;
-        if (head.left!=null){
-            mirrorCore(head.left);
-        }
-        if (head.right!=null) {
-            mirrorCore(head.right);
+        ArrayDeque<TreeNode> stack = new ArrayDeque<>();
+        stack.push(root);
+
+        while (stack.size() > 0) {
+            TreeNode node = stack.peek();
+            stack.pop();
+
+            TreeNode tmp = node.left;
+            node.left = node.right;
+            node.right = tmp;
+
+            if (node.left != null) {
+                stack.push(node.left);
+            }
+            if (node.right != null) {
+                stack.push(node.right);
+            }
         }
     }
 
     public static void main(String[] args) {
-        TreeNode head = TreeUtil.construct(Arrays.asList(1, 2, 3));
-        TreeNode h1 = TreeUtil.construct(Arrays.asList(1, 3, 2));
-        System.out.println("value-" + TreeUtil.valuesEqual(head, mirror(h1)) + "; target-true");
-
     }
 }
