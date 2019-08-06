@@ -12,12 +12,43 @@
 package datastructure.string.offer;
 
 public class Java58_01_ReverseWordsInSentence {
-    public static String reverseWord(String text) {
-        return "";
+    public static String reverseSentence(String str){
+        String result = "";
+        if (str == null) {
+            return result;
+        }
+        int start = 0;
+        int end = str.length() - 1;
+        String temp = reverseWords(str,start,end);
+
+
+        char[] array = temp.toCharArray();
+        for (int i = 0; i < array.length; i++) {
+            int low = i;
+            while (i < array.length && array[i] != ' ') {
+                i++;
+            }
+            int high = i - 1;
+            temp = reverseWords(temp, low, high);
+        }
+        result = temp;
+        return result;
     }
 
-    public static void main(String[] args) {
-        System.out.println("value-" + reverseWord("I am a student. ") + "; target-student. a am I");
-        System.out.println("value-" + reverseWord("am") + "; target-ma");
+    public static String reverseWords(String str, int start, int end) {
+
+        char[] array = str.toCharArray();
+        while (start < end) {
+            char temp = array[start];
+            array[start] = array[end];
+            array[end] = temp;
+
+            start++;
+            end--;
+        }
+
+        String result = new String(array);
+        return result;
     }
+
 }

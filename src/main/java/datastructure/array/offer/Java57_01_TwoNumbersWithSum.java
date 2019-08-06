@@ -10,51 +10,27 @@
  */
 package datastructure.array.offer;
 
-import java.util.HashSet;
-import java.util.Set;
+import java.util.ArrayList;
 
 public class Java57_01_TwoNumbersWithSum {
-    public static Pair function(int[] number, int sum) {
-        return null;
+    private static ArrayList<Integer> findNumbersEqualSum(int[] array, int sum) {
+        ArrayList<Integer> result = new ArrayList<>();
+        if (array == null || array.length <= 1) return result;
+        int left = 0;
+        int right = array.length - 1;
+        while (left < right)  {
+            int currentSum = array[left] + array[right];
+            if (currentSum == sum)  {
+                result.add(array[left]);
+                result.add(array[right]);
+                break;
+            } else if (currentSum < sum) {
+                left++; //增大左边较小的数
+            } else {
+                right--; //减小右边较大的数
+            }
+        }
+        return result;
     }
 
-    public static void main(String[] args) {
-        int[] ints = {1, 2, 3, 4, 5, 6};
-        Set<Pair> set = new HashSet<>();
-        set.add(new Pair(1, 6));
-        set.add(new Pair(2, 5));
-        set.add(new Pair(3, 4));
-        System.out.println("value-" + set.contains(function(ints, 7)) + "; target-true");
-    }
-
-    static class Pair {
-        public int a = 0;
-        public int b = 0;
-
-        public Pair(int start, int end) {
-            this.a = start;
-            this.b = end;
-        }
-
-        @Override
-        public String toString() {
-            return a + "->" + b;
-        }
-
-        @Override
-        public boolean equals(Object obj) {
-            if (this == obj) {
-                return true;
-            } else if (obj instanceof Pair) {
-                Pair o = (Pair) obj;
-                return o.a == a && o.b == b;
-            } else
-                return false;
-        }
-
-        @Override
-        public int hashCode() {
-            return toString().hashCode();
-        }
-    }
 }

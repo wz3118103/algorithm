@@ -13,12 +13,33 @@ package algorithm.search.offer;
 
 
 public class Java53_02_MissingNumber {
-    public static int missing(int[] ints, int n) {
-        return 0;
+    public static int getMissingNumber(int[] array){
+        if (array == null || array.length == 0) {
+            return -1;
+        }
+        int start = 0;
+        int end = array.length - 1;
+        while (start <= end) {
+            int mid = (start + end) / 2;
+
+            if (mid >= 0 && array[mid] != mid) {
+                if (mid == 0 || array[mid - 1] == mid - 1) {
+                    return mid;
+                } else {
+                    end = mid - 1;
+                }
+            } else if (array[mid] == mid) {
+                start = mid + 1;
+            }
+        }
+        if (start == array.length)
+            return array.length;
+        return -1;
     }
+
 
     public static void main(String[] args) {
         int[] ints = {0, 1, 2, 4};
-        System.out.println("value-" + missing(ints, 5) + "; target-3");
+        System.out.println("value-" + getMissingNumber(ints) + "; target-3");
     }
 }

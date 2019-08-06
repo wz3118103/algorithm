@@ -13,8 +13,17 @@ package datastructure.bst.offer;
 import java.util.Arrays;
 
 public class Java55_01_TreeDepth {
-    public static int treeDepth(TreeNode head) {
-        return -1;
+    public static int treeDepth(TreeNode root) {
+        if(root == null) {
+            return 0;
+        }
+        if(root.left == null && root.right == null) {
+            return 1;
+        }
+        int left = treeDepth(root.left);
+        int right = treeDepth(root.right);
+
+        return left > right ? left + 1 : right + 1;
     }
 
     public static void main(String[] args) {

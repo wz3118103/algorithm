@@ -15,15 +15,23 @@ import java.io.Reader;
 import java.io.StringReader;
 
 public class Java50_02_FirstCharacterInStream {
+    char[] chars = new char[256];
+    StringBuilder sb = new StringBuilder();
 
-    public static char first(Reader reader, int readNumber) {
-        return 1;
+    public void insert(char ch) {
+        sb.append(ch);
+        chars[ch]++;
     }
 
+    public char firstAppearingOnce() {
+        char[] str = sb.toString().toCharArray();
+        for (char c : str) {
+            if (chars[c] == 1) {
+                return c;
+            }
+        }
+        return '#';
+    }
     public static void main(String[] args) {
-        Reader reader = new StringReader("google");
-        System.out.println("value-" + first(reader, 2) + "; target-g");
-        reader = new StringReader("google");
-        System.out.println("value-" + first(reader, 6) + "; target-l");
     }
 }

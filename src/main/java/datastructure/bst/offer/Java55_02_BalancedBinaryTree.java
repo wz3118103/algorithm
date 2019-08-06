@@ -13,15 +13,27 @@ package datastructure.bst.offer;
 import java.util.Arrays;
 
 public class Java55_02_BalancedBinaryTree {
-    public static  boolean binary(TreeNode head) {
-        return false;
+    public boolean isBalanced(TreeNode root) {
+        return hight(root) != -1;
+    }
+    public int hight(TreeNode root){
+        if(root == null){
+            return 0;
+        }
+        int leftHight = hight(root.left);
+        if(leftHight == -1){
+            return -1;
+        }
+        int rightHight = hight(root.right);
+        if(rightHight == -1){
+            return -1;
+        }
+        if(Math.abs(leftHight - rightHight) > 1){
+            return -1;
+        }
+        return Math.max(leftHight,rightHight) + 1;
     }
 
     public static void main(String[] args) {
-        TreeNode node = TreeUtil.construct(Arrays.asList(1, 2, 3));
-        System.out.println("value-" + binary(node) + "; target-true");
-        TreeNode node1 = TreeUtil.construct2(1, 2, -1, 3);
-        System.out.println("value-" + binary(node1) + "; target-false");
-
     }
 }

@@ -11,16 +11,54 @@
  */
 package datastructure.queueandheap.offer;
 
-import java.util.Arrays;
+import java.util.ArrayDeque;
 
 public class Java59_02_QueueWithMax {
-    public static  int[] maxs(int[] number, int size) {
-        return number;
-    }
+    public static class QueueWithMax {
+        private ArrayDeque<InternalData> data = new ArrayDeque<InternalData>();
+        private ArrayDeque<InternalData> maximum = new ArrayDeque<InternalData>();
 
-    public static void main(String[] args) {
-        int[] ints = {2, 3, 4, 2, 6, 2, 5, 1};
-        int size = 3;
-        System.out.println("value-" + Arrays.equals(maxs(ints, size), new int[]{4, 4, 6, 6, 6, 5}) + "; target-true");
+        private class InternalData {
+            int number;
+            int index;
+
+            public InternalData(int number, int index) {
+                this.number = number;
+                this.index = index;
+            }
+        }
+
+        private int curIndex;
+
+        public void push_back(int number) {
+            InternalData curData = new InternalData(number, curIndex);
+            data.addLast(curData);
+
+            while (!maximum.isEmpty() && maximum.getLast().number < number) {
+                maximum.removeLast();
+            }
+            maximum.addLast(curData);
+
+            curIndex++;
+        }
+
+        public void pop_front() {
+            if (data.isEmpty()) {
+                System.out.println("队列为空，无法删除！");
+                return;
+            }
+            InternalData curData = data.removeFirst();
+            if (curData.index == maximum.getFirst().index) {
+                maximum.removeFirst();
+            }
+        }
+
+        public int max() {
+            if (maximum == null) {
+                System.out.println("队列为空，无法删除！");
+                return 0;
+            }
+            return maximum.getFirst().number;
+        }
     }
 }

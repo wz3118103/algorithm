@@ -15,13 +15,23 @@ import java.util.HashSet;
 import java.util.Set;
 
 public class Java53_03_IntegerIdenticalToIndex{
-    public static Set<Integer> numbers(int[] ints) {
-        Set<Integer> number = new HashSet<>();
-        return number;
+    public static int getNumberSameAsIndex(int[] arr) {
+        if(arr == null || arr.length <= 0)
+            return -1;  //代表错误
+        int low = 0;
+        int high = arr.length-1;
+        while(low <= high) {
+            int mid = (high + low) >> 1;
+            if(arr[mid] > mid)
+                high = mid - 1;
+            else if(arr[mid] < mid)
+                low = mid + 1;
+            else
+                return mid;
+        }
+        return -1;
     }
 
     public static void main(String[] args) {
-        Set<Integer> integers = numbers(new int[]{-3, -1, 1, 3, 5});
-        System.out.println("value-" + integers.contains(3) + "; target-true");
     }
 }

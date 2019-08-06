@@ -11,16 +11,37 @@
  */
 package datastructure.queueandheap.offer;
 
-import java.util.Arrays;
+import java.util.ArrayList;
+import java.util.LinkedList;
 
 public class Java59_01_MaxInSlidingWindow {
-    public static  int[] maxs(int[] number, int size) {
-        return number;
-    }
 
-    public static void main(String[] args) {
-        int[] ints = {2, 3, 4, 2, 6, 2, 5, 1};
-        int size = 3;
-        System.out.println("value-" + Arrays.equals(maxs(ints, size), new int[]{4, 4, 6, 6, 6, 5}) + "; target-true");
+    public ArrayList<Integer> maxInWindows(int[] num, int size) {
+        ArrayList<Integer> result = new ArrayList<>();
+        if(num == null || num.length == 0||size == 0||size > num.length){
+            return result;
+        }
+        // 此队列装的是数组的下标，为了判断最大的是不是还在滑动窗口中
+        LinkedList<Integer> queue = new LinkedList<>();
+        for(int i = 0;i < num.length; i++){
+            if(!queue.isEmpty()){
+                //queue.peek()获取但不移除此列表的头
+                if(i >= queue.peek() + size){
+                    //获取并移除第一个元素
+                    queue.pop();
+                }
+                //queue.getLast()返回此列表的最后一个值
+                while(!queue.isEmpty() && num[i] >= num[queue.getLast()]){
+                    //移除并返回queue的最后一个元素
+                    queue.removeLast();
+                }
+            }
+            //入队列，将指定元素添加到队列
+            queue.offer(i);
+            if(i + 1 >= size){
+                result.add(num[queue.peek()]);
+            }
+        }
+        return result;
     }
 }

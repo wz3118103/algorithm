@@ -11,51 +11,47 @@
  */
 package datastructure.array.offer;
 
-import java.util.HashSet;
-import java.util.Set;
+import java.util.ArrayList;
 
 public class Java57_02_ContinuousSquenceWithSum {
-    public static Set<Pair> function(int sum) {
-        Set<Pair> pairs = new HashSet<>();
-        return pairs;
+    public static ArrayList<ArrayList<Integer>> findSequenceEqualSum(int sum) {
+        ArrayList<ArrayList<Integer>> result = new ArrayList<>();
+        if (sum < 3)  {
+            return result;
+        }
+        int min = 1;
+        int max = 2;
+        //因为小数被舍去，所以sum+1
+        int middle = (sum + 1) / 2;
+        int currentSum = min + max;
+        //至少2个数，所以最小数要小于sum的一半
+        while (min < middle)  {
+            if (currentSum == sum) {
+                result.add(getContinuousSequence(min, max));
+            }
+            //减少序列数目
+            while (currentSum > sum && min < middle) {
+                currentSum -= min;
+                //更新最小数
+                min++;
+                if (currentSum == sum)       {
+                    result.add(getContinuousSequence(min, max));
+                }
+            }
+            //增多序列数目
+            max++;
+            currentSum += max;
+        }
+        return result;
     }
 
-    public static void main(String[] args) {
-        Set<Pair> pairs = function(15);
-        System.out.println("value-" + pairs.size() + "; target-3");
-        System.out.println("value-" + pairs.contains(new Pair(1, 5)) + "; target-true");
-        System.out.println("value-" + pairs.contains(new Pair(4, 6)) + "; target-true");
-        System.out.println("value-" + pairs.contains(new Pair(7, 8)) + "; target-true");
+
+    private static ArrayList<Integer> getContinuousSequence(int begin, int end)  {
+        ArrayList<Integer> result = new ArrayList<>();
+        for (int i = begin; i <= end; i++)  {
+            result.add(i);
+        }
+        return result;
     }
 
-    static class Pair {
-        public int start = 0;
-        public int end = 0;
-
-        public Pair(int start, int end) {
-            this.start = start;
-            this.end = end;
-        }
-
-        @Override
-        public String toString() {
-            return start + "->" + end;
-        }
-
-        @Override
-        public boolean equals(Object obj) {
-            if (this == obj) {
-                return true;
-            } else if (obj instanceof Pair) {
-                Pair o = (Pair) obj;
-                return o.start == start && o.end == end;
-            } else
-                return false;
-        }
-
-        @Override
-        public int hashCode() {
-            return toString().hashCode();
-        }
-    }
 }
