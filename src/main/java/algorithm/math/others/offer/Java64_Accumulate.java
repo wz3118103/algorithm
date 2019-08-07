@@ -11,17 +11,15 @@
 package algorithm.math.others.offer;
 
 public class Java64_Accumulate {
-    public static  int sum(int n) {
-        return -1;
-    }
+    public static int getSum(int n) {
+        int sum = n;
+        boolean flag = (n > 1) && ((sum += getSum(n-1)) > 0);
+        //上面这句话相当于：
+        //if(n > 1)
+        //   sum += getSum(n - 1);
 
-    public static void main(String[] args) {
-        System.out.println(sumtest(10));
-        System.out.println(sumtest(100));
-        Const.integerList.forEach(a ->  System.out.println("value-" + sumtest(a) + "; target-" + sum(a)));
-    }
-
-    public static int sumtest(int n) {
-        return (1 + n) * n / 2;
+        //也可以使用||来实现
+        //boolean flag = (n == 1) || ((sum += getSum(n - 1)) > 0);
+        return sum;
     }
 }

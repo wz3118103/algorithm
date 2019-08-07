@@ -11,19 +11,25 @@ package datastructure.bst.offer;
 
 public class Java68_CommonParentInTree {
 
-    public static TreeNode parent(TreeNode node1, TreeNode node2) {
-        return null;
+    public static TreeNode getLowestCommonParentBST(TreeNode root,TreeNode node1,TreeNode node2) {
+        while(true) {
+            if(root == null)
+                return root;
+            if(root.value < node1.value && root.value < node2.value)
+                root = root.right;
+            else if(root.value > node1.value && root.value > node2.value)
+                root = root.left;
+            else
+                return root;
+        }
     }
 
-    public static void main(String[] args) {
-        TreeNode head = new TreeNode(1, null, null);
-        head.left = new TreeNode(2, null, null);
-        TreeNode left = new TreeNode(3, null, null);
-        head.left.left = left;
-        TreeNode right = new TreeNode(4, null, null);
-        head.left.right = right;
-//        TreeUtil.print(head);
-        System.out.println("value-" + parent(right, left) == head.left + "; target-true");
 
+    public static TreeNode getLowestCommonParent(TreeNode root,TreeNode node1,TreeNode node2) {
+        if (root == null || root == node1 || root == node2)
+            return root;
+        TreeNode left = getLowestCommonParent(root.left, node1, node2);
+        TreeNode right = getLowestCommonParent(root.right, node1, node2);
+        return left == null ? right : (right == null ? left : root);
     }
 }

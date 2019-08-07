@@ -10,31 +10,19 @@
  */
 package algorithm.math.others.offer;
 
-import java.util.Arrays;
-
 public class Java66_ConstuctArray {
-    public static  int[] constrct(int[] a) {
-        return null;
-    }
-
-    public static void main(String[] args) {
-        int[] ints = {1, 2, 3};
-        System.out.println("value-" + Arrays.equals(constrct(ints), new int[]{1, 2, 3}) + "; target-true");
-        ints = new int[]{1, 2, 3, 4, 5, 6, 6, 7, 7};
-        System.out.println("value-" + Arrays.equals(function1(ints), constrct(ints)) + "; target-true");
-        ints = new int[]{1, 2, 0};
-        System.out.println("value-" + Arrays.equals(new int[]{0, 0, 2}, constrct(ints)) + "; target-true");
-    }
-
-    private static int[] function1(int[] a) {
-        int sun = 1;
-        for (int i : a) {
-            sun *= i;
+    public static int[] multiply(int[] A) {
+        if(A == null || A.length < 2)
+            return null;
+        int[] B = new int[A.length];
+        B[0] = 1;
+        for(int i = 1; i < A.length; i++)
+            B[i] = B[i - 1] * A[i - 1];
+        int temp = 1;
+        for(int i = A.length - 2; i >= 0; i--){
+            temp *= A[i + 1];
+            B[i] *= temp;
         }
-        int[] b = new int[a.length];
-        for (int i = 0; i < b.length; i++) {
-            b[i] = sun / a[i];
-        }
-        return b;
+        return B;
     }
 }

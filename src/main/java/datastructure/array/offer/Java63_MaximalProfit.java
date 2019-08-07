@@ -13,13 +13,19 @@
 package datastructure.array.offer;
 
 public class Java63_MaximalProfit {
-    public static int max(int[] ints) {
+    public static int MaxDiff(int[] arr) {
+        if(arr == null || arr.length < 2)
+            return -1;  //error
+        int min = arr[0];
 
-        return -1;
-    }
-
-    public static void main(String[] args) {
-        int[] ints = {9, 11, 8, 5, 7, 12, 16, 14};
-        System.out.println("value-" + max(ints) + "; target-11");
+        //最大利润可以是负数，只要亏损最小就行
+        int maxDiff = arr[1] - min;
+        for(int i = 1;i < arr.length; i++) {
+            if(arr[i - 1] < min)     //保存“之前”最小数字
+                min = arr[i - 1];
+            if(arr[i] - min > maxDiff)
+                maxDiff = arr[i] - min;
+        }
+        return maxDiff;
     }
 }
