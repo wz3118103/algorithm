@@ -24,6 +24,18 @@ public class PriorityQueue {
         queue = new int[minCapacity];
     }
 
+    public PriorityQueue(int[] array) {
+        if (array == null || array.length <= 0) {
+            throw new IllegalArgumentException();
+        }
+        size = array.length;
+        queue = new int[size + 1];
+        System.arraycopy(array, 0, queue, 1, size);
+        for (int i = size >> 1; i >= 1; i--) {
+            siftDown(i, queue[i]);
+        }
+    }
+
     public void offer(int e) {
         // 此时1..size已经存储了元素，所以下一个位置为size + 1
         int i = size;
@@ -139,7 +151,14 @@ public class PriorityQueue {
             System.out.printf("%d ", queue.poll());
         }
         System.out.println();
-        System.out.println(queue.poll());
+//        System.out.println(queue.poll());
+
+        int[] array = {1, 2, 3, 4, 5, 6, 7};
+        PriorityQueue queue1 = new PriorityQueue(array);
+        while (!queue1.isEmpty()) {
+            System.out.printf("%d ", queue1.poll());
+        }
+        System.out.println();
     }
 
 
