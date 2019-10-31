@@ -21,6 +21,10 @@ public class BinarySearchTree<E> {
         this.comparator = comparator;
     }
 
+    /**
+     * 这里是Set，如果是Map，可以覆盖原来的值，然后在覆盖时返回旧值
+     * @param e
+     */
     public void add(E e) {
         if (e == null) {
             throw new NullPointerException();
@@ -35,37 +39,35 @@ public class BinarySearchTree<E> {
         Node<E> node = root;
 
         // 另一种写法
+        int cmp = 0;
         if(comparator != null) {
             while (node != null) {
                 parent = node;
-                if (comparator.compare(e, node.element) < 0) {
+                cmp = comparator.compare(e, node.element);
+                if (cmp < 0) {
                     node = node.left;
                 } else {
                     node = node.right;
                 }
-            }
-            newNode.parent = parent;
-            if (comparator.compare(e, parent.element) < 0) {
-                parent.left = newNode;
-            } else {
-                parent.right = newNode;
             }
         } else {
             Comparable<? super E> key = (Comparable<? super E>) e;
             while (node != null) {
                 parent = node;
-                if (key.compareTo(node.element) < 0) {
+                cmp = key.compareTo(node.element);
+                if (cmp < 0) {
                     node = node.left;
                 } else {
                     node = node.right;
                 }
             }
-            newNode.parent = parent;
-            if (key.compareTo(parent.element) < 0) {
-                parent.left = newNode;
-            } else {
-                parent.right = newNode;
-            }
+        }
+
+        newNode.parent = parent;
+        if (cmp < 0) {
+            parent.left = newNode;
+        } else {
+            parent.right = newNode;
         }
 //        if (comparator != null) {
 //            while (node != null) {
