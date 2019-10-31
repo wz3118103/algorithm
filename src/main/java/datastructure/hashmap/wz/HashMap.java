@@ -43,6 +43,10 @@ public class HashMap<K,V> {
         return n < 0 ? 1 : n > MAX_CAPACITY ? MAX_CAPACITY : n + 1;
     }
 
+    public int size() {
+        return size;
+    }
+
     public V put(K key, V value) {
         return putVal(hash(key), key, value);
     }
@@ -53,10 +57,10 @@ public class HashMap<K,V> {
         int i;
         if (table == null || table.length == 0) {
             table = resize();
-            table[hash & (table.length - 1)] = new Node<>(hash, key, value, null);
+            table[hash & (table.length - 1)] = newNode(hash, key, value, null);
         } else if ((p = table[i = (hash & (table.length - 1))]) == null) {
             // slot为空
-            table[i] = new Node<>(hash, key, value, null);
+            table[i] = newNode(hash, key, value, null);
         } else {
             // 遍历链表，查看是否有key，如果有则更新value；否则放到链表尾部
             Node<K,V> node;
@@ -67,7 +71,7 @@ public class HashMap<K,V> {
                 do{
                     // 到了链表末尾，同时是首先检测node是否为null
                     if (node == null) {
-                        p.next = new Node<>(hash, key, value, null);
+                        p.next = newNode(hash, key, value, null);
                         break;
                     }
                     // 这里需要node不为null
@@ -79,9 +83,8 @@ public class HashMap<K,V> {
                 } while (p != null); // 此处之前写的是node != null，导致无法在链表末尾插入
             }
             if (node != null) {
-                V old = p.value;
-                p.value = value;
-                return old;
+                afterNodeAccess(node);
+                return node.setValue(value);
             }
         }
         // 不要忘了更新size，并判断是否扩容
@@ -89,10 +92,11 @@ public class HashMap<K,V> {
         if (size > threshold) {
             resize();
         }
+        afterNodeInsertion();
         return null;
     }
 
-    public V get(K key) {
+    public V get(Object key) {
         Node<K,V> node;
         return (node = getEntry(hash(key), key)) == null ? null : node.value;
     }
@@ -102,7 +106,7 @@ public class HashMap<K,V> {
         return (node = removeNode(hash(key), key)) == null ? null : node.value;
     }
 
-    private Node<K,V> removeNode(int hash, Object key) {
+    Node<K,V> removeNode(int hash, Object key) {
         Node<K,V> p;
         int i;
         // 忘了table为空的判断
@@ -114,6 +118,7 @@ public class HashMap<K,V> {
             table[i] = p.next;
             // 忘了更新size
             --size;
+            afterNodeRemoval(p);
             return p;
         }
         Node node;
@@ -123,6 +128,7 @@ public class HashMap<K,V> {
                 node.next = null;
                 // 忘了更新size
                 --size;
+                afterNodeRemoval(node);
                 return node;
             }
             p = node;
@@ -130,7 +136,7 @@ public class HashMap<K,V> {
         return null;
     }
 
-    private Node<K,V> getEntry(int hash, K key) {
+    Node<K,V> getEntry(int hash, Object key) {
         Node<K,V> node;
         if ((node = table[hash & (table.length - 1)]) == null) {
             return null;
@@ -228,8 +234,9 @@ public class HashMap<K,V> {
         return newTab;
     }
 
-    private int hash(Object key) {
-        int hash = key.hashCode();
+    int hash(Object key) {
+        // key可以为null，所以需要使用Objects.hashCode方法
+        int hash = Objects.hashCode(key);
         return key == null ? 0 : hash ^ (hash >>> 16);
     }
 
@@ -249,6 +256,14 @@ public class HashMap<K,V> {
         }
         return builder.toString();
     }
+
+    // Callbacks to allow LinkedHashMap post-actions
+    protected Node<K,V> newNode(int hash, K key, V value, Node<K,V> next) {
+        return new Node<>(hash, key, value, next);
+    }
+    protected void afterNodeAccess(Node<K,V> p) { }
+    protected void afterNodeInsertion() { }
+    protected void afterNodeRemoval(Node<K,V> p) { }
 
     static class Node<K,V> implements Map.Entry<K,V> {
         final int hash;
@@ -311,6 +326,7 @@ public class HashMap<K,V> {
         for (String str : strings) {
             map.put(str, str.length());
         }
+        map.put(null, null);
         System.out.println(map);
 
         System.out.println(map.remove("hi"));
@@ -320,6 +336,8 @@ public class HashMap<K,V> {
         System.out.println(map.remove("ok"));
         System.out.println(map);
         System.out.println(map.remove("fe"));
+        System.out.println(map);
+        System.out.println(map.remove(null));
         System.out.println(map);
     }
 }
