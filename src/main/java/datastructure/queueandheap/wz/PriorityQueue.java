@@ -31,9 +31,25 @@ public class PriorityQueue {
         size = array.length;
         queue = new int[size + 1];
         System.arraycopy(array, 0, queue, 1, size);
-        for (int i = size >> 1; i >= 1; i--) {
+        for (int i = (size >> 1); i >= 1; i--) {
             siftDown(i, queue[i]);
         }
+    }
+
+    public void sort() {
+        for (int i = queue.length - 1; i > 1; i--) {
+            swap(1, i);
+            size--;
+            siftDown(1, queue[1]);
+        }
+
+        System.out.println(Arrays.toString(queue));
+    }
+
+    private void swap(int i, int j) {
+        int tmp = queue[i];
+        queue[i] = queue[j];
+        queue[j] = tmp;
     }
 
     public void offer(int e) {
@@ -111,7 +127,8 @@ public class PriorityQueue {
             // 简化写法，合并左右对称写法
             int child = left;
             int c = queue[child];
-            if (queue[right] > queue[left]) {
+            // 这个地方少了对right索引的判断，right可能会超出范围！
+            if (right < size && queue[right] > queue[left]) {
                 c = queue[child = right];
             }
             // 此处break，会导致parent没有赋值正确的值
