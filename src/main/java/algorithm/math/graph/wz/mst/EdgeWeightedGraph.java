@@ -66,6 +66,22 @@ public class EdgeWeightedGraph {
         }
     }
 
+    /**
+     * 不考虑自环
+     * @return
+     */
+    public Iterable<Edge> edges() {
+        ArrayList<Edge> edges = new ArrayList<>();
+        for (int v = 0; v < V; v++) {
+            for (Edge e : adj(v)) {
+                if (e.other(v) > v) {
+                    edges.add(e);
+                }
+            }
+        }
+        return edges;
+    }
+
     public static void main(String[] args) {
         EdgeWeightedGraph G = new EdgeWeightedGraph(8);
         int[] edge = {
@@ -110,6 +126,8 @@ public class EdgeWeightedGraph {
         }
 
         System.out.println(G);
+
+        System.out.println(G.edges());
     }
 
 }
