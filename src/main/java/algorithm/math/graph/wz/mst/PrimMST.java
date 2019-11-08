@@ -20,6 +20,8 @@ public class PrimMST {
     private ArrayList<Edge> mst;
     // distTo[i] 表示顶点i到已生成的部分mst树的最短距离
     private double[] distTo;
+    // 保存distTo对应的横切边
+    private Edge[] edgeTo;
     // 对(i, distTo[i])进行堆化
     private IndexMinPriorityQueue<Double> pq;
 
@@ -29,6 +31,7 @@ public class PrimMST {
         mst = new ArrayList<>();
         distTo = new double[g.V()];
         Arrays.fill(distTo, Double.MAX_VALUE);
+        edgeTo = new Edge[g.V()];
         pq = new IndexMinPriorityQueue<>(g.V());
 
         prim();
@@ -41,11 +44,15 @@ public class PrimMST {
         while(!pq.isEmpty()) {
             int v = pq.delMin();
             marked[v] = true;
+            if (v != 0) {
+                mst.add(edgeTo[v]);
+            }
             for (Edge e : G.adj(v)) {
                 int w = e.other(v);
                 if (!marked[w]) {
                     if (distTo[w] > e.getWeight()) {
                         distTo[w] = e.getWeight();
+                        edgeTo[w] = e;
                         // 先判断是否包含
                         if (pq.contains(w)) {
                             pq.change(w, distTo[w]);

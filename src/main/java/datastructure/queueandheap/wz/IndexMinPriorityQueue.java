@@ -4,6 +4,7 @@ import java.util.Arrays;
 
 /**
  * 在堆数组中存储索引i，同时通过数组keys将索引i与key关联起来，保证堆性质的比较是通过key来实现的
+ *
  * @param <K>
  */
 public class IndexMinPriorityQueue<K extends Comparable<K>> {
@@ -72,20 +73,33 @@ public class IndexMinPriorityQueue<K extends Comparable<K>> {
 
     /**
      * 将i = qp[index]处替换为size处
+     *
      * @param index
      */
     public void delete(int index) {
+        // 少了对空堆处理
+        if (size <= 0) {
+            throw new IllegalStateException();
+        }
         checkIndex(index);
-        K key = keys[pq[size]];
+        // 交换i与size，为了减小代码复杂度，应该尽可能抽象出小方法
         int i = qp[index];
-        pq[i] = pq[size];
-        qp[pq[size]] = i;
-        pq[size] = -1;
-        --size;
+        exchange(i, size--);
+        // 这个地方写得不正确，可能是siftDown，也可能是siftUp
+        siftDown(i);
+        siftUp(i);
+
         keys[index] = null;
         qp[index] = -1;
-        siftDown(i);
 
+    }
+
+    private void exchange(int i, int j) {
+        int tmp = pq[i];
+        pq[i] = pq[j];
+        pq[j] = tmp;
+        qp[pq[i]] = i;
+        qp[pq[j]] = j;
     }
 
     public K min() {
@@ -97,15 +111,17 @@ public class IndexMinPriorityQueue<K extends Comparable<K>> {
     }
 
     public int delMin() {
+        // 少了对空堆的处理
+        if (size <= 0) {
+            throw new IllegalStateException();
+        }
         int index = pq[1];
-        pq[1] = pq[size];
-        qp[pq[1]] = 1;
         // 将size交换到1处，需要删除原来1对应的pq[1]处的值
+        exchange(1, size--);
+        siftDown(1);
+
         keys[index] = null;
         qp[index] = -1;
-        pq[size] = -1;
-        --size;
-        siftDown(1);
         return index;
     }
 
@@ -173,28 +189,28 @@ public class IndexMinPriorityQueue<K extends Comparable<K>> {
 
     public static void main(String[] args) {
         // insert a bunch of strings
-        String[] strings = { "it", "was", "the", "best", "of", "times", "it", "was", "the", "worst" };
+        String[] strings = {"it", "was", "the", "best", "of", "times", "it", "was", "the", "worst"};
 
         IndexMinPriorityQueue<String> pq = new IndexMinPriorityQueue<>(strings.length);
         for (int i = 0; i < strings.length; i++) {
             pq.insert(i, strings[i]);
         }
 
-        // delete and print each key
-//        while (!pq.isEmpty()) {
-//            int i = pq.delMin();
-//            System.out.println(i + " " + strings[i]);
-//        }
-//        System.out.println();
+//         delete and print each key
+        while (!pq.isEmpty()) {
+            int i = pq.delMin();
+            System.out.println(i + " " + strings[i]);
+        }
+        System.out.println();
 
 //        pq.delete(0);
 //        System.out.println();
 
-        pq.change(0, "a");
-        System.out.println();
-        pq.change(0, "zoom");
-        System.out.println();
-        pq.change(0, "it");
-        System.out.println();
+//        pq.change(0, "a");
+//        System.out.println();
+//        pq.change(0, "zoom");
+//        System.out.println();
+//        pq.change(0, "it");
+//        System.out.println();
     }
 }
