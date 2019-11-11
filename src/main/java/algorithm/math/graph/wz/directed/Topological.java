@@ -1,16 +1,25 @@
 package algorithm.math.graph.wz.directed;
 
+import algorithm.math.graph.wz.sp.EdgeWeightedDigraph;
+import algorithm.math.graph.wz.sp.EdgeWeightedDirectedCycle;
+
 public class Topological {
-    private Digraph G;
     private Iterable<Integer> topOrder;
 
-    public Topological(Digraph g) {
-        G = g;
+    public Topological(Digraph G) {
         DiretedCycle cycle = new DiretedCycle(G);
         // 无环才有拓扑顺序
         if (!cycle.hasCycle()) {
             DepthFirstOrder order = new DepthFirstOrder(G);
             topOrder = order.reversePost();
+        }
+    }
+
+    public Topological(EdgeWeightedDigraph G) {
+        EdgeWeightedDirectedCycle finder = new EdgeWeightedDirectedCycle(G);
+        if (!finder.hasCycle()) {
+            DepthFirstOrder dfs = new DepthFirstOrder(G);
+            topOrder = dfs.reversePost();
         }
     }
 

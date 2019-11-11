@@ -1,5 +1,8 @@
 package algorithm.math.graph.wz.directed;
 
+import algorithm.math.graph.wz.sp.DirectedEdge;
+import algorithm.math.graph.wz.sp.EdgeWeightedDigraph;
+
 import java.util.ArrayDeque;
 
 /**
@@ -8,32 +11,54 @@ import java.util.ArrayDeque;
  * 逆后序：在递归调用之后将顶点压入栈
  */
 public class DepthFirstOrder {
-    private Digraph G;
     private boolean[] marked;
     private ArrayDeque<Integer> pre;
     private ArrayDeque<Integer> post;
     private ArrayDeque<Integer> reversePost;
 
-    public DepthFirstOrder(Digraph g) {
-        G = g;
-        marked = new boolean[g.V()];
+    public DepthFirstOrder(Digraph G) {
+        marked = new boolean[G.V()];
         pre = new ArrayDeque<>();
         post = new ArrayDeque<>();
         reversePost = new ArrayDeque<>();
-        for (int v = 0; v < g.V(); v++) {
+        for (int v = 0; v < G.V(); v++) {
             // 不要少了这个检测
             if (!marked[v]) {
-                dfs(v);
+                dfs(G, v);
             }
         }
     }
 
-    private void dfs(int v) {
+    public DepthFirstOrder(EdgeWeightedDigraph G) {
+        marked = new boolean[G.V()];
+        pre = new ArrayDeque<>();
+        post = new ArrayDeque<>();
+        reversePost = new ArrayDeque<>();
+        for (int v = 0; v < G.V(); v++)
+            if (!marked[v]) {
+                dfs(G, v);
+            }
+    }
+
+    private void dfs(Digraph G, int v) {
         marked[v] = true;
         pre.offer(v);
         for (int w : G.adj(v)) {
             if (!marked[w]) {
-                dfs(w);
+                dfs(G, w);
+            }
+        }
+        post.offer(v);
+        reversePost.push(v);
+    }
+
+    private void dfs(EdgeWeightedDigraph G, int v) {
+        marked[v] = true;
+        pre.offer(v);
+        for (DirectedEdge e : G.adj(v)) {
+            int w = e.to();
+            if (!marked[w]) {
+                dfs(G, w);
             }
         }
         post.offer(v);
