@@ -1,16 +1,24 @@
 package algorithm.math.graph.wz.directed;
 
 public class DirectedDFS {
-    // 表示源点s
-    private int s;
     private Digraph G;
     private boolean[] marked;
 
-    public DirectedDFS(Digraph g, int s) {
-        this.G = g;
-        this.s = s;
-        marked = new boolean[g.V()];
+    public DirectedDFS(Digraph G, int s) {
+        this.G = G;
+        marked = new boolean[G.V()];
         dfs(s);
+    }
+
+    public DirectedDFS(Digraph G, Iterable<Integer> sources) {
+        this.G = G;
+        marked = new boolean[G.V()];
+        checkVertices(sources);
+        for (int v : sources) {
+            if (!marked[v]) {
+                dfs(v);
+            }
+        }
     }
 
     public boolean marked(int v) {
@@ -31,6 +39,12 @@ public class DirectedDFS {
     private void checkIndex(int index) {
         if (index < 0 || index > G.V()) {
             throw new IndexOutOfBoundsException();
+        }
+    }
+
+    private void checkVertices(Iterable<Integer> sources) {
+        for (int v : sources) {
+            checkIndex(v);
         }
     }
 
